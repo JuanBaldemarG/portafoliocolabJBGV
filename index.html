@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Python y Colab</title>
+  <meta
+    name="description"
+    content="Portafolio academico con notebooks de Google Colab, materiales de apoyo y datasets para cursos de Python, ciencia de datos e inteligencia artificial."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-github-user="JuanBaldemarG" data-github-repo="portafoliocolabJBGV">
+  <div class="page-shell">
+    <header class="hero" id="inicio">
+      <nav class="topbar" aria-label="Navegacion principal">
+        <a class="brand" href="#inicio">Portafolio Colab</a>
+        <div class="topbar-links">
+          <a href="#supervisados">Supervisados</a>
+          <a href="#no-supervisados">No supervisados</a>
+          <a href="#mlops">MLOps</a>
+          <a href="#generativa">IA generativa</a>
+          <a href="#fairness">Fairness</a>
+          <a href="#proyectos">Proyectos</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <p class="eyebrow">Python + Google Colab + Ciencia de Datos</p>
+        <h1>Un portafolio publico para que sus alumnos encuentren cada practica en pocos clics.</h1>
+        <p class="hero-copy">
+          Este sitio reune notebooks, presentaciones, documentos y datasets organizados por tema.
+          Cada practica ofrece accesos directos a GitHub y a Google Colab.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalogo">Explorar modulos</a>
+          <a class="button button-secondary" href="README.md">Guia de publicacion</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>Practicas</dt>
+            <dd id="stat-labs">0</dd>
+          </div>
+          <div>
+            <dt>Notebooks</dt>
+            <dd id="stat-notebooks">0</dd>
+          </div>
+          <div>
+            <dt>Materiales</dt>
+            <dd id="stat-resources">0</dd>
+          </div>
+        </dl>
+      </section>
+    </header>
+
+    <main id="catalogo">
+      <section class="config-banner" id="config-banner" aria-live="polite">
+        <div>
+          <p class="config-title">Falta configurar GitHub para los botones de Colab</p>
+          <p>
+            Antes de publicar, edite los atributos <code>data-github-user</code> y
+            <code>data-github-repo</code> en <code>index.html</code>.
+          </p>
+        </div>
+        <a class="button button-secondary" href="README.md">Ver pasos</a>
+      </section>
+
+      <section class="section-intro">
+        <p class="section-kicker">Ruta sugerida</p>
+        <h2>Los modulos estan agrupados para navegar como curso, no como lista de archivos.</h2>
+        <p>
+          Use la navegacion superior para saltar entre bloques. Dentro de cada tarjeta encontrara
+          el notebook, el material de apoyo y los datos relacionados.
+        </p>
+      </section>
+
+      <div id="sections-root" class="sections-root"></div>
+    </main>
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+# Python and notebook noise
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local envs
+.env
+.venv/
+venv/
+
+# Build and temp folders
+dist/
+build/
+tmp/
+output/
+outputs/
+
+# Files above GitHub's 100 MB limit kept only in local source storage
+docs/gestion-ia/Diplomado_2025_Mod_XII_Herramientas_e_IA_Proy.pptx
+docs/ia-generativa/Diplomado_2025_Mod_XII_IA_Gen_Prompt.pptx
+
+# Original source folders kept locally, not needed in the public site
+AB Test ok/
+Agente IA ok/
+AI Explainable shap ok/
+Analisis de Supervivencia ok/
+Anomaly Detection y SPC ok/
+Aprendizaje No Supervisado K means ok/
+Casos ML ok/
+Compas Fairness ok/
+EDA No prod ok/
+Ejecución Proy DS AI ok/
+Ejercicio Adult Income ok/
+End to end Iris/
+Herramientas de IA para Dir Proy ok/
+I IA Gen ok/
+Iris Gradio y Streamlit ok/
+ML Ing Petrolera/
+MLOps y Drift ok/
+Nations ok/
+PoC Piloto y Roll Out ok/
+Red Neuronal ok/
+Sesgos ok/
+Transformer ok/
+Web Scraping ok/
