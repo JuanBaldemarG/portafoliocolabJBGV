@@ -356,14 +356,9 @@ function renderResourceGroup(title, items) {
 function renderSections() {
   const config = getConfig();
   const root = document.getElementById("sections-root");
-  const configBanner = document.getElementById("config-banner");
   let notebookCount = 0;
   let resourceCount = 0;
   let moduleCount = 0;
-
-  if (buildColabUrl(config, "notebooks/demo.ipynb") === "") {
-    configBanner.style.display = "flex";
-  }
 
   portfolioSections.forEach((section) => {
     const sectionEl = document.createElement("section");

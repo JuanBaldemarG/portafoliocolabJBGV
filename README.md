@@ -1,55 +1,29 @@
-# Portafolio publico con GitHub Pages
+# Portafolio Colab JBGV
 
-Este workspace ya incluye una version publica del portafolio en HTML simple para publicar notebooks de Google Colab, materiales de apoyo y datasets.
+Portafolio publico con notebooks de Google Colab, materiales de apoyo y datasets para cursos de Python, ciencia de datos e inteligencia artificial.
 
-## Estructura creada
+## Contenido
 
-- `index.html`: portada del portafolio
+- `index.html`: portada principal
 - `styles.css`: estilos del sitio
-- `assets/site.js`: catalogo de modulos y generacion de enlaces
-- `notebooks/`: notebooks copiados con rutas limpias
-- `docs/`: PDF, PPTX, DOCX y XLSX de apoyo
-- `data/`: datasets CSV
+- `assets/site.js`: catalogo de modulos y enlaces
+- `notebooks/`: practicas en formato Jupyter/Colab
+- `docs/`: PDF, PPTX, DOCX y otros materiales de clase
+- `data/`: datasets de apoyo
 
-## Lo unico que debe ajustar
+## Enfoque
 
-El sitio ya quedo configurado con estos atributos en `index.html`:
+El sitio esta organizado por modulos para que los alumnos puedan:
 
-```html
-<body data-github-user="JuanBaldemarG" data-github-repo="portafoliocolabJBGV">
-```
+- abrir notebooks en Google Colab
+- consultar materiales de clase
+- descargar datasets
+- navegar por temas de forma sencilla
 
-Con eso, los botones `Abrir en Colab` y `Ver notebook` ya apuntan a su repositorio real.
+## URL publica
 
-## Como publicar en GitHub Pages
-
-1. Cree un repositorio publico en GitHub.
-2. Suba el contenido completo de esta carpeta al repositorio.
-3. Verifique que la rama principal sea `main`.
-4. En GitHub, abra `Settings` > `Pages`.
-5. En `Build and deployment`, elija:
-   - `Source`: `Deploy from a branch`
-   - `Branch`: `main`
-   - `Folder`: `/ (root)`
-6. Guarde y espere a que GitHub publique la URL.
-
-La URL final quedara similar a:
+El repositorio esta preparado para publicarse con GitHub Pages en:
 
 ```text
-https://USUARIO.github.io/REPOSITORIO/
+https://JuanBaldemarG.github.io/portafoliocolabJBGV/
 ```
-
-## Como agregar mas contenido
-
-1. Copie el nuevo notebook a la carpeta adecuada dentro de `notebooks/`.
-2. Copie PDFs, PPTX, DOCX o XLSX a `docs/`.
-3. Copie datasets a `data/`.
-4. Agregue la nueva tarjeta o recurso en `assets/site.js`.
-
-## Recomendacion practica
-
-Si quiere mantener este portafolio facil de administrar:
-
-- use nombres de archivo sin espacios cuando agregue nuevo contenido
-- deje los originales intactos y copie solo la version publica al sitio
-- mantenga una tarjeta por tema o por practica principal
