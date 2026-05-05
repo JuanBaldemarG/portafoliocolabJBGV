@@ -8,7 +8,7 @@ Portafolio publico con notebooks de Google Colab, materiales de apoyo y datasets
 - `styles.css`: estilos del sitio
 - `assets/site.js`: catalogo de modulos y enlaces
 - `notebooks/`: practicas en formato Jupyter/Colab
-- `docs/`: PDF, PPTX, DOCX y otros materiales de clase
+- `docs/`: PDF, DOCX, XLSX y otros materiales de clase
 - `data/`: datasets de apoyo
 
 ## Enfoque

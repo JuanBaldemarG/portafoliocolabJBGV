@@ -25,8 +25,7 @@ const portfolioSections = [
           { label: "Iris con Streamlit", path: "notebooks/iris/Iris_Classifier_Streamlit_Localtunnel.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pdf" },
-          { label: "Presentacion PPTX", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pptx" }
+          { label: "Presentacion PDF", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pdf" }
         ]
       },
       {
@@ -101,7 +100,6 @@ const portfolioSections = [
         ],
         resources: [
           { label: "Presentacion PDF", path: "docs/anomalias-spc/Diplomado_2025_Mod_XII_Anomaly.pdf" },
-          { label: "Presentacion PPTX", path: "docs/anomalias-spc/Diplomado_2025_Mod_XII_Anomaly.pptx" },
           { label: "Explicacion Isolation Forest", path: "docs/anomalias-spc/Que_es_el_Isolation_Forest.docx" }
         ],
         datasets: [
@@ -118,8 +116,7 @@ const portfolioSections = [
           { label: "Bombas industriales", path: "notebooks/supervivencia/supervivencia_industrial_bombas_comentado.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pdf" },
-          { label: "Presentacion PPTX", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pptx" }
+          { label: "Presentacion PDF", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pdf" }
         ],
         datasets: [
           { label: "Supervivencia Tires", path: "data/supervivencia/Supervivencia_Tires.csv" }
@@ -142,8 +139,7 @@ const portfolioSections = [
           { label: "Data Leakage", path: "notebooks/mlops-drift/notebook_data_leakage_explicado.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pdf" },
-          { label: "Presentacion PPTX", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pptx" }
+          { label: "Presentacion PDF", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pdf" }
         ],
         datasets: [
           { label: "MPG dataset", path: "data/mlops-drift/MPG_data_for_various_automobiles.csv" }
@@ -175,9 +171,7 @@ const portfolioSections = [
         ],
         resources: [
           { label: "Presentacion Agente IA", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Agente_IA.pdf" },
-          { label: "PPT Agente IA", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Agente_IA.pptx" },
           { label: "Casos Agentes PDF", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Casos_Agentes_IA.pdf" },
-          { label: "Casos Agentes PPTX", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Casos_Agentes_IA.pptx" },
           { label: "WEF Future of Jobs", path: "docs/agentes-ia/WEF_Future_of_Jobs_1736354478.pdf" }
         ]
       },
@@ -200,8 +194,7 @@ const portfolioSections = [
           { label: "Web Scraping", path: "notebooks/web-scraping/Web_Scraping.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pdf" },
-          { label: "Presentacion PPTX", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pptx" }
+          { label: "Presentacion PDF", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pdf" }
         ]
       }
     ]
@@ -220,8 +213,7 @@ const portfolioSections = [
         ],
         resources: [
           { label: "Explicacion simple", path: "docs/fairness/Fairness_Explicacion_Simple.docx" },
-          { label: "Sesgos PDF", path: "docs/fairness/Sesgos.pdf" },
-          { label: "Sesgos PPTX", path: "docs/fairness/Sesgos.pptx" }
+          { label: "Sesgos PDF", path: "docs/fairness/Sesgos.pdf" }
         ]
       },
       {
@@ -246,9 +238,7 @@ const portfolioSections = [
         description: "CRISP-DM, variabilidad, casos y referencias para ejecutar proyectos de ciencia de datos e IA.",
         resources: [
           { label: "Proyectos IA PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_IA.pdf" },
-          { label: "Proyectos IA PPTX", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_IA.pptx" },
           { label: "Variabilidad PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_con_variabilidad.pdf" },
-          { label: "Variabilidad PPTX", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_con_variabilidad.pptx" },
           { label: "CRISP-DM", path: "docs/proyectos-ia/Estandar_CRISP_DM.pdf" },
           { label: "EVM Agile", path: "docs/proyectos-ia/Measuring_Earned_Value_on_Agile_and_Scrum.pdf" },
           { label: "CASO", path: "docs/proyectos-ia/CASO.docx" },
@@ -262,7 +252,6 @@ const portfolioSections = [
         resources: [
           { label: "Herramientas IA PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_Herramientas_e_IA_Proy.pdf" },
           { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" },
-          { label: "PoC y rollout PPTX", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_PoC_Piloto_y_Roll_Out.pptx" }
         ]
       },
       {
@@ -271,8 +260,6 @@ const portfolioSections = [
         description: "Casos y presentaciones para contextualizar aplicaciones reales de machine learning.",
         resources: [
           { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" },
-          { label: "Diplomado Oct 2024 PPTX", path: "docs/casos-ml/Diplomado_Oct_2024_Mod_IV.pptx" },
-          { label: "ML Ing. Petrolera PPTX", path: "docs/casos-ml/Diplomado_2025_Mod_XII_ML_Ing_Petrolera.pptx" }
         ]
       }
     ]
