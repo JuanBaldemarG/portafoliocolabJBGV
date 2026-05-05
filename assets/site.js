@@ -315,8 +315,30 @@ function createDisabledButton(label) {
   return span;
 }
 
+function isPowerPointResource(item) {
+  return /\.pptx?$/i.test(item.path) || /powerpoint|pptx?/i.test(item.label);
+}
+
+function filterVisibleResources(items = []) {
+  return items.filter((item) => !isPowerPointResource(item));
+}
+
+function getPrimaryResourceLabel(item) {
+  if (!item) {
+    return "Material";
+  }
+
+  if (/\.pdf$/i.test(item.path)) {
+    return "PDF";
+  }
+
+  return "Material";
+}
+
 function renderResourceGroup(title, items) {
-  if (!items || items.length === 0) {
+  const visibleItems = filterVisibleResources(items);
+
+  if (visibleItems.length === 0) {
     return null;
   }
 
@@ -330,7 +352,7 @@ function renderResourceGroup(title, items) {
   const list = document.createElement("ul");
   list.className = "resource-list";
 
-  items.forEach((item) => {
+  visibleItems.forEach((item) => {
     const li = document.createElement("li");
     li.appendChild(createLink(item.label, item.path));
     list.appendChild(li);
@@ -373,9 +395,10 @@ function renderSections() {
     grid.className = "card-grid";
 
     section.modules.forEach((module, index) => {
+      const visibleResources = filterVisibleResources(module.resources || []);
       moduleCount += 1;
       notebookCount += module.notebooks ? module.notebooks.length : 0;
-      resourceCount += (module.resources ? module.resources.length : 0) + (module.datasets ? module.datasets.length : 0);
+      resourceCount += visibleResources.length + (module.datasets ? module.datasets.length : 0);
 
       const card = document.createElement("article");
       card.className = "module-card";
@@ -400,7 +423,7 @@ function renderSections() {
       card.appendChild(head);
 
       const notebookGroup = renderResourceGroup("Notebooks", module.notebooks || []);
-      const resourceGroup = renderResourceGroup("Material de apoyo", module.resources || []);
+      const resourceGroup = renderResourceGroup("Material de apoyo", visibleResources);
       const dataGroup = renderResourceGroup("Datasets", module.datasets || []);
 
       [notebookGroup, resourceGroup, dataGroup].forEach((group) => {
@@ -430,8 +453,14 @@ function renderSections() {
         );
       }
 
-      if (module.resources && module.resources.length > 0) {
-        actions.appendChild(createLink("Material", module.resources[0].path, "button button-ghost"));
+      if (visibleResources.length > 0) {
+        actions.appendChild(
+          createLink(
+            getPrimaryResourceLabel(visibleResources[0]),
+            visibleResources[0].path,
+            "button button-ghost"
+          )
+        );
       }
 
       if (module.datasets && module.datasets.length > 0) {
