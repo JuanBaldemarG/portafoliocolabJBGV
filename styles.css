@@ -274,6 +274,14 @@ code {
   margin-top: 1.3rem;
 }
 
+.site-footer {
+  margin-top: 1.5rem;
+  padding: 1rem 0 0.5rem;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
 .module-section {
   border: 1px solid var(--line);
   border-radius: 30px;
