@@ -1,28 +1,29 @@
-# Portafolio Colab JBGV
+# Portafolio de Ejercicios de Analítica y Ciencia de Datos
 
-Portafolio publico con notebooks de Google Colab, materiales de apoyo y datasets para cursos de Python, ciencia de datos e inteligencia artificial.
+Portafolio académico con ejercicios de analítica y ciencia de datos para alumnos de posgrado de la Universidad de Monterrey (UDEM), con notebooks de Python listos para abrirse en Google Colab.
 
 ## Contenido
 
 - `index.html`: portada principal
+- `sobre-mi.html`: semblanza académica del profesor
 - `styles.css`: estilos del sitio
-- `assets/site.js`: catalogo de modulos y enlaces
-- `notebooks/`: practicas en formato Jupyter/Colab
+- `assets/site.js`: catálogo de módulos y enlaces
+- `notebooks/`: prácticas en formato Jupyter/Colab
 - `docs/`: PDF, DOCX, XLSX y otros materiales de clase
 - `data/`: datasets de apoyo
 
 ## Enfoque
 
-El sitio esta organizado por modulos para que los alumnos puedan:
+El sitio está organizado por módulos para que los alumnos puedan:
 
 - abrir notebooks en Google Colab
 - consultar materiales de clase
 - descargar datasets
 - navegar por temas de forma sencilla
 
-## URL publica
+## URL pública
 
-El repositorio esta preparado para publicarse con GitHub Pages en:
+El repositorio está preparado para publicarse con GitHub Pages en:
 
 ```text
 https://JuanBaldemarG.github.io/portafoliocolabJBGV/

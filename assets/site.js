@@ -2,63 +2,63 @@ const portfolioSections = [
   {
     id: "supervisados",
     title: "Modelos supervisados",
-    description: "Practicas introductorias y aplicadas para clasificacion, experimentacion y redes neuronales.",
+    description: "Ejercicios introductorios y aplicados de clasificación, experimentación y redes neuronales.",
     modules: [
       {
-        title: "AB Testing",
-        level: "Experimentacion",
-        description: "Notebook base para introducir el analisis de pruebas A/B y su interpretacion en Colab.",
+        title: "Pruebas A/B",
+        level: "Experimentación",
+        description: "Ejercicio para introducir el análisis de pruebas A/B y su interpretación en Google Colab.",
         notebooks: [
           { label: "AB Test Colab", path: "notebooks/ab-test/AB_Test_Colab.ipynb" }
         ],
         resources: [
-          { label: "Explicacion AB Test", path: "docs/ab-test/Explicacion_AB_Test.docx" }
+          { label: "Explicación del ejercicio", path: "docs/ab-test/Explicacion_AB_Test.docx" }
         ]
       },
       {
-        title: "Iris end to end",
-        level: "Clasificacion",
-        description: "Ruta desde la practica clasica de Iris hasta demos en Gradio y Streamlit.",
+        title: "Clasificación con Iris",
+        level: "Clasificación",
+        description: "Ruta de aprendizaje desde el caso clásico de Iris hasta interfaces en Gradio y Streamlit.",
         notebooks: [
-          { label: "End to end Iris", path: "notebooks/iris/End_to_end_iris.ipynb" },
+          { label: "End to End Iris", path: "notebooks/iris/End_to_end_iris.ipynb" },
           { label: "Iris con Gradio", path: "notebooks/iris/Iris_Classifier_Gradio_Funcional.ipynb" },
           { label: "Iris con Streamlit", path: "notebooks/iris/Iris_Classifier_Streamlit_Localtunnel.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pdf" }
+          { label: "Presentación PDF", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pdf" }
         ]
       },
       {
         title: "Adult Income",
-        level: "Clasificacion",
-        description: "Ejercicio guiado y solucion completa para trabajar un caso de prediccion con datos tabulares.",
+        level: "Clasificación",
+        description: "Ejercicio y solución para trabajar predicción con datos tabulares en un contexto aplicado.",
         notebooks: [
-          { label: "Ejercicio", path: "notebooks/adult-income/adult_income_ejercicio.ipynb" },
-          { label: "Solucion", path: "notebooks/adult-income/adult_income_solucion.ipynb" }
+          { label: "Ejercicio Adult Income", path: "notebooks/adult-income/adult_income_ejercicio.ipynb" },
+          { label: "Solución Adult Income", path: "notebooks/adult-income/adult_income_solucion.ipynb" }
         ]
       },
       {
-        title: "Red neuronal MNIST",
+        title: "Red neuronal con MNIST",
         level: "Deep Learning",
-        description: "Introduccion a redes neuronales con Keras y ejemplo de clasificacion de imagenes.",
+        description: "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
         notebooks: [
           { label: "Notebook MNIST", path: "notebooks/red-neuronal/Red_Neu_Mnist.ipynb" }
         ],
         resources: [
-          { label: "Guia Keras", path: "docs/red-neuronal/Red_Neuronal_Keras_Introduccion.docx" }
+          { label: "Guía de Keras", path: "docs/red-neuronal/Red_Neuronal_Keras_Introduccion.docx" }
         ]
       }
     ]
   },
   {
     id: "no-supervisados",
-    title: "No supervisados y analitica",
-    description: "Exploracion de datos, clustering, deteccion de anomalias y analisis de supervivencia.",
+    title: "Analítica exploratoria y aprendizaje no supervisado",
+    description: "Ejercicios de exploración de datos, clustering, detección de anomalías y análisis de supervivencia.",
     modules: [
       {
-        title: "EDA no productivo",
+        title: "EDA introductorio",
         level: "EDA",
-        description: "Practica base para analisis exploratorio con dataset de ejemplo.",
+        description: "Práctica base para análisis exploratorio de datos con un conjunto de datos de ejemplo.",
         notebooks: [
           { label: "Exploratory Data Analysis", path: "notebooks/eda/Exploratory_data_Analysis.ipynb" }
         ],
@@ -69,7 +69,7 @@ const portfolioSections = [
       {
         title: "Nations",
         level: "EDA",
-        description: "Analisis descriptivo del dataset Nations para practicar lectura, limpieza y visualizacion.",
+        description: "Análisis descriptivo del dataset Nations para practicar lectura, limpieza y visualización.",
         notebooks: [
           { label: "Data Analysis Nations", path: "notebooks/nations/Data_Analysis_nations.ipynb" }
         ],
@@ -80,27 +80,27 @@ const portfolioSections = [
       {
         title: "K-means con osos",
         level: "Clustering",
-        description: "Ejemplo sencillo de aprendizaje no supervisado para explicar segmentacion y centroides.",
+        description: "Ejemplo de aprendizaje no supervisado para explicar segmentación y centroides.",
         notebooks: [
           { label: "Notebook K-means", path: "notebooks/no-supervisado/osos_kmeans.ipynb" }
         ],
         resources: [
-          { label: "Guia K-means", path: "docs/explicabilidad/Aprendizaje_No_Supervisado_KMeans.docx" },
+          { label: "Guía de K-means", path: "docs/explicabilidad/Aprendizaje_No_Supervisado_KMeans.docx" },
           { label: "Notas del caso", path: "docs/explicabilidad/Osos_K_means.docx" }
         ]
       },
       {
-        title: "Anomalias y SPC",
+        title: "Anomalías y control estadístico de procesos",
         level: "Monitoreo",
-        description: "Coleccion de practicas para control estadistico de procesos, Grubbs e Isolation Forest.",
+        description: "Colección de ejercicios para control estadístico de procesos, prueba de Grubbs e Isolation Forest.",
         notebooks: [
-          { label: "Grafica tipo C", path: "notebooks/anomalias-spc/GRAFICA_TIPO_C.ipynb" },
-          { label: "Grubbs manual", path: "notebooks/anomalias-spc/Grubbs_manual.ipynb" },
+          { label: "Gráfica tipo C", path: "notebooks/anomalias-spc/GRAFICA_TIPO_C.ipynb" },
+          { label: "Prueba de Grubbs", path: "notebooks/anomalias-spc/Grubbs_manual.ipynb" },
           { label: "Isolation Forest", path: "notebooks/anomalias-spc/IsolationForest_NYC_Taxi_Anomalies.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/anomalias-spc/Diplomado_2025_Mod_XII_Anomaly.pdf" },
-          { label: "Explicacion Isolation Forest", path: "docs/anomalias-spc/Que_es_el_Isolation_Forest.docx" }
+          { label: "Presentación PDF", path: "docs/anomalias-spc/Diplomado_2025_Mod_XII_Anomaly.pdf" },
+          { label: "Explicación de Isolation Forest", path: "docs/anomalias-spc/Que_es_el_Isolation_Forest.docx" }
         ],
         datasets: [
           { label: "DefectosC.csv", path: "data/anomalias-spc/DefectosC.csv" },
@@ -108,15 +108,15 @@ const portfolioSections = [
         ]
       },
       {
-        title: "Analisis de supervivencia",
+        title: "Análisis de supervivencia",
         level: "Confiabilidad",
-        description: "Practicas de Kaplan-Meier y supervivencia industrial con datasets reales de apoyo.",
+        description: "Prácticas de Kaplan-Meier y supervivencia industrial con datos reales de apoyo.",
         notebooks: [
           { label: "Kaplan-Meier", path: "notebooks/supervivencia/kaplan_meier_neumaticos_desde_csv.ipynb" },
           { label: "Bombas industriales", path: "notebooks/supervivencia/supervivencia_industrial_bombas_comentado.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pdf" }
+          { label: "Presentación PDF", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pdf" }
         ],
         datasets: [
           { label: "Supervivencia Tires", path: "data/supervivencia/Supervivencia_Tires.csv" }
@@ -127,19 +127,19 @@ const portfolioSections = [
   {
     id: "mlops",
     title: "MLOps y drift",
-    description: "Material para leakage, drift y monitoreo del desempeno en modelos productivos.",
+    description: "Material para entender data leakage, drift de datos y monitoreo del desempeño en modelos productivos.",
     modules: [
       {
         title: "MLOps y drift",
-        level: "Operacion",
-        description: "Bloque enfocado en drift de datos, drift de modelos y errores frecuentes de leakage.",
+        level: "Operación",
+        description: "Bloque orientado a drift de datos, drift de modelos y errores frecuentes de leakage.",
         notebooks: [
           { label: "Iris Drift", path: "notebooks/mlops-drift/Iris_Drift.ipynb" },
           { label: "MPG Data Drift", path: "notebooks/mlops-drift/MPG_Data_Drift.ipynb" },
           { label: "Data Leakage", path: "notebooks/mlops-drift/notebook_data_leakage_explicado.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pdf" }
+          { label: "Presentación PDF", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pdf" }
         ],
         datasets: [
           { label: "MPG dataset", path: "data/mlops-drift/MPG_data_for_various_automobiles.csv" }
@@ -149,34 +149,34 @@ const portfolioSections = [
   },
   {
     id: "generativa",
-    title: "IA generativa y agentes",
-    description: "Material de prompting, agentes, transformers y automatizacion con notebooks listos para Colab.",
+    title: "IA generativa, agentes y automatización",
+    description: "Material de prompting, agentes, transformers y automatización con notebooks listos para Colab.",
     modules: [
       {
         title: "IA generativa",
         level: "Prompting",
-        description: "Material de apoyo para introduccion, prompting y aplicaciones del cientifico de datos.",
+        description: "Material de apoyo para introducir prompting y aplicaciones del científico de datos.",
         resources: [
-          { label: "Presentacion PDF", path: "docs/ia-generativa/Diplomado_2025_Mod_XII_IA_Gen_Prompt.pdf" },
-          { label: "Guia GPT", path: "docs/ia-generativa/GPT_Cientifico_de_Datos_Avanzado.docx" }
+          { label: "Presentación PDF", path: "docs/ia-generativa/Diplomado_2025_Mod_XII_IA_Gen_Prompt.pdf" },
+          { label: "Guía GPT", path: "docs/ia-generativa/GPT_Cientifico_de_Datos_Avanzado.docx" }
         ]
       },
       {
-        title: "Agentes IA",
+        title: "Agentes de IA",
         level: "Agentes",
-        description: "Dos ejemplos de agentes y materiales complementarios para explicar casos de uso y adopcion.",
+        description: "Ejemplos de agentes y materiales complementarios para explicar casos de uso y adopción.",
         notebooks: [
           { label: "Agente ML Qwen 7B", path: "notebooks/agentes-ia/Agente_ML_Qwen7B.ipynb" },
           { label: "Agente IA Arxiv", path: "notebooks/agentes-ia/Agente_IA_Arxiv.ipynb" }
         ],
         resources: [
-          { label: "Presentacion Agente IA", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Agente_IA.pdf" },
-          { label: "Casos Agentes PDF", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Casos_Agentes_IA.pdf" },
+          { label: "Presentación Agente IA", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Agente_IA.pdf" },
+          { label: "Casos de agentes PDF", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Casos_Agentes_IA.pdf" },
           { label: "WEF Future of Jobs", path: "docs/agentes-ia/WEF_Future_of_Jobs_1736354478.pdf" }
         ]
       },
       {
-        title: "Transformer",
+        title: "Transformers",
         level: "NLP",
         description: "Notebook con pipeline de Hugging Face y documento conceptual para explicar transformers.",
         notebooks: [
@@ -188,13 +188,13 @@ const portfolioSections = [
       },
       {
         title: "Web Scraping",
-        level: "Automatizacion",
-        description: "Practica de scraping y material de clase para recoleccion de datos desde la web.",
+        level: "Automatización",
+        description: "Práctica de scraping y material de clase para recolección de datos desde la web.",
         notebooks: [
           { label: "Web Scraping", path: "notebooks/web-scraping/Web_Scraping.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pdf" }
+          { label: "Presentación PDF", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pdf" }
         ]
       }
     ]
@@ -202,17 +202,17 @@ const portfolioSections = [
   {
     id: "fairness",
     title: "Fairness, sesgos y explicabilidad",
-    description: "Practicas para explicar modelos, discutir sesgos y revisar decisiones responsables en IA.",
+    description: "Ejercicios para explicar modelos, discutir sesgos y revisar decisiones responsables en IA.",
     modules: [
       {
-        title: "COMPAS fairness",
+        title: "Fairness con COMPAS",
         level: "Fairness",
-        description: "Notebook explicativo para abordar sesgo algoritimico y discusion de metricas de equidad.",
+        description: "Notebook para abordar sesgo algorítmico y discutir métricas de equidad.",
         notebooks: [
           { label: "Fairness COMPAS", path: "notebooks/fairness/Fairness_COMPAS_Explicado.ipynb" }
         ],
         resources: [
-          { label: "Explicacion simple", path: "docs/fairness/Fairness_Explicacion_Simple.docx" },
+          { label: "Explicación simple", path: "docs/fairness/Fairness_Explicacion_Simple.docx" },
           { label: "Sesgos PDF", path: "docs/fairness/Sesgos.pdf" }
         ]
       },
@@ -229,37 +229,37 @@ const portfolioSections = [
   },
   {
     id: "proyectos",
-    title: "Proyectos y direccion de IA",
-    description: "Material complementario para gestion, rollout, casos de negocio y direccion de proyectos.",
+    title: "Proyectos y dirección de IA",
+    description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
     modules: [
       {
         title: "Proyectos de IA",
-        level: "Gestion",
+        level: "Gestión",
         description: "CRISP-DM, variabilidad, casos y referencias para ejecutar proyectos de ciencia de datos e IA.",
         resources: [
           { label: "Proyectos IA PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_IA.pdf" },
           { label: "Variabilidad PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_con_variabilidad.pdf" },
           { label: "CRISP-DM", path: "docs/proyectos-ia/Estandar_CRISP_DM.pdf" },
           { label: "EVM Agile", path: "docs/proyectos-ia/Measuring_Earned_Value_on_Agile_and_Scrum.pdf" },
-          { label: "CASO", path: "docs/proyectos-ia/CASO.docx" },
+          { label: "Caso", path: "docs/proyectos-ia/CASO.docx" },
           { label: "Variabilidad XLSX", path: "docs/proyectos-ia/Variabilidad_Proyecto.xlsx" }
         ]
       },
       {
         title: "Herramientas y rollout",
-        level: "Adopcion",
-        description: "Apoyos para dirigir proyectos, planear PoC, piloto, rollout y uso estrategico de IA.",
+        level: "Adopción",
+        description: "Apoyos para dirigir proyectos, planear PoC, piloto, rollout y uso estratégico de IA.",
         resources: [
           { label: "Herramientas IA PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_Herramientas_e_IA_Proy.pdf" },
-          { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" },
+          { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" }
         ]
       },
       {
-        title: "Casos ML",
+        title: "Casos de machine learning",
         level: "Casos",
-        description: "Casos y presentaciones para contextualizar aplicaciones reales de machine learning.",
+        description: "Material para contextualizar aplicaciones reales de machine learning.",
         resources: [
-          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" },
+          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" }
         ]
       }
     ]
@@ -279,19 +279,11 @@ function buildColabUrl(config, path) {
     return "";
   }
 
-  if (config.githubUser === "TU_USUARIO_GITHUB" || config.githubRepo === "NOMBRE_DEL_REPO") {
-    return "";
-  }
-
   return `https://colab.research.google.com/github/${config.githubUser}/${config.githubRepo}/blob/main/${path}`;
 }
 
 function buildGithubUrl(config, path) {
   if (!config.githubUser || !config.githubRepo) {
-    return path;
-  }
-
-  if (config.githubUser === "TU_USUARIO_GITHUB" || config.githubRepo === "NOMBRE_DEL_REPO") {
     return path;
   }
 
@@ -333,6 +325,56 @@ function getPrimaryResourceLabel(item) {
   }
 
   return "Material";
+}
+
+function renderNotebookGroup(config, notebooks) {
+  if (!notebooks || notebooks.length === 0) {
+    return null;
+  }
+
+  const group = document.createElement("div");
+  group.className = "resource-group";
+
+  const heading = document.createElement("h4");
+  heading.textContent = "Notebooks";
+  group.appendChild(heading);
+
+  const list = document.createElement("div");
+  list.className = "notebook-list";
+
+  notebooks.forEach((notebook) => {
+    const row = document.createElement("article");
+    row.className = "notebook-row";
+
+    const label = document.createElement("p");
+    label.className = "notebook-label";
+    label.textContent = notebook.label;
+    row.appendChild(label);
+
+    const actions = document.createElement("div");
+    actions.className = "notebook-actions";
+
+    const colabUrl = buildColabUrl(config, notebook.path);
+    if (colabUrl) {
+      actions.appendChild(createLink("Abrir en Colab", colabUrl, "button button-primary button-small"));
+    } else {
+      actions.appendChild(createDisabledButton("Configurar Colab"));
+    }
+
+    actions.appendChild(
+      createLink(
+        "Ver notebook",
+        buildGithubUrl(config, notebook.path),
+        "button button-secondary button-small"
+      )
+    );
+
+    row.appendChild(actions);
+    list.appendChild(row);
+  });
+
+  group.appendChild(list);
+  return group;
 }
 
 function renderResourceGroup(title, items) {
@@ -386,7 +428,7 @@ function renderSections() {
 
     const count = document.createElement("div");
     count.className = "section-count";
-    count.textContent = `${section.modules.length} modulos`;
+    count.textContent = `${section.modules.length} módulos`;
 
     header.append(headerText, count);
     sectionEl.appendChild(header);
@@ -422,7 +464,7 @@ function renderSections() {
       head.append(headText, tag);
       card.appendChild(head);
 
-      const notebookGroup = renderResourceGroup("Notebooks", module.notebooks || []);
+      const notebookGroup = renderNotebookGroup(config, module.notebooks || []);
       const resourceGroup = renderResourceGroup("Material de apoyo", visibleResources);
       const dataGroup = renderResourceGroup("Datasets", module.datasets || []);
 
@@ -434,24 +476,6 @@ function renderSections() {
 
       const actions = document.createElement("div");
       actions.className = "card-actions";
-
-      if (module.notebooks && module.notebooks.length > 0) {
-        const featuredNotebook = module.notebooks[0];
-        const colabUrl = buildColabUrl(config, featuredNotebook.path);
-        if (colabUrl) {
-          actions.appendChild(createLink("Abrir en Colab", colabUrl, "button button-primary"));
-        } else {
-          actions.appendChild(createDisabledButton("Configurar Colab"));
-        }
-
-        actions.appendChild(
-          createLink(
-            "Ver notebook",
-            buildGithubUrl(config, featuredNotebook.path),
-            "button button-secondary"
-          )
-        );
-      }
 
       if (visibleResources.length > 0) {
         actions.appendChild(

@@ -179,6 +179,12 @@ code {
   transform: translateY(-2px);
 }
 
+.button-small {
+  min-height: 38px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.95rem;
+}
+
 .button-primary {
   color: white;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
@@ -274,6 +280,52 @@ code {
   margin-top: 1.3rem;
 }
 
+.about-layout {
+  display: grid;
+  gap: 1.3rem;
+  margin-top: 1.4rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-section,
+.about-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+
+.about-card {
+  padding: 1.5rem 1.35rem;
+}
+
+.about-card h2 {
+  margin: 0 0 0.8rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.about-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-compact .hero-content {
+  padding-top: 2.2rem;
+}
+
 .site-footer {
   margin-top: 1.5rem;
   padding: 1rem 0 0.5rem;
@@ -364,6 +416,31 @@ code {
   gap: 0.6rem;
 }
 
+.notebook-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.notebook-row {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.notebook-label {
+  margin: 0;
+  font-weight: 700;
+}
+
+.notebook-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .resource-group h4 {
   margin: 0;
   font-family: "Space Grotesk", sans-serif;
@@ -426,6 +503,10 @@ code {
 
   .topbar-links {
     justify-content: start;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
