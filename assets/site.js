@@ -228,6 +228,24 @@ const portfolioSections = [
     ]
   },
   {
+    id: "databricks",
+    title: "Databricks Free Edition",
+    description: "Recurso introductorio para explorar Databricks Free Edition como entorno de práctica en analítica, SQL y manejo de datos desde la nube.",
+    modules: [
+      {
+        title: "Primeros pasos con Databricks",
+        level: "Plataforma",
+        description: "Databricks Free Edition ofrece un espacio sin costo para comenzar a trabajar con notebooks, análisis de datos y flujos de trabajo colaborativos. Puede servir como punto de entrada para practicar con datasets reales y familiarizarse con una plataforma moderna de datos.",
+        resources: [
+          { label: "Suscribirse a Databricks Free Edition", path: "https://www.databricks.com/es/learn/free-edition" }
+        ],
+        datasets: [
+          { label: "Superstore.csv", path: "data/databricks/Superstore.csv" }
+        ]
+      }
+    ]
+  },
+  {
     id: "proyectos",
     title: "Proyectos y dirección de IA",
     description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
