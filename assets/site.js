@@ -315,18 +315,6 @@ function filterVisibleResources(items = []) {
   return items.filter((item) => !isPowerPointResource(item));
 }
 
-function getPrimaryResourceLabel(item) {
-  if (!item) {
-    return "Material";
-  }
-
-  if (/\.pdf$/i.test(item.path)) {
-    return "PDF";
-  }
-
-  return "Material";
-}
-
 function renderNotebookGroup(config, notebooks) {
   if (!notebooks || notebooks.length === 0) {
     return null;
@@ -474,24 +462,6 @@ function renderSections() {
         }
       });
 
-      const actions = document.createElement("div");
-      actions.className = "card-actions";
-
-      if (visibleResources.length > 0) {
-        actions.appendChild(
-          createLink(
-            getPrimaryResourceLabel(visibleResources[0]),
-            visibleResources[0].path,
-            "button button-ghost"
-          )
-        );
-      }
-
-      if (module.datasets && module.datasets.length > 0) {
-        actions.appendChild(createLink("Datos", module.datasets[0].path, "button button-ghost"));
-      }
-
-      card.appendChild(actions);
       grid.appendChild(card);
     });
 

@@ -197,12 +197,6 @@ code {
   background: rgba(255, 255, 255, 0.72);
 }
 
-.button-ghost {
-  color: var(--ink);
-  border-color: var(--line);
-  background: rgba(255, 255, 255, 0.62);
-}
-
 .button-disabled {
   opacity: 0.55;
   cursor: not-allowed;
@@ -490,13 +484,6 @@ code {
 .link-chip:focus-visible {
   transform: translateY(-2px);
   border-color: rgba(14, 124, 134, 0.35);
-}
-
-.card-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-top: auto;
 }
 
 .is-visible .module-card {
