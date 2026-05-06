@@ -309,6 +309,15 @@ code {
   text-align: center;
 }
 
+.about-campus {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin: 0 auto 1rem;
+}
+
 .about-logo {
   display: block;
   width: min(240px, 100%);

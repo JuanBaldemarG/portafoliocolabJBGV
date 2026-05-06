@@ -29,7 +29,11 @@ La página `sobre-mi.html` presenta una semblanza académica breve del profesor,
 - trayectoria académica y de dirección
 - experiencia aplicada en analítica, ciencia de datos y mejora continua
 
-Esta página se mantiene enfocada en la semblanza y no incluye enlaces externos visibles ni secciones promocionales adicionales.
+Además, esta página integra:
+
+- imagen institucional del entorno UDEM
+- logotipo UDEM
+- enlace visible al sitio personal `https://baldemar.carrd.co/`
 
 ## URL pública
 
