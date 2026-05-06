@@ -246,6 +246,21 @@ const portfolioSections = [
     ]
   },
   {
+    id: "orange-data-mining",
+    title: "Orange Data Mining",
+    description: "Recurso introductorio para conocer Orange Data Mining como una plataforma visual para analisis de datos, machine learning y experimentacion sin programar desde cero.",
+    modules: [
+      {
+        title: "Primeros pasos con Orange",
+        level: "Plataforma",
+        description: "Orange Data Mining es una herramienta visual de codigo abierto que permite explorar datos, construir flujos analiticos y experimentar con modelos de aprendizaje automatico mediante una interfaz basada en bloques. Es muy util para introducir conceptos de analitica y modelado de forma practica y accesible.",
+        resources: [
+          { label: "Ir a Orange Data Mining", path: "https://orangedatamining.com/" }
+        ]
+      }
+    ]
+  },
+  {
     id: "proyectos",
     title: "Proyectos y dirección de IA",
     description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
