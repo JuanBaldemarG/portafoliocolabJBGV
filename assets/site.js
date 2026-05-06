@@ -248,12 +248,12 @@ const portfolioSections = [
   {
     id: "orange-data-mining",
     title: "Orange Data Mining",
-    description: "Recurso introductorio para conocer Orange Data Mining como una plataforma visual para analisis de datos, machine learning y experimentacion sin programar desde cero.",
+    description: "Recurso introductorio para conocer Orange Data Mining como una plataforma visual para análisis de datos, machine learning y experimentación sin programar desde cero.",
     modules: [
       {
         title: "Primeros pasos con Orange",
         level: "Plataforma",
-        description: "Orange Data Mining es una herramienta visual de codigo abierto que permite explorar datos, construir flujos analiticos y experimentar con modelos de aprendizaje automatico mediante una interfaz basada en bloques. Es muy util para introducir conceptos de analitica y modelado de forma practica y accesible.",
+        description: "Orange Data Mining es una herramienta visual de código abierto que permite explorar datos, construir flujos analíticos y experimentar con modelos de aprendizaje automático mediante una interfaz basada en bloques. Es muy útil para introducir conceptos de analítica y modelado de forma práctica y accesible.",
         resources: [
           { label: "Ir a Orange Data Mining", path: "https://orangedatamining.com/" }
         ]
@@ -263,12 +263,12 @@ const portfolioSections = [
   {
     id: "minitab",
     title: "Minitab Statistical Software",
-    description: "Recurso introductorio para conocer Minitab Statistical Software como una plataforma enfocada en analisis estadistico, mejora de procesos y apoyo academico para cursos cuantitativos.",
+    description: "Recurso introductorio para conocer Minitab Statistical Software como una plataforma enfocada en análisis estadístico, mejora de procesos y apoyo académico para cursos cuantitativos.",
     modules: [
       {
         title: "Primeros pasos con Minitab",
         level: "Plataforma",
-        description: "Minitab es una herramienta ampliamente utilizada para analisis estadistico, control de calidad, mejora continua y apoyo a la toma de decisiones con datos. En el contexto academico resulta util para introducir conceptos de estadistica aplicada, visualizacion y analisis de procesos en un entorno profesional.",
+        description: "Minitab es una herramienta ampliamente utilizada para análisis estadístico, control de calidad, mejora continua y apoyo a la toma de decisiones con datos. En el contexto académico resulta útil para introducir conceptos de estadística aplicada, visualización y análisis de procesos en un entorno profesional.",
         resources: [
           { label: "Explorar Minitab para academia", path: "https://www.minitab.com/en-us/solutions/industry/academic/" }
         ]
