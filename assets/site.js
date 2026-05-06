@@ -261,6 +261,21 @@ const portfolioSections = [
     ]
   },
   {
+    id: "minitab",
+    title: "Minitab Statistical Software",
+    description: "Recurso introductorio para conocer Minitab Statistical Software como una plataforma enfocada en analisis estadistico, mejora de procesos y apoyo academico para cursos cuantitativos.",
+    modules: [
+      {
+        title: "Primeros pasos con Minitab",
+        level: "Plataforma",
+        description: "Minitab es una herramienta ampliamente utilizada para analisis estadistico, control de calidad, mejora continua y apoyo a la toma de decisiones con datos. En el contexto academico resulta util para introducir conceptos de estadistica aplicada, visualizacion y analisis de procesos en un entorno profesional.",
+        resources: [
+          { label: "Explorar Minitab para academia", path: "https://www.minitab.com/en-us/solutions/industry/academic/" }
+        ]
+      }
+    ]
+  },
+  {
     id: "proyectos",
     title: "Proyectos y dirección de IA",
     description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
