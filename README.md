@@ -21,6 +21,16 @@ El sitio está organizado por módulos para que los alumnos puedan:
 - descargar datasets
 - navegar por temas de forma sencilla
 
+## Página del profesor
+
+La página `sobre-mi.html` presenta una semblanza académica breve del profesor, con énfasis en:
+
+- docencia de posgrado en la UDEM
+- trayectoria académica y de dirección
+- experiencia aplicada en analítica, ciencia de datos y mejora continua
+
+Esta página se mantiene enfocada en la semblanza y no incluye enlaces externos visibles ni secciones promocionales adicionales.
+
 ## URL pública
 
 El repositorio está preparado para publicarse con GitHub Pages en:
