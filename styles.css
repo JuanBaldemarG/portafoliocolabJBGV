@@ -274,6 +274,42 @@ code {
   margin-top: 1.3rem;
 }
 
+.learning-block {
+  display: grid;
+  gap: 1.2rem;
+  padding: 1.35rem;
+  border: 1px solid rgba(14, 124, 134, 0.16);
+  border-radius: 34px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(255, 248, 235, 0.9)),
+    linear-gradient(120deg, rgba(14, 124, 134, 0.06), transparent 70%);
+  box-shadow: var(--shadow);
+}
+
+.block-header {
+  padding: 0.4rem 0.15rem 0;
+}
+
+.block-title {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.02;
+}
+
+.block-description {
+  max-width: 64ch;
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.block-sections {
+  display: grid;
+  gap: 1.1rem;
+}
+
 .about-layout {
   display: grid;
   gap: 1.3rem;

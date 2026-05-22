@@ -321,6 +321,21 @@ const portfolioSections = [
   }
 ];
 
+const learningBlocks = [
+  {
+    id: "data-analytics-i",
+    title: "Data Analytics I",
+    description: "Bloque orientado a fundamentos analíticos, modelado supervisado y exploración aplicada de datos.",
+    sectionIds: ["supervisados", "no-supervisados", "mlops"]
+  },
+  {
+    id: "data-analytics-ii",
+    title: "Data Analytics II",
+    description: "Bloque orientado a inteligencia artificial aplicada, explicabilidad, dirección de proyectos y herramientas de apoyo.",
+    sectionIds: ["generativa", "neurosimbolica", "fairness", "proyectos", "herramientas"]
+  }
+];
+
 function getConfig() {
   const body = document.body;
   return {
@@ -447,86 +462,125 @@ function renderResourceGroup(title, items) {
   return group;
 }
 
+function renderSection(config, section, counters) {
+  const sectionEl = document.createElement("section");
+  sectionEl.className = "module-section";
+  sectionEl.id = section.id;
+
+  const header = document.createElement("div");
+  header.className = "section-header";
+
+  const headerText = document.createElement("div");
+  const title = document.createElement("h2");
+  title.textContent = section.title;
+  const description = document.createElement("p");
+  description.textContent = section.description;
+  headerText.append(title, description);
+
+  const count = document.createElement("div");
+  count.className = "section-count";
+  count.textContent = `${section.modules.length} módulos`;
+
+  header.append(headerText, count);
+  sectionEl.appendChild(header);
+
+  const grid = document.createElement("div");
+  grid.className = "card-grid";
+
+  section.modules.forEach((module, index) => {
+    const visibleResources = filterVisibleResources(module.resources || []);
+    counters.moduleCount += 1;
+    counters.notebookCount += module.notebooks ? module.notebooks.length : 0;
+    counters.resourceCount += visibleResources.length + (module.datasets ? module.datasets.length : 0);
+
+    const card = document.createElement("article");
+    card.className = "module-card";
+    card.style.animationDelay = `${index * 90}ms`;
+
+    const head = document.createElement("div");
+    head.className = "card-head";
+
+    const headText = document.createElement("div");
+    const cardTitle = document.createElement("h3");
+    cardTitle.className = "card-title";
+    cardTitle.textContent = module.title;
+    const cardDescription = document.createElement("p");
+    cardDescription.className = "card-description";
+    cardDescription.textContent = module.description;
+    headText.append(cardTitle, cardDescription);
+
+    const tag = document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = module.level;
+    head.append(headText, tag);
+    card.appendChild(head);
+
+    const notebookGroup = renderNotebookGroup(config, module.notebooks || []);
+    const resourceGroup = renderResourceGroup("Material de apoyo", visibleResources);
+    const dataGroup = renderResourceGroup("Datasets", module.datasets || []);
+
+    [notebookGroup, resourceGroup, dataGroup].forEach((group) => {
+      if (group) {
+        card.appendChild(group);
+      }
+    });
+
+    grid.appendChild(card);
+  });
+
+  sectionEl.appendChild(grid);
+  return sectionEl;
+}
+
 function renderSections() {
   const config = getConfig();
   const root = document.getElementById("sections-root");
-  let notebookCount = 0;
-  let resourceCount = 0;
-  let moduleCount = 0;
+  const counters = {
+    notebookCount: 0,
+    resourceCount: 0,
+    moduleCount: 0
+  };
 
-  portfolioSections.forEach((section) => {
-    const sectionEl = document.createElement("section");
-    sectionEl.className = "module-section";
-    sectionEl.id = section.id;
+  learningBlocks.forEach((block) => {
+    const blockEl = document.createElement("section");
+    blockEl.className = "learning-block";
+    blockEl.id = block.id;
 
-    const header = document.createElement("div");
-    header.className = "section-header";
+    const blockHeader = document.createElement("div");
+    blockHeader.className = "block-header";
 
-    const headerText = document.createElement("div");
-    const title = document.createElement("h2");
-    title.textContent = section.title;
-    const description = document.createElement("p");
-    description.textContent = section.description;
-    headerText.append(title, description);
+    const blockEyebrow = document.createElement("p");
+    blockEyebrow.className = "section-kicker";
+    blockEyebrow.textContent = "Bloque principal";
 
-    const count = document.createElement("div");
-    count.className = "section-count";
-    count.textContent = `${section.modules.length} módulos`;
+    const blockTitle = document.createElement("h2");
+    blockTitle.className = "block-title";
+    blockTitle.textContent = block.title;
 
-    header.append(headerText, count);
-    sectionEl.appendChild(header);
+    const blockDescription = document.createElement("p");
+    blockDescription.className = "block-description";
+    blockDescription.textContent = block.description;
 
-    const grid = document.createElement("div");
-    grid.className = "card-grid";
+    blockHeader.append(blockEyebrow, blockTitle, blockDescription);
+    blockEl.appendChild(blockHeader);
 
-    section.modules.forEach((module, index) => {
-      const visibleResources = filterVisibleResources(module.resources || []);
-      moduleCount += 1;
-      notebookCount += module.notebooks ? module.notebooks.length : 0;
-      resourceCount += visibleResources.length + (module.datasets ? module.datasets.length : 0);
+    const blockSections = document.createElement("div");
+    blockSections.className = "block-sections";
 
-      const card = document.createElement("article");
-      card.className = "module-card";
-      card.style.animationDelay = `${index * 90}ms`;
-
-      const head = document.createElement("div");
-      head.className = "card-head";
-
-      const headText = document.createElement("div");
-      const cardTitle = document.createElement("h3");
-      cardTitle.className = "card-title";
-      cardTitle.textContent = module.title;
-      const cardDescription = document.createElement("p");
-      cardDescription.className = "card-description";
-      cardDescription.textContent = module.description;
-      headText.append(cardTitle, cardDescription);
-
-      const tag = document.createElement("span");
-      tag.className = "tag";
-      tag.textContent = module.level;
-      head.append(headText, tag);
-      card.appendChild(head);
-
-      const notebookGroup = renderNotebookGroup(config, module.notebooks || []);
-      const resourceGroup = renderResourceGroup("Material de apoyo", visibleResources);
-      const dataGroup = renderResourceGroup("Datasets", module.datasets || []);
-
-      [notebookGroup, resourceGroup, dataGroup].forEach((group) => {
-        if (group) {
-          card.appendChild(group);
-        }
+    block.sectionIds
+      .map((sectionId) => portfolioSections.find((section) => section.id === sectionId))
+      .filter(Boolean)
+      .forEach((section) => {
+        blockSections.appendChild(renderSection(config, section, counters));
       });
 
-      grid.appendChild(card);
-    });
-
-    sectionEl.appendChild(grid);
-    root.appendChild(sectionEl);
+    blockEl.appendChild(blockSections);
+    root.appendChild(blockEl);
   });
 
-  document.getElementById("stat-labs").textContent = String(moduleCount);
-  document.getElementById("stat-notebooks").textContent = String(notebookCount);
-  document.getElementById("stat-resources").textContent = String(resourceCount);
+  document.getElementById("stat-labs").textContent = String(counters.moduleCount);
+  document.getElementById("stat-notebooks").textContent = String(counters.notebookCount);
+  document.getElementById("stat-resources").textContent = String(counters.resourceCount);
 }
 
 renderSections();
