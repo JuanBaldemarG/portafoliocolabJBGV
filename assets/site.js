@@ -25,7 +25,7 @@ const portfolioSections = [
           { label: "Iris con Streamlit", path: "notebooks/iris/Iris_Classifier_Streamlit_Localtunnel.ipynb" }
         ],
         resources: [
-          { label: "Presentación PDF", path: "docs/iris/Diplomado_2025_Mod_XII_Iris.pdf" }
+          { label: "Presentación PDF", path: "docs/iris/Diplomado_2026_Mod_XII_Iris.pdf" }
         ]
       },
       {
@@ -99,7 +99,7 @@ const portfolioSections = [
           { label: "Isolation Forest", path: "notebooks/anomalias-spc/IsolationForest_NYC_Taxi_Anomalies.ipynb" }
         ],
         resources: [
-          { label: "Presentación PDF", path: "docs/anomalias-spc/Diplomado_2025_Mod_XII_Anomaly.pdf" },
+          { label: "Presentación PDF", path: "docs/anomalias-spc/Diplomado_2026_Mod_XII_Anomaly.pdf" },
           { label: "Explicación de Isolation Forest", path: "docs/anomalias-spc/Que_es_el_Isolation_Forest.docx" }
         ],
         datasets: [
@@ -116,7 +116,7 @@ const portfolioSections = [
           { label: "Bombas industriales", path: "notebooks/supervivencia/supervivencia_industrial_bombas_comentado.ipynb" }
         ],
         resources: [
-          { label: "Presentación PDF", path: "docs/supervivencia/Diplomado_2025_Mod_XII_Supervivencia.pdf" }
+          { label: "Presentación PDF", path: "docs/supervivencia/Diplomado_2026_Mod_XII_Supervivencia.pdf" }
         ],
         datasets: [
           { label: "Supervivencia Tires", path: "data/supervivencia/Supervivencia_Tires.csv" }
@@ -139,7 +139,7 @@ const portfolioSections = [
           { label: "Data Leakage", path: "notebooks/mlops-drift/notebook_data_leakage_explicado.ipynb" }
         ],
         resources: [
-          { label: "Presentación PDF", path: "docs/mlops-drift/Diplomado_2025_Mod_XII_MLOps_y_Drift.pdf" }
+          { label: "Presentación PDF", path: "docs/mlops-drift/Diplomado_2026_Mod_XII_MLOps_y_Drift.pdf" }
         ],
         datasets: [
           { label: "MPG dataset", path: "data/mlops-drift/MPG_data_for_various_automobiles.csv" }
@@ -157,7 +157,7 @@ const portfolioSections = [
         level: "Prompting",
         description: "Material de apoyo para introducir prompting y aplicaciones del científico de datos.",
         resources: [
-          { label: "Presentación PDF", path: "docs/ia-generativa/Diplomado_2025_Mod_XII_IA_Gen_Prompt.pdf" },
+          { label: "Presentación PDF", path: "docs/ia-generativa/Diplomado_2026_Mod_XII_IA_Gen_Prompt.pdf" },
           { label: "Guía GPT", path: "docs/ia-generativa/GPT_Cientifico_de_Datos_Avanzado.docx" }
         ]
       },
@@ -170,8 +170,8 @@ const portfolioSections = [
           { label: "Agente IA Arxiv", path: "notebooks/agentes-ia/Agente_IA_Arxiv.ipynb" }
         ],
         resources: [
-          { label: "Presentación Agente IA", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Agente_IA.pdf" },
-          { label: "Casos de agentes PDF", path: "docs/agentes-ia/Diplomado_2025_Mod_XII_Casos_Agentes_IA.pdf" },
+          { label: "Presentación Agente IA", path: "docs/agentes-ia/Diplomado_2026_Mod_XII_Agente_IA.pdf" },
+          { label: "Casos de agentes PDF", path: "docs/agentes-ia/Diplomado_2026_Mod_XII_Casos_Agentes_IA.pdf" },
           { label: "WEF Future of Jobs", path: "docs/agentes-ia/WEF_Future_of_Jobs_1736354478.pdf" }
         ]
       },
@@ -194,7 +194,7 @@ const portfolioSections = [
           { label: "Web Scraping", path: "notebooks/web-scraping/Web_Scraping.ipynb" }
         ],
         resources: [
-          { label: "Presentación PDF", path: "docs/web-scraping/Diplomado_2025_Mod_XII_Web_Scraping.pdf" }
+          { label: "Presentación PDF", path: "docs/web-scraping/Diplomado_2026_Mod_XII_Web_Scraping.pdf" }
         ]
       }
     ]
@@ -305,8 +305,8 @@ const portfolioSections = [
         level: "Gestión",
         description: "CRISP-DM, variabilidad, casos y referencias para ejecutar proyectos de ciencia de datos e IA.",
         resources: [
-          { label: "Proyectos IA PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_IA.pdf" },
-          { label: "Variabilidad PDF", path: "docs/proyectos-ia/Diplomado_2025_Mod_XII_Proyectos_con_variabilidad.pdf" },
+          { label: "Proyectos IA PDF", path: "docs/proyectos-ia/Diplomado_2026_Mod_XII_Proyectos_IA.pdf" },
+          { label: "Variabilidad PDF", path: "docs/proyectos-ia/Diplomado_2026_Mod_XII_Proyectos_con_variabilidad.pdf" },
           { label: "CRISP-DM", path: "docs/proyectos-ia/Estandar_CRISP_DM.pdf" },
           { label: "EVM Agile", path: "docs/proyectos-ia/Measuring_Earned_Value_on_Agile_and_Scrum.pdf" },
           { label: "Caso", path: "docs/proyectos-ia/CASO.docx" },
@@ -318,8 +318,8 @@ const portfolioSections = [
         level: "Adopción",
         description: "Apoyos para dirigir proyectos, planear PoC, piloto, rollout y uso estratégico de IA.",
         resources: [
-          { label: "Herramientas IA PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_Herramientas_e_IA_Proy.pdf" },
-          { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2025_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" }
+          { label: "Herramientas IA PDF", path: "docs/gestion-ia/Diplomado_2026_Mod_XII_Herramientas_e_IA_Proy.pdf" },
+          { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2026_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" }
         ]
       },
       {
