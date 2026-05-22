@@ -213,7 +213,7 @@ const portfolioSections = [
           { label: "Neurosimbolica en manufactura de cable", path: "IA Neurosimbolica/neurosimbolica_manufactura_cable.ipynb" }
         ],
         resources: [
-          { label: "Presentacion PDF 2026", path: "IA Neurosimbolica/Diplomado 2026 Mod XII IA Neuro.pdf" },
+          { label: "Presentacion PDF 2026", path: "docs/neurosimbolica/Diplomado_2026_Mod_XII_IA_Neuro.pdf" },
           { label: "Presentacion PowerPoint 2026", path: "IA Neurosimbolica/Diplomado 2026 Mod XII IA Neuro.pptx" }
         ]
       }
