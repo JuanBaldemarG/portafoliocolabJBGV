@@ -248,54 +248,6 @@ const portfolioSections = [
     ]
   },
   {
-    id: "databricks",
-    title: "Databricks Free Edition",
-    description: "Recurso introductorio para explorar Databricks Free Edition como entorno de práctica en analítica, SQL y manejo de datos desde la nube.",
-    modules: [
-      {
-        title: "Primeros pasos con Databricks",
-        level: "Plataforma",
-        description: "Databricks Free Edition ofrece un espacio sin costo para comenzar a trabajar con notebooks, análisis de datos y flujos de trabajo colaborativos. Puede servir como punto de entrada para practicar con datasets reales y familiarizarse con una plataforma moderna de datos.",
-        resources: [
-          { label: "Suscribirse a Databricks Free Edition", path: "https://www.databricks.com/es/learn/free-edition" }
-        ],
-        datasets: [
-          { label: "Superstore.csv", path: "data/databricks/Superstore.csv" }
-        ]
-      }
-    ]
-  },
-  {
-    id: "orange-data-mining",
-    title: "Orange Data Mining",
-    description: "Recurso introductorio para conocer Orange Data Mining como una plataforma visual para análisis de datos, machine learning y experimentación sin programar desde cero.",
-    modules: [
-      {
-        title: "Primeros pasos con Orange",
-        level: "Plataforma",
-        description: "Orange Data Mining es una herramienta visual de código abierto que permite explorar datos, construir flujos analíticos y experimentar con modelos de aprendizaje automático mediante una interfaz basada en bloques. Es muy útil para introducir conceptos de analítica y modelado de forma práctica y accesible.",
-        resources: [
-          { label: "Ir a Orange Data Mining", path: "https://orangedatamining.com/" }
-        ]
-      }
-    ]
-  },
-  {
-    id: "minitab",
-    title: "Minitab Statistical Software",
-    description: "Recurso introductorio para conocer Minitab Statistical Software como una plataforma enfocada en análisis estadístico, mejora de procesos y apoyo académico para cursos cuantitativos.",
-    modules: [
-      {
-        title: "Primeros pasos con Minitab",
-        level: "Plataforma",
-        description: "Minitab es una herramienta ampliamente utilizada para análisis estadístico, control de calidad, mejora continua y apoyo a la toma de decisiones con datos. En el contexto académico resulta útil para introducir conceptos de estadística aplicada, visualización y análisis de procesos en un entorno profesional.",
-        resources: [
-          { label: "Explorar Minitab para academia", path: "https://www.minitab.com/en-us/solutions/industry/academic/" }
-        ]
-      }
-    ]
-  },
-  {
     id: "proyectos",
     title: "Proyectos y dirección de IA",
     description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
@@ -325,9 +277,44 @@ const portfolioSections = [
       {
         title: "Casos de machine learning",
         level: "Casos",
-        description: "Material para contextualizar aplicaciones reales de machine learning.",
+        description: "Material para contextualizar aplicaciones reales de machine learning en diferentes industrias.",
         resources: [
-          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" }
+          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" },
+          { label: "ML Ing. Petrolera PDF", path: "docs/ml-ing-petrolera/Diplomado_2026_Mod_XII_ML_Ing_Petrolera.pdf" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "herramientas",
+    title: "Software y herramientas",
+    description: "Recursos de apoyo para complementar la práctica con plataformas, software estadístico y herramientas visuales.",
+    modules: [
+      {
+        title: "Databricks Free Edition",
+        level: "Plataforma",
+        description: "Entorno de práctica en analítica, SQL y manejo de datos desde la nube para comenzar con notebooks y trabajo colaborativo.",
+        resources: [
+          { label: "Suscribirse a Databricks Free Edition", path: "https://www.databricks.com/es/learn/free-edition" }
+        ],
+        datasets: [
+          { label: "Superstore.csv", path: "data/databricks/Superstore.csv" }
+        ]
+      },
+      {
+        title: "Orange Data Mining",
+        level: "Plataforma visual",
+        description: "Herramienta visual de código abierto para explorar datos, construir flujos analíticos y experimentar con machine learning.",
+        resources: [
+          { label: "Ir a Orange Data Mining", path: "https://orangedatamining.com/" }
+        ]
+      },
+      {
+        title: "Minitab Statistical Software",
+        level: "Software estadístico",
+        description: "Software orientado a análisis estadístico, mejora de procesos y apoyo académico para cursos cuantitativos.",
+        resources: [
+          { label: "Explorar Minitab para academia", path: "https://www.minitab.com/en-us/solutions/industry/academic/" }
         ]
       }
     ]
