@@ -8,6 +8,7 @@ Portafolio académico con ejercicios de analítica y ciencia de datos para alumn
 - `sobre-mi.html`: semblanza académica del profesor
 - `styles.css`: estilos del sitio
 - `assets/site.js`: catálogo de módulos y enlaces
+- `IA Neurosimbolica/`: materiales 2026 de IA neurosimbólica, incluyendo PDF, PPTX y notebooks aplicados
 - `notebooks/`: prácticas en formato Jupyter/Colab
 - `docs/`: PDF, DOCX, XLSX y otros materiales de clase
 - `data/`: datasets de apoyo
@@ -20,6 +21,13 @@ El sitio está organizado por módulos para que los alumnos puedan:
 - consultar materiales de clase
 - descargar datasets
 - navegar por temas de forma sencilla
+
+## Actualización 2026
+
+La versión actual del portafolio ya incorpora la temática de `IA Neurosimbolica`, con material orientado a razonamiento híbrido y dos casos aplicados:
+
+- RH
+- manufactura de cable
 
 ## Página del profesor
 

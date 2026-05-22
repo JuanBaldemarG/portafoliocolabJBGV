@@ -200,6 +200,26 @@ const portfolioSections = [
     ]
   },
   {
+    id: "neurosimbolica",
+    title: "IA neurosimbolica",
+    description: "Material 2026 para introducir arquitecturas hibridas que combinan aprendizaje automatico con reglas, logica y razonamiento explicable.",
+    modules: [
+      {
+        title: "IA neurosimbolica aplicada",
+        level: "Razonamiento hibrido",
+        description: "Unidad con presentacion 2026 y notebooks aplicados para explicar como combinar modelos neuronales con conocimiento simbolico en contextos organizacionales e industriales.",
+        notebooks: [
+          { label: "Neurosimbolica en RH", path: "IA Neurosimbolica/neurosimbolica_rh.ipynb" },
+          { label: "Neurosimbolica en manufactura de cable", path: "IA Neurosimbolica/neurosimbolica_manufactura_cable.ipynb" }
+        ],
+        resources: [
+          { label: "Presentacion PDF 2026", path: "IA Neurosimbolica/Diplomado 2026 Mod XII IA Neuro.pdf" },
+          { label: "Presentacion PowerPoint 2026", path: "IA Neurosimbolica/Diplomado 2026 Mod XII IA Neuro.pptx" }
+        ]
+      }
+    ]
+  },
+  {
     id: "fairness",
     title: "Fairness, sesgos y explicabilidad",
     description: "Ejercicios para explicar modelos, discutir sesgos y revisar decisiones responsables en IA.",
