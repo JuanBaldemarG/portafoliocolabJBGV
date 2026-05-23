@@ -37,6 +37,9 @@ const portfolioSections = [
         ],
         resources: [
           { label: "Presentación PDF", path: "docs/iris/Diplomado_2026_Mod_XII_Iris.pdf" }
+        ],
+        datasets: [
+          { label: "iris.csv", path: "data/iris/iris.csv" }
         ]
       },
       {
@@ -87,6 +90,9 @@ const portfolioSections = [
         resources: [
           { label: "Guía de K-means", path: "docs/explicabilidad/Aprendizaje_No_Supervisado_KMeans.docx" },
           { label: "Notas del caso", path: "docs/explicabilidad/Osos_K_means.docx" }
+        ],
+        datasets: [
+          { label: "Osos.csv", path: "data/no-supervisado/Osos.csv" }
         ]
       },
       {
