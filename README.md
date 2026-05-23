@@ -1,6 +1,6 @@
 # Portafolio de Ejercicios de Analítica y Ciencia de Datos
 
-Portafolio académico con ejercicios de analítica y ciencia de datos para alumnos de posgrado de la Universidad de Monterrey (UDEM), con notebooks de Python listos para abrirse en Google Colab.
+Portafolio académico con ejercicios de analítica y ciencia de datos para alumnos de posgrado y de educación continua en UDEM, con notebooks de Python listos para abrirse en Google Colab.
 
 ## Contenido
 
