@@ -5,6 +5,17 @@ const portfolioSections = [
     description: "Ejercicios introductorios y aplicados de clasificación, experimentación y redes neuronales.",
     modules: [
       {
+        title: "Nations",
+        level: "EDA",
+        description: "Análisis descriptivo del dataset Nations para practicar lectura, limpieza y visualización.",
+        notebooks: [
+          { label: "Data Analysis Nations", path: "notebooks/nations/Data_Analysis_nations.ipynb" }
+        ],
+        datasets: [
+          { label: "nations.csv", path: "data/nations/nations.csv" }
+        ]
+      },
+      {
         title: "Pruebas A/B",
         level: "Experimentación",
         description: "Ejercicio para introducir el análisis de pruebas A/B y su interpretación en Google Colab.",
@@ -64,17 +75,6 @@ const portfolioSections = [
         ],
         datasets: [
           { label: "Dataset CSV", path: "data/eda/data.csv" }
-        ]
-      },
-      {
-        title: "Nations",
-        level: "EDA",
-        description: "Análisis descriptivo del dataset Nations para practicar lectura, limpieza y visualización.",
-        notebooks: [
-          { label: "Data Analysis Nations", path: "notebooks/nations/Data_Analysis_nations.ipynb" }
-        ],
-        datasets: [
-          { label: "nations.csv", path: "data/nations/nations.csv" }
         ]
       },
       {
