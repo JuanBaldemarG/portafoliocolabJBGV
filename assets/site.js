@@ -5,6 +5,15 @@ const portfolioSections = [
     description: "Ejercicios introductorios y aplicados de clasificación, experimentación y redes neuronales.",
     modules: [
       {
+        title: "Casos de machine learning",
+        level: "Casos",
+        description: "Material para contextualizar aplicaciones reales de machine learning en diferentes industrias.",
+        resources: [
+          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" },
+          { label: "ML Ing. Petrolera PDF", path: "docs/ml-ing-petrolera/Diplomado_2026_Mod_XII_ML_Ing_Petrolera.pdf" }
+        ]
+      },
+      {
         title: "Nations",
         level: "EDA",
         description: "Análisis descriptivo del dataset Nations para practicar lectura, limpieza y visualización.",
@@ -280,15 +289,6 @@ const portfolioSections = [
           { label: "PoC y rollout PDF", path: "docs/gestion-ia/Diplomado_2026_Mod_XII_PoC_Piloto_y_Roll_Out.pdf" }
         ]
       },
-      {
-        title: "Casos de machine learning",
-        level: "Casos",
-        description: "Material para contextualizar aplicaciones reales de machine learning en diferentes industrias.",
-        resources: [
-          { label: "Casos ML PDF", path: "docs/casos-ml/Casos_ML.pdf" },
-          { label: "ML Ing. Petrolera PDF", path: "docs/ml-ing-petrolera/Diplomado_2026_Mod_XII_ML_Ing_Petrolera.pdf" }
-        ]
-      }
     ]
   },
   {
