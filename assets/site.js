@@ -297,6 +297,14 @@ const portfolioSections = [
     description: "Recursos de apoyo para complementar la práctica con plataformas, software estadístico y herramientas visuales.",
     modules: [
       {
+        title: "Asistente de MinerÃ­a, AnalÃ­tica y Ciencia de Datos",
+        level: "Asistente de apoyo",
+        description: "Acceso al GPT de apoyo acadÃ©mico para resolver dudas, reforzar conceptos y acompaÃ±ar ejercicios de minerÃ­a, analÃ­tica y ciencia de datos.",
+        resources: [
+          { label: "Abrir asistente GPT", path: "https://chatgpt.com/g/g-nSv2zrv2U-asistente-de-mineria-analitica-y-ciencia-de-datos" }
+        ]
+      },
+      {
         title: "Databricks Free Edition",
         level: "Plataforma",
         description: "Entorno de práctica en analítica, SQL y manejo de datos desde la nube para comenzar con notebooks y trabajo colaborativo.",
