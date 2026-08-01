@@ -61,6 +61,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Abandono de Empleado",
+        level: "Clasificación",
+        description: "Employee Churn Model con scikit-learn para predecir abandono de empleado y ejecutarse directamente en Google Colab.",
+        notebooks: [
+          { label: "Clasificación Employee Churn Model", path: "notebooks/employee-churn/employee_churn_model.ipynb" }
+        ],
+        datasets: [
+          { label: "HR_dataset_copy.csv", path: "data/employee-churn/HR_dataset_copy.csv" }
+        ]
+      },
+      {
         title: "Red neuronal con MNIST",
         level: "Deep Learning",
         description: "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
