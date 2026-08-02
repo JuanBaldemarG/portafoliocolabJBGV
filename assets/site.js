@@ -202,6 +202,14 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Futuro del trabajo",
+        level: "Tendencias",
+        description: "Sitio de referencia para discutir cómo la IA generativa, la automatización y los cambios en habilidades están transformando el empleo y los perfiles profesionales.",
+        resources: [
+          { label: "WEF Future of Jobs 2025", path: "https://es.weforum.org/publications/the-future-of-jobs-report-2025/digest/" }
+        ]
+      },
+      {
         title: "Transformers",
         level: "NLP",
         description: "Notebook con pipeline de Hugging Face y documento conceptual para explicar transformers.",
