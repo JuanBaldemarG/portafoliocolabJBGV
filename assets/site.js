@@ -25,6 +25,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Costo Calefacci\u00f3n (Energ\u00eda)",
+        level: "Regresi\u00f3n m\u00faltiple",
+        description: "Ejercicio de regresi\u00f3n m\u00faltiple para analizar el costo de calefacci\u00f3n de viviendas y practicar aprendizaje supervisado en Google Colab.",
+        notebooks: [
+          { label: "Regresi\u00f3n M\u00faltiple Salsberry Colab", path: "notebooks/costo-calefaccion-energia/Regresion_Multiple_Salsberry_Statsmodels.ipynb" }
+        ],
+        datasets: [
+          { label: "Costocal.csv", path: "data/costo-calefaccion-energia/Costocal.csv" }
+        ]
+      },
+      {
         title: "Pruebas A/B",
         level: "Experimentación",
         description: "Ejercicio para introducir el análisis de pruebas A/B y su interpretación en Google Colab.",
