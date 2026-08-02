@@ -61,6 +61,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Autos",
+        level: "Regresión",
+        description: "Ejercicio de regresión con scikit-learn para analizar y predecir el rendimiento de combustible de automóviles en Google Colab.",
+        notebooks: [
+          { label: "Autos scikit-learn Colab", path: "notebooks/autos/Autos_sklearn_colab.ipynb" }
+        ],
+        datasets: [
+          { label: "MPG_data_for_various_automobiles.csv", path: "data/autos/MPG_data_for_various_automobiles.csv" }
+        ]
+      },
+      {
         title: "Abandono de Empleado",
         level: "Clasificación",
         description: "Employee Churn Model con scikit-learn para predecir abandono de empleado y ejecutarse directamente en Google Colab.",
