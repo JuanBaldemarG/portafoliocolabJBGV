@@ -206,7 +206,7 @@ const portfolioSections = [
         level: "Tendencias",
         description: "Sitio de referencia para discutir cómo la IA generativa, la automatización y los cambios en habilidades están transformando el empleo y los perfiles profesionales.",
         resources: [
-          { label: "WEF Future of Jobs 2025", path: "https://es.weforum.org/publications/the-future-of-jobs-report-2025/digest/" }
+          { label: "Sitio Futuro del trabajo", path: "https://futuro-trabajo-mx.juanb.chatgpt.site/" }
         ]
       },
       {
