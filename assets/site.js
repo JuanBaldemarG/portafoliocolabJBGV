@@ -72,6 +72,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Titanic",
+        level: "Clasificación",
+        description: "Ejercicio de clasificación con scikit-learn para analizar supervivencia de pasajeros y practicar aprendizaje supervisado en Google Colab.",
+        notebooks: [
+          { label: "Titanic Clasificación Colab", path: "notebooks/titanic/Titanic_Clasificacion_Colab.ipynb" }
+        ],
+        datasets: [
+          { label: "Titanic.csv", path: "data/titanic/Titanic.csv" }
+        ]
+      },
+      {
         title: "Abandono de Empleado",
         level: "Clasificación",
         description: "Employee Churn Model con scikit-learn para predecir abandono de empleado y ejecutarse directamente en Google Colab.",
