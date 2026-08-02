@@ -105,6 +105,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Insurance",
+        level: "Regresión",
+        description: "Ejercicio de aprendizaje supervisado con varios algoritmos de regresión para predecir costos médicos y comparar desempeño directamente en Google Colab.",
+        notebooks: [
+          { label: "Predicción de Costos Médicos", path: "notebooks/insurance/ML_Prediccion_Costos_Medicos.ipynb" }
+        ],
+        datasets: [
+          { label: "insurance.csv", path: "data/insurance/insurance.csv" }
+        ]
+      },
+      {
         title: "Red neuronal con MNIST",
         level: "Deep Learning",
         description: "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
