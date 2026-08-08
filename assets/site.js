@@ -125,6 +125,14 @@ const portfolioSections = [
         resources: [
           { label: "Guía de Keras", path: "docs/red-neuronal/Red_Neuronal_Keras_Introduccion.docx" }
         ]
+      },
+      {
+        title: "Detección de objetos con YOLO26",
+        level: "Visión por computadora",
+        description: "Práctica guiada para principiantes sobre detección de objetos con YOLO26n en Google Colab, orientada a comprender entrenamiento, validación e interpretación básica del modelo.",
+        notebooks: [
+          { label: "YOLO26 para principiantes", path: "notebooks/yolo26/deteccion_objetos_yolo26_principiantes_udem.ipynb" }
+        ]
       }
     ]
   },
