@@ -160,6 +160,17 @@ export const portfolioSections: SectionItem[] = [
         ]
       },
       {
+        title: "California Housing con XGBoost",
+        level: "Regresión",
+        description: "Ejercicio de regresión con XGBoost para predecir el valor de viviendas en California y practicar aprendizaje supervisado en Google Colab.",
+        notebooks: [
+          { label: "XGBoost California Housing Colab", path: "notebooks/xgboost-california-housing/XGBoost_California_Housing_Colab.ipynb" }
+        ],
+        datasets: [
+          { label: "California_Housing.csv", path: "data/xgboost-california-housing/California_Housing.csv" }
+        ]
+      },
+      {
         title: "Red neuronal con MNIST",
         level: "Deep Learning",
         description: "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
