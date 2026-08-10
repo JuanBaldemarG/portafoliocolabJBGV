@@ -116,6 +116,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Manufactura con CatBoost",
+        level: "Clasificaci\u00f3n",
+        description: "Ejercicio introductorio de clasificaci\u00f3n con CatBoost para predecir piezas defectuosas en manufactura a partir de variables num\u00e9ricas y categ\u00f3ricas en Google Colab.",
+        notebooks: [
+          { label: "Manufactura con CatBoost Colab", path: "notebooks/manufactura-catboost/manufactura_catboost_colab.ipynb" }
+        ],
+        datasets: [
+          { label: "dataset_manufactura_catboost.csv", path: "data/manufactura-catboost/dataset_manufactura_catboost.csv" }
+        ]
+      },
+      {
         title: "Red neuronal con MNIST",
         level: "Deep Learning",
         description: "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",

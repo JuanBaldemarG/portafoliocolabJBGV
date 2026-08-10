@@ -1,11 +1,34 @@
 import { learningBlocks, portfolioSections, type NotebookLink, type ResourceLink } from "./portfolio-data";
 
+const githubRepo = "JuanBaldemarG/portafoliocolabJBGV";
+
 function joinLocalPath(path: string) {
   if (/^https?:\/\//i.test(path)) {
     return path;
   }
 
   return `/${path
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/")}`;
+}
+
+function toColabPath(path: string) {
+  return `https://colab.research.google.com/github/${githubRepo}/blob/main/${path
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/")}`;
+}
+
+function toGithubBlobPath(path: string) {
+  return `https://github.com/${githubRepo}/blob/main/${path
+    .split("/")
+    .map((segment) => encodeURIComponent(segment))
+    .join("/")}`;
+}
+
+function toGithubRawPath(path: string) {
+  return `https://raw.githubusercontent.com/${githubRepo}/main/${path
     .split("/")
     .map((segment) => encodeURIComponent(segment))
     .join("/")}`;
@@ -41,7 +64,7 @@ function NotebookList({ notebooks }: { notebooks: NotebookLink[] }) {
       <h4>Notebooks</h4>
       <div className="notebook-list">
         {notebooks.map((notebook) => {
-          const notebookHref = joinLocalPath(notebook.path);
+          const notebookHref = toColabPath(notebook.path);
 
           return (
             <article key={notebook.label} className="notebook-row">
@@ -50,17 +73,10 @@ function NotebookList({ notebooks }: { notebooks: NotebookLink[] }) {
                 <a
                   className="button button-primary button-small"
                   href={notebookHref}
-                  download
-                >
-                  Descargar notebook
-                </a>
-                <a
-                  className="button button-secondary button-small"
-                  href={notebookHref}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Abrir archivo
+                  Abrir en Colab
                 </a>
               </div>
             </article>
@@ -74,9 +90,11 @@ function NotebookList({ notebooks }: { notebooks: NotebookLink[] }) {
 function LinkChipList({
   title,
   items,
+  kind,
 }: {
   title: string;
   items: ResourceLink[];
+  kind: "dataset" | "resource";
 }) {
   const visibleItems = filterVisibleResources(items);
 
@@ -92,7 +110,13 @@ function LinkChipList({
           <li key={item.label}>
             <a
               className="link-chip"
-              href={joinLocalPath(item.path)}
+              href={
+                /^https?:\/\//i.test(item.path)
+                  ? item.path
+                  : kind === "dataset"
+                    ? toGithubRawPath(item.path)
+                    : toGithubBlobPath(item.path)
+              }
               target="_blank"
               rel="noreferrer"
             >
@@ -127,11 +151,11 @@ export default function HomePage() {
           <h1>Portafolio de ejercicios de analítica y ciencia de datos para alumnos de posgrado y de educación continua en UDEM.</h1>
           <p className="hero-copy">
             Este portafolio reúne ejercicios, materiales de apoyo y conjuntos de datos organizados por tema.
-            Cada módulo conserva la estructura del portafolio original y ahora aloja sus materiales directamente
-            dentro de este sitio.
+            Cada módulo conserva la estructura del portafolio original dentro de este sitio privado.
           </p>
           <p className="hero-copy hero-note">
-            Para ejecutar un notebook en Google Colab, descárguelo desde este sitio y súbalo a su cuenta de Colab.
+            Los notebooks se abren en Google Colab desde GitHub y los datasets y materiales de apoyo
+            también se consultan desde GitHub, para mantener la misma lógica del portafolio UANL.
           </p>
 
           <div className="hero-actions">
@@ -213,11 +237,11 @@ export default function HomePage() {
                             ) : null}
 
                             {module.resources && module.resources.length > 0 ? (
-                              <LinkChipList title="Material de apoyo" items={module.resources} />
+                              <LinkChipList title="Material de apoyo" items={module.resources} kind="resource" />
                             ) : null}
 
                             {module.datasets && module.datasets.length > 0 ? (
-                              <LinkChipList title="Datasets" items={module.datasets} />
+                              <LinkChipList title="Datasets" items={module.datasets} kind="dataset" />
                             ) : null}
                           </article>
                         ))}
