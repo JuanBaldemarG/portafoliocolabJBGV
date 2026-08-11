@@ -1,0 +1,95 @@
+user_id,item_id,rating,timestamp,item_name,category
+1,6,5,2025-01-01 00:00:00,Monitor 24 pulgadas,Tecnología
+1,8,3,2025-01-01 19:00:00,Libro de Estadística,Educación
+1,9,5,2025-01-02 09:00:00,Curso de Machine Learning,Educación
+1,2,4,2025-01-03 08:00:00,Laptop Pro,Tecnología
+1,12,3,2025-01-03 21:00:00,Mochila Ejecutiva,Accesorios
+1,10,4,2025-01-04 07:00:00,Curso de SQL,Educación
+2,5,3,2025-01-04 19:00:00,Audífonos Bluetooth,Tecnología
+2,6,5,2025-01-05 16:00:00,Monitor 24 pulgadas,Tecnología
+2,3,5,2025-01-06 12:00:00,Mouse Inalámbrico,Tecnología
+2,9,1,2025-01-07 00:00:00,Curso de Machine Learning,Educación
+2,4,3,2025-01-07 21:00:00,Teclado Mecánico,Tecnología
+2,6,5,2025-01-08 11:00:00,Monitor 24 pulgadas,Tecnología
+2,14,2,2025-01-08 17:00:00,Silla Ergonómica,Oficina
+3,9,3,2025-01-09 15:00:00,Curso de Machine Learning,Educación
+3,9,4,2025-01-10 03:00:00,Curso de Machine Learning,Educación
+3,10,4,2025-01-10 08:00:00,Curso de SQL,Educación
+3,10,4,2025-01-10 14:00:00,Curso de SQL,Educación
+3,11,5,2025-01-11 10:00:00,Cuaderno Premium,Papelería
+3,7,5,2025-01-12 06:00:00,Libro de Python,Educación
+3,5,1,2025-01-12 17:00:00,Audífonos Bluetooth,Tecnología
+4,14,5,2025-01-13 12:00:00,Silla Ergonómica,Oficina
+4,14,4,2025-01-14 00:00:00,Silla Ergonómica,Oficina
+4,13,3,2025-01-14 17:00:00,Botella Térmica,Accesorios
+4,13,4,2025-01-15 01:00:00,Botella Térmica,Accesorios
+4,13,5,2025-01-15 06:00:00,Botella Térmica,Accesorios
+4,12,4,2025-01-15 21:00:00,Mochila Ejecutiva,Accesorios
+5,1,4,2025-01-16 13:00:00,Laptop Básica,Tecnología
+5,3,4,2025-01-16 22:00:00,Mouse Inalámbrico,Tecnología
+5,3,3,2025-01-17 21:00:00,Mouse Inalámbrico,Tecnología
+5,3,4,2025-01-18 17:00:00,Mouse Inalámbrico,Tecnología
+5,6,5,2025-01-19 05:00:00,Monitor 24 pulgadas,Tecnología
+5,9,2,2025-01-19 21:00:00,Curso de Machine Learning,Educación
+5,2,3,2025-01-20 08:00:00,Laptop Pro,Tecnología
+5,1,5,2025-01-21 04:00:00,Laptop Básica,Tecnología
+5,2,4,2025-01-21 21:00:00,Laptop Pro,Tecnología
+6,10,4,2025-01-22 09:00:00,Curso de SQL,Educación
+6,8,4,2025-01-22 15:00:00,Libro de Estadística,Educación
+6,8,3,2025-01-23 08:00:00,Libro de Estadística,Educación
+6,4,4,2025-01-24 00:00:00,Teclado Mecánico,Tecnología
+6,10,4,2025-01-24 10:00:00,Curso de SQL,Educación
+6,14,3,2025-01-25 08:00:00,Silla Ergonómica,Oficina
+6,8,4,2025-01-25 16:00:00,Libro de Estadística,Educación
+6,3,4,2025-01-26 10:00:00,Mouse Inalámbrico,Tecnología
+6,7,4,2025-01-26 15:00:00,Libro de Python,Educación
+6,9,3,2025-01-27 03:00:00,Curso de Machine Learning,Educación
+7,13,5,2025-01-27 15:00:00,Botella Térmica,Accesorios
+7,12,4,2025-01-28 07:00:00,Mochila Ejecutiva,Accesorios
+7,12,3,2025-01-28 19:00:00,Mochila Ejecutiva,Accesorios
+7,2,2,2025-01-29 13:00:00,Laptop Pro,Tecnología
+7,9,1,2025-01-30 00:00:00,Curso de Machine Learning,Educación
+7,12,3,2025-01-30 17:00:00,Mochila Ejecutiva,Accesorios
+7,14,3,2025-01-30 22:00:00,Silla Ergonómica,Oficina
+7,12,3,2025-01-31 10:00:00,Mochila Ejecutiva,Accesorios
+7,14,2,2025-01-31 20:00:00,Silla Ergonómica,Oficina
+7,3,2,2025-02-01 08:00:00,Mouse Inalámbrico,Tecnología
+8,13,4,2025-02-02 03:00:00,Botella Térmica,Accesorios
+8,5,4,2025-02-02 16:00:00,Audífonos Bluetooth,Tecnología
+8,6,4,2025-02-03 15:00:00,Monitor 24 pulgadas,Tecnología
+8,1,5,2025-02-04 00:00:00,Laptop Básica,Tecnología
+8,2,4,2025-02-04 03:00:00,Laptop Pro,Tecnología
+8,2,5,2025-02-05 00:00:00,Laptop Pro,Tecnología
+8,9,3,2025-02-05 05:00:00,Curso de Machine Learning,Educación
+8,12,3,2025-02-05 13:00:00,Mochila Ejecutiva,Accesorios
+8,3,3,2025-02-06 04:00:00,Mouse Inalámbrico,Tecnología
+9,9,4,2025-02-07 02:00:00,Curso de Machine Learning,Educación
+9,14,4,2025-02-07 16:00:00,Silla Ergonómica,Oficina
+9,7,3,2025-02-07 23:00:00,Libro de Python,Educación
+9,7,4,2025-02-08 22:00:00,Libro de Python,Educación
+9,2,2,2025-02-09 04:00:00,Laptop Pro,Tecnología
+9,15,5,2025-02-09 10:00:00,Escritorio Ajustable,Oficina
+10,14,5,2025-02-09 14:00:00,Silla Ergonómica,Oficina
+10,5,5,2025-02-09 19:00:00,Audífonos Bluetooth,Tecnología
+10,9,4,2025-02-10 08:00:00,Curso de Machine Learning,Educación
+10,10,4,2025-02-11 05:00:00,Curso de SQL,Educación
+10,15,4,2025-02-11 09:00:00,Escritorio Ajustable,Oficina
+10,13,1,2025-02-11 12:00:00,Botella Térmica,Accesorios
+10,3,4,2025-02-11 17:00:00,Mouse Inalámbrico,Tecnología
+10,3,4,2025-02-12 11:00:00,Mouse Inalámbrico,Tecnología
+10,10,5,2025-02-13 08:00:00,Curso de SQL,Educación
+11,3,1,2025-02-13 21:00:00,Mouse Inalámbrico,Tecnología
+11,3,3,2025-02-14 03:00:00,Mouse Inalámbrico,Tecnología
+11,3,3,2025-02-14 10:00:00,Mouse Inalámbrico,Tecnología
+11,11,3,2025-02-15 08:00:00,Cuaderno Premium,Papelería
+11,12,3,2025-02-16 01:00:00,Mochila Ejecutiva,Accesorios
+11,3,1,2025-02-16 05:00:00,Mouse Inalámbrico,Tecnología
+11,14,2,2025-02-16 23:00:00,Silla Ergonómica,Oficina
+11,9,3,2025-02-17 22:00:00,Curso de Machine Learning,Educación
+12,7,5,2025-02-18 07:00:00,Libro de Python,Educación
+12,2,3,2025-02-19 06:00:00,Laptop Pro,Tecnología
+12,4,1,2025-02-19 12:00:00,Teclado Mecánico,Tecnología
+12,9,5,2025-02-20 04:00:00,Curso de Machine Learning,Educación
+12,14,4,2025-02-20 10:00:00,Silla Ergonómica,Oficina
+12,9,5,2025-02-21 01:00:00,Curso de Machine Learning,Educación
+12,4,4,2025-02-21 21:00:00,Teclado Mecánico,Tecnología
