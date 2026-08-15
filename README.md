@@ -17,6 +17,8 @@ Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posg
 - Analítica exploratoria y aprendizaje no supervisado
 - MLOps y drift
 
+La ruta de analítica exploratoria incluye también un ejercicio explicado de segmentación RFM para clientes de comercio electrónico, con su notebook y dataset de práctica.
+
 ### Data Analytics II
 
 - IA generativa, agentes y automatización

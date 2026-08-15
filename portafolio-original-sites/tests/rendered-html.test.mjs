@@ -25,6 +25,9 @@ test("renders the current analytics portfolio and Copilot module", async () => {
   assert.match(html, /Data Analytics II/);
   assert.match(html, /Software y herramientas/);
   assert.match(html, /Microsoft 365 Copilot/);
+  assert.match(html, /Segmentación RFM de clientes/);
+  assert.match(html, /RFM Online Retail explicado/);
+  assert.match(html, /online_retail_rfm_practice\.csv/);
   assert.match(html, /https:\/\/microsoft-365-copilot-guia-practica\.juanb\.chatgpt\.site/);
   assert.doesNotMatch(html, /Los notebooks se abren en Google Colab desde GitHub/);
 });

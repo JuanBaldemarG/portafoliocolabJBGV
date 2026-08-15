@@ -175,6 +175,17 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Segmentación RFM de clientes",
+        level: "Analítica de clientes",
+        description: "Ejercicio aplicado para calcular Recencia, Frecuencia y Valor monetario, explorar perfiles de clientes y construir segmentos accionables.",
+        notebooks: [
+          { label: "RFM Online Retail explicado", path: "notebooks/eda/RFM_Online_Retail_Explicado.ipynb" }
+        ],
+        datasets: [
+          { label: "Online Retail RFM practice.csv", path: "data/eda/online_retail_rfm_practice.csv" }
+        ]
+      },
+      {
         title: "K-means con osos",
         level: "Clustering",
         description: "Ejemplo de aprendizaje no supervisado para explicar segmentación y centroides.",
