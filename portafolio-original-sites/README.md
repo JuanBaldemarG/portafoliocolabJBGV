@@ -2,10 +2,6 @@
 
 Sitio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Presenta ejercicios, notebooks, datasets y materiales de apoyo en una ruta de aprendizaje aplicada.
 
-## Sitio publicado
-
-[Abrir el portafolio](https://portafolio-original-analitica-jbgv.juanb.chatgpt.site/)
-
 ## Contenido
 
 - Data Analytics I: modelos supervisados, analítica exploratoria, aprendizaje no supervisado, MLOps y drift.
@@ -14,7 +10,7 @@ Sitio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y
 
 ## Microsoft 365 Copilot
 
-El módulo de Software y herramientas enlaza la [Guía práctica de Microsoft 365 Copilot](https://microsoft-365-copilot-guia-practica.juanb.chatgpt.site/), orientada a productividad, análisis y trabajo académico.
+El módulo de Software y herramientas incluye la Guía práctica de Microsoft 365 Copilot, orientada a productividad, análisis y trabajo académico.
 
 ## Desarrollo local
 

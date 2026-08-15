@@ -2,12 +2,12 @@
 
 Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne notebooks listos para Google Colab, datasets, materiales de apoyo y sitios de consulta organizados como rutas de aprendizaje.
 
-## Sitios publicados
+## Portafolios y recursos
 
-- [Portafolio original de Analítica y Ciencia de Datos](https://portafolio-original-analitica-jbgv.juanb.chatgpt.site/)
-- [Portafolio de Minería de Datos](https://portafolio-mineria-datos-jbgv.juanb.chatgpt.site/)
-- [Guía práctica de Microsoft 365 Copilot](https://microsoft-365-copilot-guia-practica.juanb.chatgpt.site/)
-- [Versión en GitHub Pages](https://JuanBaldemarG.github.io/portafoliocolabJBGV/)
+- Portafolio original de Analítica y Ciencia de Datos
+- Portafolio de Minería de Datos
+- Guía práctica de Microsoft 365 Copilot
+- Versión en GitHub Pages
 
 ## Rutas de aprendizaje
 
