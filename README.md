@@ -1,52 +1,59 @@
-# Portafolio de Ejercicios de Analítica y Ciencia de Datos
+# Portafolios de Analítica, Ciencia y Minería de Datos
 
-Portafolio académico con ejercicios de analítica y ciencia de datos para alumnos de posgrado y de educación continua en UDEM, con notebooks de Python listos para abrirse en Google Colab.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne notebooks listos para Google Colab, datasets, materiales de apoyo y sitios de consulta organizados como rutas de aprendizaje.
 
-## Contenido
+## Sitios publicados
 
-- `index.html`: portada principal
-- `sobre-mi.html`: semblanza académica del profesor
-- `styles.css`: estilos del sitio
-- `assets/site.js`: catálogo de módulos y enlaces
-- `IA Neurosimbolica/`: materiales 2026 de IA neurosimbólica, incluyendo PDF, PPTX y notebooks aplicados
-- `notebooks/`: prácticas en formato Jupyter/Colab
-- `docs/`: PDF, DOCX, XLSX y otros materiales de clase
-- `data/`: datasets de apoyo
+- [Portafolio original de Analítica y Ciencia de Datos](https://portafolio-original-analitica-jbgv.juanb.chatgpt.site/)
+- [Portafolio de Minería de Datos](https://portafolio-mineria-datos-jbgv.juanb.chatgpt.site/)
+- [Guía práctica de Microsoft 365 Copilot](https://microsoft-365-copilot-guia-practica.juanb.chatgpt.site/)
+- [Versión en GitHub Pages](https://JuanBaldemarG.github.io/portafoliocolabJBGV/)
 
-## Enfoque
+## Rutas de aprendizaje
 
-El sitio está organizado por módulos para que los alumnos puedan:
+### Data Analytics I
 
-- abrir notebooks en Google Colab
-- consultar materiales de clase
-- descargar datasets
-- navegar por temas de forma sencilla
+- Modelos supervisados
+- Analítica exploratoria y aprendizaje no supervisado
+- MLOps y drift
 
-## Actualización 2026
+### Data Analytics II
 
-La versión actual del portafolio ya incorpora la temática de `IA Neurosimbolica`, con material orientado a razonamiento híbrido y dos casos aplicados:
+- IA generativa, agentes y automatización
+- IA neurosimbólica
+- Fairness, sesgos y explicabilidad
 
-- RH
-- manufactura de cable
+### Data Analytics III — Portafolio de Minería de Datos
 
-## Página del profesor
+- Pruebas de Hipótesis para Minería de Datos
+- Sistemas de recomendación
+- Proyectos y dirección de IA
+- Software y herramientas
 
-La página `sobre-mi.html` presenta una semblanza académica breve del profesor, con énfasis en:
+El apartado de pruebas de hipótesis incluye pruebas t, pruebas de proporciones, comparación de varianzas y medias, ANOVA y chi-cuadrada. El apartado de sistemas de recomendación incorpora un caso práctico de comercio electrónico y su dataset.
 
-- docencia de posgrado en la UDEM
-- trayectoria académica y de dirección
-- experiencia aplicada en analítica, ciencia de datos y mejora continua
+## Software y herramientas
 
-Además, esta página integra:
+- Asistente de Minería, Analítica y Ciencia de Datos
+- Databricks Free Edition
+- Orange Data Mining
+- Minitab Statistical Software
+- Microsoft 365 Copilot, con acceso a la guía práctica
 
-- imagen institucional del entorno UDEM
-- logotipo UDEM
-- enlace visible al sitio personal `https://baldemar.carrd.co/`
+## Organización del repositorio
 
-## URL pública
+- `notebooks/`: prácticas en Jupyter listas para abrirse en Google Colab
+- `data/`: conjuntos de datos utilizados en los ejercicios
+- `docs/`: materiales de apoyo en PDF, DOCX, XLSX y otros formatos
+- `assets/`: lógica y recursos de la versión publicada en GitHub Pages
+- `portafolio-original-sites/`: versión del portafolio original para Sites
+- `index.html`, `sobre-mi.html` y `styles.css`: versión estática del portafolio
 
-El repositorio está preparado para publicarse con GitHub Pages en:
+## Uso académico
 
-```text
-https://JuanBaldemarG.github.io/portafoliocolabJBGV/
-```
+1. Seleccione un tema en cualquiera de los portafolios.
+2. Abra el notebook correspondiente en Google Colab.
+3. Consulte o descargue los datasets y materiales relacionados desde GitHub.
+4. Utilice las herramientas complementarias para reforzar la práctica.
+
+Última actualización: 15 de agosto de 2026.

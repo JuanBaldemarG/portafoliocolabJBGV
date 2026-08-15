@@ -456,6 +456,14 @@ export const portfolioSections: SectionItem[] = [
         resources: [
           { label: "Explorar Minitab para academia", path: "https://www.minitab.com/en-us/solutions/industry/academic/" }
         ]
+      },
+      {
+        title: "Microsoft 365 Copilot",
+        level: "Productividad con IA",
+        description: "Guía práctica para incorporar Microsoft 365 Copilot en tareas de productividad, análisis y trabajo académico.",
+        resources: [
+          { label: "Abrir guía práctica de Microsoft 365 Copilot", path: "https://microsoft-365-copilot-guia-practica.juanb.chatgpt.site" }
+        ]
       }
     ]
   }

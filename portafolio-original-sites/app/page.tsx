@@ -153,11 +153,6 @@ export default function HomePage() {
             Este portafolio reúne ejercicios, materiales de apoyo y conjuntos de datos organizados por tema.
             Cada módulo conserva la estructura del portafolio original dentro de este sitio privado.
           </p>
-          <p className="hero-copy hero-note">
-            Los notebooks se abren en Google Colab desde GitHub y los datasets y materiales de apoyo
-            también se consultan desde GitHub, para mantener la misma lógica del portafolio UANL.
-          </p>
-
           <div className="hero-actions">
             <a className="button button-primary" href="#catalogo">
               Explorar ejercicios
@@ -256,7 +251,7 @@ export default function HomePage() {
       </main>
 
       <footer className="site-footer">
-        Portafolio académico para alumnos de posgrado y de educación continua en UDEM · Actualizado el 8 de agosto de 2026 · Versión 11
+        Portafolio académico para alumnos de posgrado y de educación continua en UDEM · Actualizado el 15 de agosto de 2026 · Versión 12
       </footer>
     </main>
   );
