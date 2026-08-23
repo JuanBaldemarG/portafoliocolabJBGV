@@ -367,6 +367,29 @@ const portfolioSections = [
     ]
   },
   {
+    id: "mineria-datos",
+    title: "Portafolio de Minería de Datos",
+    description: "Ejercicios aplicados para transformar datos en decisiones, desde recomendaciones personalizadas hasta inferencia causal en manufactura.",
+    modules: [
+      {
+        title: "Sistemas de Recomendación",
+        level: "Recomendadores",
+        description: "Caso práctico de comercio electrónico para construir y comparar recomendaciones por popularidad y filtrado colaborativo item-item.",
+        notebooks: [
+          { label: "Sistema de recomendación en Colab", path: "notebooks/sistemas-recomendacion/caso_uso_sistema_recomendacion_colab.ipynb" }
+        ]
+      },
+      {
+        title: "IA Causal aplicada a manufactura",
+        level: "Inferencia causal",
+        description: "Ejercicio con DoWhy para estimar el efecto causal de una intervención de proceso sobre una variable de calidad, evaluar supuestos y contrastar resultados.",
+        notebooks: [
+          { label: "IA Causal DoWhy Manufactura", path: "notebooks/ia-causal/ia_causal_dowhy_manufactura_colab.ipynb" }
+        ]
+      }
+    ]
+  },
+  {
     id: "proyectos",
     title: "Proyectos y dirección de IA",
     description: "Material complementario para gestión, rollout, casos de negocio y dirección de proyectos.",
