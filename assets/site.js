@@ -482,6 +482,12 @@ const learningBlocks = [
     title: "Data Analytics II",
     description: "Bloque orientado a inteligencia artificial aplicada, explicabilidad, dirección de proyectos y herramientas de apoyo.",
     sectionIds: ["generativa", "neurosimbolica", "fairness", "proyectos", "herramientas"]
+  },
+  {
+    id: "data-analytics-iii",
+    title: "Data Analytics III — Portafolio de Minería de Datos",
+    description: "Bloque orientado a recomendadores e inferencia causal aplicada.",
+    sectionIds: ["mineria-datos"]
   }
 ];
 
