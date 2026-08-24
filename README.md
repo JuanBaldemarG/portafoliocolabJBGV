@@ -58,4 +58,12 @@ El apartado de pruebas de hipótesis incluye pruebas t, pruebas de proporciones,
 3. Consulte o descargue los datasets y materiales relacionados desde GitHub.
 4. Utilice las herramientas complementarias para reforzar la práctica.
 
-Última actualización: 15 de agosto de 2026.
+## Derechos reservados / All rights reserved
+
+**Todos los derechos reservados.** Desarrollado exclusivamente con fines educativos y de capacitación. Se prohíbe la reproducción, modificación, redistribución, publicación o uso comercial — total o parcial — sin la autorización expresa y por escrito del autor.
+
+**All rights reserved.** Developed solely for educational and training purposes. Reproduction, modification, redistribution, publication, or commercial use — in whole or in part — is prohibited without the author's express written permission.
+
+Por / By: **Dr. Juan Baldemar Garza Villegas**
+
+Última actualización: 23 de agosto de 2026.
