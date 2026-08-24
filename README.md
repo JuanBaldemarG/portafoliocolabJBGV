@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 59 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 60 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -58,6 +58,7 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 - [Módulo 2 — Diagnóstico de valores faltantes](notebooks/limpieza-datos/Valores-faltantes_colab.ipynb)
 - [Módulo 3 — Eliminar, imputar o reconstruir valores faltantes](notebooks/limpieza-datos/eliminar_imputar_o_reconstruir_valores_faltantes_colab.ipynb)
 - [Módulo 4 — Conversión de tipos de datos](notebooks/limpieza-datos/Conversion_de_tipos_de_datos_colab.ipynb)
+- [Módulo 5 — Fechas y datos temporales](notebooks/limpieza-datos/fechas_y_datos_temporales_colab.ipynb)
 - [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### A/B testing
