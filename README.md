@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 55 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 59 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -12,6 +12,16 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 - Versión en GitHub Pages
 
 ## Rutas de aprendizaje
+
+### Limpieza de Datos para ML-DL-IA
+
+Ruta inicial para inspeccionar, diagnosticar, transformar y validar datos antes de utilizarlos en machine learning, deep learning e inteligencia artificial.
+
+- [Módulo 1 — Limpieza de datos para ML](notebooks/limpieza-datos/Limpieza_datos_ML_colab.ipynb)
+- [Módulo 2 — Diagnóstico de valores faltantes](notebooks/limpieza-datos/Valores-faltantes_colab.ipynb)
+- [Módulo 3 — Eliminar, imputar o reconstruir valores faltantes](notebooks/limpieza-datos/eliminar_imputar_o_reconstruir_valores_faltantes_colab.ipynb)
+- [Módulo 4 — Conversión de tipos de datos](notebooks/limpieza-datos/Conversion_de_tipos_de_datos_colab.ipynb)
+- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### Fundamentos de analítica y exploración de datos
 
@@ -51,6 +61,14 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 
 - [IA neurosimbólica — control de calidad en manufactura de cable](IA%20Neurosimbolica/neurosimbolica_manufactura_cable.ipynb)
 - [IA neurosimbólica — gestión de talento en Recursos Humanos](IA%20Neurosimbolica/neurosimbolica_rh.ipynb)
+
+### Limpieza de datos
+
+- [Módulo 1 — Limpieza de datos para ML](notebooks/limpieza-datos/Limpieza_datos_ML_colab.ipynb)
+- [Módulo 2 — Diagnóstico de valores faltantes](notebooks/limpieza-datos/Valores-faltantes_colab.ipynb)
+- [Módulo 3 — Eliminar, imputar o reconstruir valores faltantes](notebooks/limpieza-datos/eliminar_imputar_o_reconstruir_valores_faltantes_colab.ipynb)
+- [Módulo 4 — Conversión de tipos de datos](notebooks/limpieza-datos/Conversion_de_tipos_de_datos_colab.ipynb)
+- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### A/B testing
 
@@ -226,5 +244,4 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 
 Por / By: **Dr. Juan Baldemar Garza Villegas**
 
-Última actualización: 23 de agosto de 2026.
-
+Última actualización: 24 de agosto de 2026.
