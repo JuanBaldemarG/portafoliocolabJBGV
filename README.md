@@ -13,16 +13,6 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 
 ## Rutas de aprendizaje
 
-### Limpieza de Datos para ML-DL-IA
-
-Ruta inicial para inspeccionar, diagnosticar, transformar y validar datos antes de utilizarlos en machine learning, deep learning e inteligencia artificial.
-
-- [Módulo 1 — Limpieza de datos para ML](notebooks/limpieza-datos/Limpieza_datos_ML_colab.ipynb)
-- [Módulo 2 — Diagnóstico de valores faltantes](notebooks/limpieza-datos/Valores-faltantes_colab.ipynb)
-- [Módulo 3 — Eliminar, imputar o reconstruir valores faltantes](notebooks/limpieza-datos/eliminar_imputar_o_reconstruir_valores_faltantes_colab.ipynb)
-- [Módulo 4 — Conversión de tipos de datos](notebooks/limpieza-datos/Conversion_de_tipos_de_datos_colab.ipynb)
-- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
-
 ### Fundamentos de analítica y exploración de datos
 
 La colección cubre Python, análisis exploratorio, limpieza, visualización, segmentación de clientes y comunicación de resultados. Incluye análisis de países, comercio electrónico y ejercicios introductorios con los datasets Adult Income y Autos.
@@ -62,7 +52,7 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 - [IA neurosimbólica — control de calidad en manufactura de cable](IA%20Neurosimbolica/neurosimbolica_manufactura_cable.ipynb)
 - [IA neurosimbólica — gestión de talento en Recursos Humanos](IA%20Neurosimbolica/neurosimbolica_rh.ipynb)
 
-### Limpieza de datos
+### Limpieza de Datos para ML-DL-IA
 
 - [Módulo 1 — Limpieza de datos para ML](notebooks/limpieza-datos/Limpieza_datos_ML_colab.ipynb)
 - [Módulo 2 — Diagnóstico de valores faltantes](notebooks/limpieza-datos/Valores-faltantes_colab.ipynb)
