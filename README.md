@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 64 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 65 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -153,6 +153,8 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 - [Módulo 1 — Pronóstico con promedio móvil](notebooks/series-tiempo/notebook_pronostico_promedio_movil_colab.ipynb)
 - [Módulo 2 — Pronóstico con Holt-Winters](notebooks/series-tiempo/notebook_pronostico_statsmodels_colab.ipynb)
 - [Módulo 3 — Pronóstico de pasajeros con Prophet](notebooks/series-tiempo/notebook_pronostico_prophet_passengers_colab.ipynb)
+- [Módulo 4 — Prophet con festivos y cambios estructurales](notebooks/series-tiempo/notebook_prophet_festivos_cambios_estructurales_colab.ipynb)
+- [Dataset — Visitas de Peyton Manning](data/series-tiempo/peyton_manning_visitas.csv)
 
 ### Nations
 
