@@ -41,14 +41,6 @@ Se presentan SHAP, interpretación de modelos, Propensity Score Matching, fairne
 
 La colección incluye agentes de IA con Arxiv y Qwen, monitoreo de data drift con Iris y MPG, y un notebook narrado sobre data leakage.
 
-### Series de Tiempo (Forecasting)
-
-La ruta de pronóstico está organizada en tres módulos progresivos:
-
-1. **Módulo 1 — Promedio móvil:** suavizado de series temporales, comparación de ventanas y pronóstico recursivo.
-2. **Módulo 2 — Holt-Winters con statsmodels:** modelado de nivel, tendencia y estacionalidad anual.
-3. **Módulo 3 — Prophet:** pronóstico interpretable con tendencia, estacionalidad y componentes de planificación.
-
 ### Aplicaciones avanzadas y despliegue educativo
 
 Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendación para comercio electrónico, web scraping, redes neuronales con MNIST, Transformers con Hugging Face, detección de objetos con YOLO26 y despliegues demostrativos con Gradio, Streamlit y Localtunnel.
