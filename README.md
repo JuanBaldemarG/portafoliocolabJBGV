@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 61 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 64 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -40,6 +40,14 @@ Se presentan SHAP, interpretación de modelos, Propensity Score Matching, fairne
 ### Agentes, MLOps y ciclo de vida de datos
 
 La colección incluye agentes de IA con Arxiv y Qwen, monitoreo de data drift con Iris y MPG, y un notebook narrado sobre data leakage.
+
+### Series de Tiempo (Forecasting)
+
+La ruta de pronóstico está organizada en tres módulos progresivos:
+
+1. **Módulo 1 — Promedio móvil:** suavizado de series temporales, comparación de ventanas y pronóstico recursivo.
+2. **Módulo 2 — Holt-Winters con statsmodels:** modelado de nivel, tendencia y estacionalidad anual.
+3. **Módulo 3 — Prophet:** pronóstico interpretable con tendencia, estacionalidad y componentes de planificación.
 
 ### Aplicaciones avanzadas y despliegue educativo
 
@@ -148,6 +156,12 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 - [Data drift con MPG](notebooks/mlops-drift/MPG_Data_Drift.ipynb)
 - [Data leakage explicado](notebooks/mlops-drift/notebook_data_leakage_explicado.ipynb)
 
+### Series de Tiempo (Forecasting)
+
+- [Módulo 1 — Pronóstico con promedio móvil](notebooks/series-tiempo/notebook_pronostico_promedio_movil_colab.ipynb)
+- [Módulo 2 — Pronóstico con Holt-Winters](notebooks/series-tiempo/notebook_pronostico_statsmodels_colab.ipynb)
+- [Módulo 3 — Pronóstico de pasajeros con Prophet](notebooks/series-tiempo/notebook_pronostico_prophet_passengers_colab.ipynb)
+
 ### Nations
 
 - [Análisis de datos de países](notebooks/nations/Data_Analysis_nations.ipynb)
@@ -236,4 +250,4 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 
 Por / By: **Dr. Juan Baldemar Garza Villegas**
 
-Última actualización: 24 de agosto de 2026.
+Última actualización: 25 de agosto de 2026.
