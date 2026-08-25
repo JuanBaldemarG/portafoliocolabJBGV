@@ -13,9 +13,13 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 
 ## Rutas de aprendizaje
 
+### Preparación y transformación de datos
+
+La ruta aborda inspección de calidad, valores faltantes, conversión de tipos, fechas y datos temporales, estandarización de nombres y creación de variables. Incluye prácticas reproducibles para preparar datos antes de aplicar analítica, machine learning, deep learning e inteligencia artificial.
+
 ### Fundamentos de analítica y exploración de datos
 
-La colección cubre Python, análisis exploratorio, limpieza, visualización, segmentación de clientes y comunicación de resultados. Incluye análisis de países, comercio electrónico y ejercicios introductorios con los datasets Adult Income y Autos.
+La colección cubre Python, análisis exploratorio, visualización, segmentación de clientes, análisis de países, comercio electrónico y comunicación de resultados. También incluye ejercicios introductorios con los datasets Adult Income y Autos.
 
 ### Aprendizaje supervisado y no supervisado
 
@@ -33,17 +37,25 @@ La ruta de pruebas de hipótesis aborda pruebas t, proporciones, comparación de
 
 Incluye gráfica tipo C, prueba manual de Grubbs e Isolation Forest aplicado a anomalías de taxis de Nueva York.
 
+### Series de Tiempo (Forecasting)
+
+La ruta contiene cinco módulos progresivos: promedio móvil, Holt-Winters con Statsmodels, Prophet, Prophet con días festivos y cambios estructurales, y Prophet con regresores externos. Se trabajan tendencia, estacionalidad, evaluación temporal, incertidumbre, eventos y variables externas.
+
 ### Explicabilidad, causalidad y uso responsable de la IA
 
 Se presentan SHAP, interpretación de modelos, Propensity Score Matching, fairness con el caso COMPAS, IA causal con DoWhy e IA neurosimbólica aplicada a manufactura de cable y gestión de talento en Recursos Humanos.
 
-### Agentes, MLOps y ciclo de vida de datos
+### IA generativa, agentes y ciclo de vida de datos
 
-La colección incluye agentes de IA con Arxiv y Qwen, monitoreo de data drift con Iris y MPG, y un notebook narrado sobre data leakage.
+La colección incluye prompting, agentes de IA con Arxiv y Qwen, Transformers, monitoreo de data drift con Iris y MPG, data leakage y automatización de flujos analíticos.
 
 ### Aplicaciones avanzadas y despliegue educativo
 
-Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendación para comercio electrónico, web scraping, redes neuronales con MNIST, Transformers con Hugging Face, detección de objetos con YOLO26 y despliegues demostrativos con Gradio, Streamlit y Localtunnel.
+Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendación para comercio electrónico, web scraping, redes neuronales con MNIST, detección de objetos con YOLO26 y despliegues demostrativos con Gradio, Streamlit y Localtunnel.
+
+### Software, herramientas y entornos de práctica
+
+Incluye Google Colab, Jupyter, Databricks, Orange Data Mining, Minitab, Microsoft 365 Copilot, Hugging Face, Scikit-Learn, Statsmodels, Prophet, SHAP, DoWhy, Gradio, Streamlit, XGBoost, CatBoost y YOLO.
 
 ## Inventario de notebooks
 
