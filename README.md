@@ -153,6 +153,7 @@ Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendaci
 - [Módulo 1 — Pronóstico con promedio móvil](notebooks/series-tiempo/notebook_pronostico_promedio_movil_colab.ipynb)
 - [Módulo 2 — Pronóstico con Holt-Winters](notebooks/series-tiempo/notebook_pronostico_statsmodels_colab.ipynb)
 - [Módulo 3 — Pronóstico de pasajeros con Prophet](notebooks/series-tiempo/notebook_pronostico_prophet_passengers_colab.ipynb)
+- [Dataset — Passengers](data/series-tiempo/passengers.csv)
 - [Módulo 4 — Prophet con festivos y cambios estructurales](notebooks/series-tiempo/notebook_prophet_festivos_cambios_estructurales_colab.ipynb)
 - [Dataset — Visitas de Peyton Manning](data/series-tiempo/peyton_manning_visitas.csv)
 
