@@ -13,49 +13,32 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 
 ## Rutas de aprendizaje
 
-### Preparación y transformación de datos
+### Datos y analítica
+Python, preparación y limpieza de datos, análisis exploratorio, visualización, segmentación y comunicación de resultados.
 
-La ruta aborda inspección de calidad, valores faltantes, conversión de tipos, fechas y datos temporales, estandarización de nombres y creación de variables. Incluye prácticas reproducibles para preparar datos antes de aplicar analítica, machine learning, deep learning e inteligencia artificial.
+### Machine Learning
+Aprendizaje supervisado y no supervisado, clasificación, regresión, clustering, selección de modelos y métricas de evaluación.
 
-### Fundamentos de analítica y exploración de datos
+### Estadística y minería de datos
+Pruebas de hipótesis, ANOVA, chi-cuadrada, pruebas t y F, proporciones, GLM y análisis inferencial.
 
-La colección cubre Python, análisis exploratorio, visualización, segmentación de clientes, análisis de países, comercio electrónico y comunicación de resultados. También incluye ejercicios introductorios con los datasets Adult Income y Autos.
-
-### Aprendizaje supervisado y no supervisado
-
-Se practican clasificación, regresión, clustering y selección de modelos con Iris, Titanic, Adult Income, costos médicos, vivienda en California, manufactura y abandono de empleados. También se incluyen modelos con Scikit-Learn, XGBoost y CatBoost.
-
-### Evaluación de modelos y métricas de ML
-
-Los notebooks explican matrices de confusión, precisión, recall, F1-score, curvas ROC, ROC-AUC y métricas de regresión, con énfasis en la detección de piezas defectuosas y la inspección de calidad.
-
-### Estadística inferencial y minería de datos
-
-La ruta de pruebas de hipótesis aborda pruebas t, proporciones, comparación de varianzas y medias, ANOVA, chi-cuadrada y modelos lineales generalizados mediante ejemplos de baterías, catalizadores, adhesivos, golf balls, correos, costos y salarios académicos.
-
-### Anomalías, control estadístico y calidad
-
-Incluye gráfica tipo C, prueba manual de Grubbs e Isolation Forest aplicado a anomalías de taxis de Nueva York.
+### Calidad, anomalías y MLOps
+Control estadístico de procesos, detección de anomalías, data drift, data leakage y monitoreo de modelos.
 
 ### Series de Tiempo (Forecasting)
+Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regresores externos.
 
-La ruta contiene cinco módulos progresivos: promedio móvil, Holt-Winters con Statsmodels, Prophet, Prophet con días festivos y cambios estructurales, y Prophet con regresores externos. Se trabajan tendencia, estacionalidad, evaluación temporal, incertidumbre, eventos y variables externas.
+### Explicabilidad, causalidad y fairness
+SHAP, interpretación de modelos, Propensity Score Matching, IA causal, DoWhy y evaluación de fairness.
 
-### Explicabilidad, causalidad y uso responsable de la IA
+### IA generativa y agentes
+Prompting, Transformers, agentes de IA, Hugging Face y automatización de flujos analíticos.
 
-Se presentan SHAP, interpretación de modelos, Propensity Score Matching, fairness con el caso COMPAS, IA causal con DoWhy e IA neurosimbólica aplicada a manufactura de cable y gestión de talento en Recursos Humanos.
+### Deep Learning y aplicaciones
+Redes neuronales, MNIST, detección de objetos con YOLO, sistemas de recomendación, supervivencia y web scraping.
 
-### IA generativa, agentes y ciclo de vida de datos
-
-La colección incluye prompting, agentes de IA con Arxiv y Qwen, Transformers, monitoreo de data drift con Iris y MPG, data leakage y automatización de flujos analíticos.
-
-### Aplicaciones avanzadas y despliegue educativo
-
-Se cubren análisis de supervivencia con Kaplan–Meier, sistemas de recomendación para comercio electrónico, web scraping, redes neuronales con MNIST, detección de objetos con YOLO26 y despliegues demostrativos con Gradio, Streamlit y Localtunnel.
-
-### Software, herramientas y entornos de práctica
-
-Incluye Google Colab, Jupyter, Databricks, Orange Data Mining, Minitab, Microsoft 365 Copilot, Hugging Face, Scikit-Learn, Statsmodels, Prophet, SHAP, DoWhy, Gradio, Streamlit, XGBoost, CatBoost y YOLO.
+### Herramientas y despliegue
+Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Learn, Statsmodels, XGBoost y CatBoost.
 
 ## Inventario de notebooks
 
