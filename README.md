@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 72 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 73 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -166,6 +166,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 3 — Similitud semántica](notebooks/mineria-texto/mineria_texto_similitud_semantica_colab.ipynb)
 - [Módulo 4 — Modelado de tópicos con LDA](notebooks/mineria-texto/mineria_texto_lda_colab.ipynb)
 - [Módulo 5 — Resumen extractivo con TextRank](notebooks/mineria-texto/mineria_texto_textrank_colab.ipynb)
+- [Módulo 6 — Análisis de sentimiento tradicional](notebooks/mineria-texto/analisis_sentimiento_tradicional_colab.ipynb)
 
 ### Nations
 
