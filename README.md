@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 74 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 75 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -30,6 +30,9 @@ Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regr
 
 ### Minería de Texto
 Clasificación de texto, procesamiento de lenguaje natural, representación de documentos y evaluación de modelos.
+
+### Anomaly Detection en Minería de Datos
+Detección de anomalías con métodos no supervisados, incluyendo Local Outlier Factor (LOF).
 
 ### Explicabilidad, causalidad y fairness
 SHAP, interpretación de modelos, Propensity Score Matching, IA causal, DoWhy y evaluación de fairness.
@@ -168,6 +171,10 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 5 — Resumen extractivo con TextRank](notebooks/mineria-texto/mineria_texto_textrank_colab.ipynb)
 - [Módulo 6 — Análisis de sentimiento tradicional](notebooks/mineria-texto/analisis_sentimiento_tradicional_colab.ipynb)
 - [Módulo 7 — Clasificación de intención](notebooks/mineria-texto/clasificacion_intencion_colab.ipynb)
+
+### Anomaly Detection en Minería de Datos
+
+- [Módulo 1 — LOF para servicio con dos regímenes](notebooks/anomaly-detection/anomaly_detection_LOF_servicio_dos_regimenes.ipynb)
 
 ### Nations
 
