@@ -206,7 +206,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 ### Sistemas de recomendación
 
-- [Sistema de recomendación para e-commerce](notebooks/sistemas-recomendacion/caso_uso_sistema_recomendacion_colab.ipynb)
+- [Módulo 1 — Sistema de recomendación para e-commerce](notebooks/sistemas-recomendacion/caso_uso_sistema_recomendacion_colab.ipynb)
 - [Módulo 2 — Recomendación contextual de proveedores administrativos](notebooks/sistemas-recomendacion/recomendacion_contextual_proveedores_administrativos.ipynb)
 
 ### Análisis de supervivencia
