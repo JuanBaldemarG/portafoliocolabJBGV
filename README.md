@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 78 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 79 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -207,6 +207,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Sistemas de recomendación
 
 - [Sistema de recomendación para e-commerce](notebooks/sistemas-recomendacion/caso_uso_sistema_recomendacion_colab.ipynb)
+- [Módulo 2 — Recomendación contextual de proveedores administrativos](notebooks/sistemas-recomendacion/recomendacion_contextual_proveedores_administrativos.ipynb)
 
 ### Análisis de supervivencia
 
