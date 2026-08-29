@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 80 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 81 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -29,7 +29,7 @@ Control estadístico de procesos, detección de anomalías, data drift, data lea
 Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regresores externos.
 
 ### Técnicas de Simulación
-Simulación Monte Carlo, incertidumbre y análisis de riesgo presupuestal.
+Simulación Monte Carlo, incertidumbre y análisis de riesgo presupuestal y productivo.
 
 ### Minería de Texto
 Clasificación de texto, procesamiento de lenguaje natural, representación de documentos y evaluación de modelos.
@@ -168,6 +168,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Técnicas de Simulación
 
 - [Módulo 1 — Simulación Monte Carlo para riesgo de presupuesto](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_presupuesto.ipynb)
+- [Módulo 2 — Simulación Monte Carlo para riesgo de producción](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_produccion.ipynb)
 
 ### Minería de Texto
 
