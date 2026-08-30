@@ -273,4 +273,4 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 Por / By: **Dr. Juan Baldemar Garza Villegas**
 
-Última actualización: 25 de agosto de 2026.
+Última actualización: 29 de agosto de 2026.
