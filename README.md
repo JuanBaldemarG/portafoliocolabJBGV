@@ -1,6 +1,6 @@
 # Portafolios de Analítica, Ciencia y Minería de Datos
 
-Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 82 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
+Repositorio académico del Dr. Juan Baldemar Garza Villegas para alumnos de posgrado y educación continua. Reúne 83 notebooks de Jupyter, datasets, materiales de apoyo y herramientas aplicadas a la analítica, la ciencia de datos, la inteligencia artificial y la minería de datos.
 
 Los notebooks están preparados principalmente para Google Colab e incluyen ejercicios guiados, soluciones, casos industriales, ejemplos reproducibles y prácticas con datos reales o de uso educativo.
 
@@ -171,6 +171,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 2 — Simulación Monte Carlo para riesgo de producción](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_produccion.ipynb)
 - [Módulo 3 — Ejercicios Monte Carlo para bombas de pistón](notebooks/tecnicas-simulacion/montecarlo_ejercicios_bombas_piston.ipynb)
 - [Módulo 4 — Simulación de eventos discretos de servicio con SimPy](notebooks/tecnicas-simulacion/simulacion_eventos_discretos_servicio_simpy.ipynb)
+- [Módulo 5 — Simulación de agentes para mesa de servicio digital](notebooks/tecnicas-simulacion/simulacion_agentes_mesa_servicio_digital.ipynb)
 
 ### Minería de Texto
 
