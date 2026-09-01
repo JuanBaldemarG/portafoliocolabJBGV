@@ -64,7 +64,8 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 4 — Conversión de tipos de datos](notebooks/limpieza-datos/Conversion_de_tipos_de_datos_colab.ipynb)
 - [Módulo 5 — Fechas y datos temporales](notebooks/limpieza-datos/fechas_y_datos_temporales_colab.ipynb)
 - [Módulo 6 — Estandarizar nombres y crear nuevas columnas](notebooks/limpieza-datos/estandarizar_nombres_y_crear_nuevas_columnas_colab.ipynb)
-- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
+
+- [Tipos de Machine Learning](notebooks/limpieza-datos/tipos_ml.ipynb)- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### A/B testing
 
