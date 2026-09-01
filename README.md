@@ -245,6 +245,10 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [YOLO26 para principiantes](notebooks/yolo26/deteccion_objetos_yolo26_principiantes_udem.ipynb)
 
+### Inspección visual con OpenCV
+
+- [Inspección de manufactura con OpenCV](notebooks/vision-computadora/ejemplo_opencv_inspeccion_manufactura_colab.ipynb)
+
 ## Software y herramientas
 
 - Asistente de Minería, Analítica y Ciencia de Datos
