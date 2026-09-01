@@ -240,6 +240,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### XGBoost y regresión
 
 - [XGBoost con California Housing](notebooks/xgboost-california-housing/XGBoost_California_Housing_Colab.ipynb)
+- [Comparación entre Machine Learning y Deep Learning](notebooks/ml-vs-dl/ML_vs_DL.ipynb)
 
 ### Detección de objetos
 
