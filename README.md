@@ -254,6 +254,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Inspección visual con OpenCV
 
 - [Inspección de manufactura con OpenCV](notebooks/vision-computadora/ejemplo_opencv_inspeccion_manufactura_colab.ipynb)
+- [Emociones con cámara](notebooks/vision-computadora/notebook_emociones_camara_colab.ipynb)
 - [Ejercicio de piezas faltantes con OpenCV](notebooks/vision-computadora/ejercicio_opencv_piezas_faltantes_colab.ipynb)
 
 ## Software y herramientas
