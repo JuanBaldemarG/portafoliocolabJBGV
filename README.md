@@ -86,6 +86,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Anomalías y SPC
 
 - [Gráfica tipo C](notebooks/anomalias-spc/GRAFICA_TIPO_C.ipynb)
+- [Control estadístico de procesos con cartas Shewhart](notebooks/anomalias-spc/control_estadistico_shewhart_colab.ipynb)
 - [Prueba manual de Grubbs](notebooks/anomalias-spc/Grubbs_manual.ipynb)
 - [Isolation Forest — anomalías en NYC Taxi](notebooks/anomalias-spc/IsolationForest_NYC_Taxi_Anomalies.ipynb)
 
