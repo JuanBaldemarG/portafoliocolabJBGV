@@ -243,6 +243,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### XGBoost y regresión
 
 - [XGBoost con California Housing](notebooks/xgboost-california-housing/XGBoost_California_Housing_Colab.ipynb)
+- [Clasificación supervisada de cáncer de mama](notebooks/supervisados/APSupCancer.ipynb)
 - [Comparación entre Machine Learning y Deep Learning](notebooks/ml-vs-dl/ML_vs_DL.ipynb)
 - [Neurona artificial](notebooks/ml-vs-dl/Neurona.ipynb)
 - [De neurona a red neuronal](notebooks/ml-vs-dl/De_neurona_a_red.ipynb)
