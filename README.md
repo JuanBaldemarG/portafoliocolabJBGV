@@ -67,7 +67,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [Tipos de Machine Learning](notebooks/limpieza-datos/tipos_ml.ipynb)
 - [Inputs y Targets](notebooks/limpieza-datos/inputs_y_targets.ipynb)
-- [Dataset — Dirty Cafe Sales](data/limpieza-datos/dirty_cafe_sales.csv)
+- [Dataset — Dirty Cafe Sales (actualizado)](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### A/B testing
 
