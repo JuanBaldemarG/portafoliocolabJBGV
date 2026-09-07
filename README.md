@@ -53,7 +53,8 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 ### Análisis Geoespacial
 
-- [Análisis geoespacial en manufactura](notebooks/geoespacial/geoespacial_manufactura_colab.ipynb)
+- [Módulo 1 — Análisis geoespacial para retail: Tienda Urbana](notebooks/geoespacial/geoespacial_retail_tienda_urbana_colab.ipynb)
+- [Módulo 2 — Análisis geoespacial en manufactura](notebooks/geoespacial/geoespacial_manufactura_colab.ipynb)
 
 ### IA neurosimbólica
 
