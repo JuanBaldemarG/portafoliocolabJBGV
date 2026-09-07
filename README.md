@@ -51,6 +51,10 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 ## Inventario de notebooks
 
+### Análisis Geoespacial
+
+- [Análisis geoespacial en manufactura](notebooks/geoespacial/geoespacial_manufactura_colab.ipynb)
+
 ### IA neurosimbólica
 
 - [IA neurosimbólica — control de calidad en manufactura de cable](IA%20Neurosimbolica/neurosimbolica_manufactura_cable.ipynb)
