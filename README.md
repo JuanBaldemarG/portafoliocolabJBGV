@@ -71,7 +71,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 5 — Fechas y datos temporales](notebooks/limpieza-datos/fechas_y_datos_temporales_colab.ipynb)
 - [Módulo 6 — Estandarizar nombres y crear nuevas columnas](notebooks/limpieza-datos/estandarizar_nombres_y_crear_nuevas_columnas_colab.ipynb)
 
-- [Tipos de Machine Learning](notebooks/limpieza-datos/tipos_ml.ipynb)
+- [Tipos de Machine Learning — notebook compatible con Colab](notebooks/limpieza-datos/tipos_ml.ipynb)
 - [Inputs y Targets](notebooks/limpieza-datos/inputs_y_targets.ipynb)
 - [Dataset — Dirty Cafe Sales (actualizado)](data/limpieza-datos/dirty_cafe_sales.csv)
 
