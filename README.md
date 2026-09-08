@@ -35,7 +35,7 @@ Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, y even
 Clasificación de texto, procesamiento de lenguaje natural, representación de documentos y evaluación de modelos.
 
 ### Anomaly Detection en Minería de Datos
-Detección de anomalías con métodos no supervisados, incluyendo Local Outlier Factor (LOF), One-Class SVM, Elliptic Envelope, DBSCAN, Isolation Forest y Gradio.
+Detección de anomalías con métodos no supervisados, incluyendo Local Outlier Factor (LOF), One-Class SVM, Elliptic Envelope y DBSCAN.
 
 ### Explicabilidad, causalidad y fairness
 SHAP, interpretación de modelos, Propensity Score Matching, IA causal, DoWhy y evaluación de fairness.
@@ -201,8 +201,6 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 2 — Anomaly Detection comercial con One-Class SVM](notebooks/anomaly-detection/anomaly_detection_comercial_one_class_svm.ipynb)
 - [Módulo 3 — Detección de anomalías de calidad con Elliptic Envelope](notebooks/anomaly-detection/anomaly_detection_calidad_elliptic_envelope.ipynb)
 - [Módulo 4 — Detección de anomalías administrativas con DBSCAN](notebooks/anomaly-detection/anomaly_detection_administracion_dbscan.ipynb)
-- [Módulo 5 — Días extraños con Isolation Forest y Gradio](notebooks/anomalias-spc/analitica_avanzada_dias_extraños_gradio_subir_dataset.ipynb)
-- [Dataset — day.csv](data/anomalias-spc/day.csv)
 
 ### Nations
 
