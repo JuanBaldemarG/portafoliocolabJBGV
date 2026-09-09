@@ -238,6 +238,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [Kaplan–Meier — vida útil de neumáticos](notebooks/supervivencia/kaplan_meier_neumaticos_desde_csv.ipynb)
 - [Supervivencia industrial — bombas centrífugas](notebooks/supervivencia/supervivencia_industrial_bombas_comentado.ipynb)
+- [Confiabilidad — predicción RUL de cojinete](notebooks/supervivencia/prediccion_rul_cojinete_colab_publico.ipynb)
 
 ### Titanic
 
