@@ -31,6 +31,9 @@ Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regr
 ### Técnicas de Simulación
 Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, y eventos discretos con SimPy.
 
+- [Módulo 1 — Simulación Monte Carlo para riesgo de presupuesto](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_presupuesto.ipynb)
+Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, y eventos discretos con SimPy.
+
 ### Minería de Texto
 Clasificación de texto, procesamiento de lenguaje natural, representación de documentos y evaluación de modelos.
 
