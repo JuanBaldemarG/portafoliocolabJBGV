@@ -17,7 +17,7 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 Python, preparación y limpieza de datos, análisis exploratorio, visualización, segmentación y comunicación de resultados.
 
 ### Machine Learning
-Aprendizaje supervisado y no supervisado, clasificación, regresión, clustering, selección de modelos y métricas de evaluación.
+Aprendizaje supervisado y no supervisado, clasificación, regresión, clustering, selección de modelos, funciones de pérdida y métricas de evaluación.
 
 ### Estadística y minería de datos
 Pruebas de hipótesis, ANOVA, chi-cuadrada, pruebas t y F, proporciones, GLM y análisis inferencial.
@@ -160,6 +160,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Métricas de regresión
 
 - [Métricas de regresión para costos de mantenimiento](notebooks/metricas-regresion/metricas_regresion_costo_mantenimiento_colab.ipynb)
+- [Funciones de pérdida en un sistema industrial](notebooks/metricas-ml/Funcion_de_Perdida_reformulada.ipynb)
 
 
 ### MLOps, drift y leakage
