@@ -29,7 +29,7 @@ Control estadístico de procesos, detección de anomalías, data drift, data lea
 Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regresores externos.
 
 ### Técnicas de Simulación
-Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, y eventos discretos con SimPy.
+Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, eventos discretos con SimPy y gemelos digitales.
 
 - [Módulo 1 — Simulación Monte Carlo para riesgo de presupuesto](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_presupuesto.ipynb)
 Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, y eventos discretos con SimPy.
@@ -188,6 +188,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 3 — Ejercicios Monte Carlo para bombas de pistón](notebooks/tecnicas-simulacion/montecarlo_ejercicios_bombas_piston.ipynb)
 - [Módulo 4 — Simulación de eventos discretos de servicio con SimPy](notebooks/tecnicas-simulacion/simulacion_eventos_discretos_servicio_simpy.ipynb)
 - [Módulo 5 — Simulación de agentes para mesa de servicio digital](notebooks/tecnicas-simulacion/simulacion_agentes_mesa_servicio_digital.ipynb)
+- [Módulo 6 — Digital Twin de un motor eléctrico](notebooks/tecnicas-simulacion/digital_twin_motor_colab.ipynb)
 
 ### Minería de Texto
 
