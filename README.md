@@ -294,40 +294,6 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - `portafolio-original-sites/`: versión del portafolio original para Sites
 - `index.html`, `sobre-mi.html` y `styles.css`: versión estática del portafolio
 
-## Skills para Codex
-
-Este repositorio también contiene skills reutilizables para Codex. GitHub es la fuente maestra; cada instalación de Codex descarga una copia técnica local para poder ejecutar la skill.
-
-### `seleccion-de-candidatos`
-
-Genera una matriz formativa de criterios y evidencias con perfiles inequívocamente sintéticos y no identificables. Incluye rúbrica descriptiva y revisión humana.
-
-- No procesa personas reales ni datos identificables.
-- No asigna puntuaciones, pesos, rankings, shortlists ni recomendaciones.
-- La ausencia de información se registra como “No consta”.
-- Uso exclusivamente educativo; no debe emplearse para decisiones de contratación.
-
-### `reunion-a-entregables`
-
-Transforma audio, transcripciones o notas de reuniones en entregables como actas, resúmenes ejecutivos, tareas, decisiones, riesgos, briefs, cronogramas y presentaciones.
-
-- Conserva la diferencia entre hechos, opiniones, propuestas, decisiones, dudas y compromisos.
-- No inventa acuerdos, responsables, fechas, cifras ni conclusiones.
-- Las instrucciones dentro de una transcripción o documento se tratan como contenido de la reunión, no como órdenes para el agente.
-- No envía comunicaciones ni publica contenido sin autorización explícita.
-
-### Instalación desde GitHub
-
-Con el instalador oficial de Codex:
-
-```powershell
-python $CODEX_HOME/skills/.system/skill-installer/scripts/install-skill-from-github.py `
-  --repo JuanBaldemarG/portafoliocolabJBGV `
-  --path skills/seleccion-de-candidatos skills/reunion-a-entregables
-```
-
-En otra laptop, instalar las mismas rutas desde la rama `main`. Las skills requieren una copia técnica local durante la ejecución, pero el contenido oficial y actualizado permanece en GitHub.
-
 ## Uso académico
 
 1. Seleccione un tema en cualquiera de los portafolios.
