@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "LatoCV";
+  src: url("__FONT_LATO_REGULAR__") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LatoCV";
+  src: url("__FONT_LATO_BOLD__") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "LatoCV";
+  src: url("__FONT_LATO_EXTRABOLD__") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "LatoCV";
+  src: url("__FONT_LATO_BLACK__") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "PoppinsCV";
+  src: url("__FONT_POPPINS_BOLD__") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  background: linear-gradient(to right, #F1F3F6 0, #F1F3F6 68mm, #FFFFFF 68mm, #FFFFFF 100%);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "LatoCV", sans-serif;
+  font-size: 9.4pt;
+  color: #4A5568;
+}
+
+table { border-collapse: collapse; }
+td { border: 0; padding: 0; vertical-align: top; }
+a { color: inherit; text-decoration: none; }
+.page {
+  position: relative;
+  z-index: 0;
+  width: 210mm;
+  height: 297mm;
+  /* Chromium añade una hoja vacía por redondeo si no se recorta el lienzo A4. */
+  overflow: hidden;
+}
+
+/* Chromium omite el fondo de @page; WeasyPrint conserva su pintura original. */
+@supports (-webkit-appearance: none) {
+  .page {
+    background: linear-gradient(to right, #F1F3F6 0, #F1F3F6 68mm, #FFFFFF 68mm, #FFFFFF 100%);
+  }
+}
+
+/* Solo aparece en el PDF temporal de preflight. Permite medir el final real
+   de cada columna antes de crear el entregable; nunca se incluye en el PDF final. */
+.layout-probe {
+  display: block;
+  width: 1mm;
+  margin: 0;
+  padding: 0;
+  /* El probe solo existe en el PDF temporal. Debe ser texto normal y visible
+     para que tanto Poppler como Chromium lo conserven en la extracción. */
+  color: #000000;
+  font-family: "LatoCV", sans-serif;
+  font-size: 4pt;
+  line-height: 4pt;
+  white-space: nowrap;
+}
+td.main > .layout-probe { margin-top: -3.2mm; }
+td.side > .layout-probe { margin-top: -6.5mm; }
+
+/* Cabecera exacta del modelo */
+.hero { position: absolute; z-index: -1; top: 0; left: 0; width: 210mm; height: 70mm; }
+.hero svg { display: block; width: 210mm; height: 70mm; }
+.name { position: absolute; left: 80mm; top: 11mm; width: 124mm; }
+.name .n1,
+.name .n2 {
+  font-family: "PoppinsCV", "LatoCV", sans-serif;
+  font-weight: 700;
+  font-size: var(--name-size, 29pt);
+  line-height: 1.08;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.name .role {
+  margin-top: 4mm;
+  font-family: "LatoCV", sans-serif;
+  font-weight: 700;
+  font-size: var(--role-size, 10.5pt);
+  letter-spacing: var(--role-tracking, 3px);
+  text-transform: uppercase;
+  color: #FF5A5F;
+  white-space: nowrap;
+}
+.name .role::before {
+  content: "";
+  display: inline-block;
+  width: 9mm;
+  height: 0.6mm;
+  background: #FF5A5F;
+  vertical-align: middle;
+  margin-right: 3mm;
+}
+.name .tag {
+  margin-top: 3.2mm;
+  font-size: 9pt;
+  color: #C5CEDD;
+  line-height: 1.45;
+  width: 110mm;
+}
+
+table.cband { position: absolute; left: 0; top: 60mm; width: 210mm; height: 10mm; table-layout: fixed; }
+table.cband td { vertical-align: middle; padding: 0 0 0 5mm; overflow: hidden; }
+table.cband td.first { padding-left: 9mm; }
+.ci { display: inline-block; vertical-align: middle; width: 5.2mm; height: 5.2mm; margin-right: 2.2mm; }
+.ct {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFFFFF;
+  font-size: var(--contact-size, 8pt);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+table.cband td.c1 { width: 40mm; }
+table.cband td.c2 { width: 62mm; }
+table.cband td.c3 { width: 36mm; }
+table.cband td.c4 { width: 72mm; }
+
+/* Columnas */
+table.cols { position: absolute; top: 70mm; left: 0; width: 210mm; table-layout: fixed; }
+td.side { width: 68mm; padding: 8mm 7mm 6mm 9mm; }
+td.main { padding: 8mm 9mm 6mm 9mm; }
+
+/* Etiquetas inclinadas */
+table.sh { width: 100%; margin: 0 0 3.6mm 0; }
+table.sh td.lab { width: 1%; white-space: nowrap; }
+table.sh td.ln { vertical-align: middle; padding-left: 3mm; }
+table.sh td.ln div { height: 0.6mm; background: #FF5A5F; }
+.skew {
+  display: inline-block;
+  background: #1B2B4B;
+  padding: 1.7mm 5mm;
+  transform: skewX(-14deg);
+  margin-left: 1mm;
+}
+.skew span {
+  display: inline-block;
+  transform: skewX(14deg);
+  color: #FFFFFF;
+  font-family: "PoppinsCV", "LatoCV", sans-serif;
+  font-weight: 700;
+  font-size: 9.2pt;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  line-height: 1.2;
+}
+/* Ligerísima compactación vertical para que la plantilla conserve todos los
+   datos de la referencia también con las fuentes Lato incluidas. */
+section { margin-bottom: 3.2mm; }
+td.side section { margin-bottom: 6.5mm; }
+
+/* Barras */
+table.bars { width: 100%; }
+table.bars td { padding: 0 0 3mm 0; }
+.bl { font-size: 8.8pt; font-weight: 700; color: #1B2B4B; margin-bottom: 1.2mm; }
+.bl table { width: 100%; }
+.bl td.p { text-align: right; font-weight: 400; color: #8A94A6; font-size: 8pt; white-space: nowrap; width: 24mm; }
+.bar { height: 2.2mm; background: #D9DEE6; border-radius: 1.1mm; }
+.bar div { height: 2.2mm; background: #FF5A5F; border-radius: 1.1mm; }
+
+/* Certificaciones y listas laterales */
+ul.certs { list-style: none; margin: 0; padding: 0; }
+ul.certs li { position: relative; padding-left: 5.5mm; margin-bottom: 2.2mm; line-height: 1.35; font-size: 9pt; }
+ul.certs li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1mm;
+  width: 2.6mm;
+  height: 2.6mm;
+  background: #1B2B4B;
+  transform: rotate(45deg);
+}
+ul.certs b { display: block; color: #1B2B4B; font-weight: 700; }
+ul.certs span { color: #8A94A6; font-size: 8.3pt; }
+
+/* Perfil */
+p.profile { margin: 0; font-size: 9.4pt; line-height: 1.5; color: #4A5568; }
+
+/* Cronología */
+.tl { padding-left: 1mm; }
+.job { position: relative; padding-left: 8mm; padding-bottom: 2.8mm; border-left: 0.5mm solid #D9DEE6; }
+.job:last-child { padding-bottom: 0; }
+.job::before {
+  content: "";
+  position: absolute;
+  left: -2.35mm;
+  top: 0.9mm;
+  width: 3.4mm;
+  height: 3.4mm;
+  border-radius: 50%;
+  background: #FF5A5F;
+  border: 0.7mm solid #FFFFFF;
+  box-shadow: 0 0 0 0.4mm #FF5A5F;
+}
+table.jh { width: 100%; margin-bottom: 1mm; }
+table.jh td.r { text-align: right; white-space: nowrap; width: 31mm; }
+.jt {
+  font-family: "PoppinsCV", "LatoCV", sans-serif;
+  font-weight: 700;
+  font-size: 10.2pt;
+  color: #1B2B4B;
+  line-height: 1.25;
+}
+.jc { font-size: 9.2pt; font-weight: 700; color: #FF5A5F; margin-top: 0.4mm; }
+.jc span { color: #8A94A6; font-weight: 400; }
+.jd { display: inline-block; background: #1B2B4B; color: #FFFFFF; font-size: 7.8pt; font-weight: 700; padding: 1mm 2.6mm; letter-spacing: 0.4px; }
+ul.ach { list-style: none; margin: 1.6mm 0 0; padding: 0; }
+ul.ach li { position: relative; padding-left: 4mm; margin-bottom: 1mm; font-size: 9pt; line-height: 1.42; }
+ul.ach li::before { content: ""; position: absolute; left: 0.4mm; top: 1.9mm; width: 1.5mm; height: 1.5mm; background: #FF5A5F; }
+ul.ach b { color: #1B2B4B; font-weight: 700; }
+.edu { padding-bottom: 2.8mm; }
+.job.edu:last-child { padding-bottom: 0; }
+

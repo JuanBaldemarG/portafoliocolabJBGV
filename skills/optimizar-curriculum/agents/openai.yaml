@@ -1,0 +1,5 @@
+interface:
+  display_name: "Optimizador de currículum"
+  short_description: "Convierte tu CV en un PDF más claro y competitivo"
+  default_prompt: "Usa $optimizar-curriculum para revisar mi CV y devolverme una versión mejorada en PDF."
+
