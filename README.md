@@ -13,6 +13,9 @@ Los notebooks están preparados principalmente para Google Colab e incluyen ejer
 
 ## Rutas de aprendizaje
 
+En la carpeta `skills/` también puedes consultar varias skills reutilizables que complementan las rutas de aprendizaje y apoyan distintos flujos de trabajo.
+
+
 ### Datos y analítica
 Python, preparación y limpieza de datos, análisis exploratorio, visualización, segmentación y comunicación de resultados.
 
