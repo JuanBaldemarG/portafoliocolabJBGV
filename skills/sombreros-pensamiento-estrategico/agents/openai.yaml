@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sombreros de Pensamiento Estratégico"
+  short_description: "Analiza decisiones con seis perspectivas separadas"
+  default_prompt: "Usa $sombreros-pensamiento-estrategico para analizar este problema de forma secuencial con los seis sombreros para pensar."
+policy:
+  allow_implicit_invocation: true
