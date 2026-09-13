@@ -99,7 +99,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Prueba manual de Grubbs](notebooks/anomalias-spc/Grubbs_manual.ipynb)
 - [Isolation Forest — anomalías en NYC Taxi](notebooks/anomalias-spc/IsolationForest_NYC_Taxi_Anomalies.ipynb)
 
-### Autos
+### Regresión
 
 - [Autos con Scikit-Learn](notebooks/autos/Autos_sklearn_colab.ipynb)
 - [Regularización Lasso y Ridge](notebooks/supervisados/regularizacion_lasso_ridge_principiantes_colab.ipynb)
