@@ -77,7 +77,6 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [Tipos de Machine Learning — notebook compatible con Colab](notebooks/limpieza-datos/tipos_ml.ipynb)
 - [Inputs y Targets](notebooks/limpieza-datos/inputs_y_targets.ipynb)
-- [Dataset — Dirty Cafe Sales (actualizado)](data/limpieza-datos/dirty_cafe_sales.csv)
 
 ### A/B testing
 
@@ -175,13 +174,9 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 1 — Pronóstico con promedio móvil](notebooks/series-tiempo/notebook_pronostico_promedio_movil_colab.ipynb)
 - [Módulo 2 — Pronóstico con Holt-Winters](notebooks/series-tiempo/notebook_pronostico_statsmodels_colab.ipynb)
 - [Módulo 3 — Pronóstico de pasajeros con Prophet](notebooks/series-tiempo/notebook_pronostico_prophet_passengers_colab.ipynb)
-- [Dataset — Passengers](data/series-tiempo/passengers.csv)
 - [Módulo 4 — Prophet con festivos y cambios estructurales](notebooks/series-tiempo/notebook_prophet_festivos_cambios_estructurales_colab.ipynb)
-- [Dataset — Visitas de Peyton Manning](data/series-tiempo/peyton_manning_visitas.csv)
 - [Módulo 5 — Prophet con regresores externos](notebooks/series-tiempo/notebook_prophet_regresores_externos_colab.ipynb)
-- [Dataset — Demanda con regresores externos](data/series-tiempo/prophet_regresores_demanda.csv)
 - [Módulo 6 — Suavización simple de Holt con macrodata](notebooks/series-tiempo/notebook_suavizacion_simple_holt_macrodata_colab.ipynb)
-- [Dataset — Macrodata](data/series-tiempo/macrodata.csv)
 
 ### Técnicas de Simulación
 
@@ -209,7 +204,6 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 - [Módulo 3 — Detección de anomalías de calidad con Elliptic Envelope](notebooks/anomaly-detection/anomaly_detection_calidad_elliptic_envelope.ipynb)
 - [Módulo 4 — Detección de anomalías administrativas con DBSCAN](notebooks/anomaly-detection/anomaly_detection_administracion_dbscan.ipynb)
 - [Módulo 5 — Días extraños con Isolation Forest y Gradio](notebooks/anomalias-spc/analitica_avanzada_dias_extraños_gradio_subir_dataset.ipynb)
-- [Dataset — day.csv](data/anomalias-spc/day.csv)
 
 ### Nations
 
