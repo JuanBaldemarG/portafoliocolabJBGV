@@ -31,7 +31,6 @@ Promedio móvil, Holt-Winters, Prophet, festivos y cambios estructurales, y regr
 ### Técnicas de Simulación
 Simulación Monte Carlo, incertidumbre, riesgo presupuestal y productivo, eventos discretos con SimPy y gemelos digitales.
 
-- [Módulo 1 — Simulación Monte Carlo para riesgo de presupuesto](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_presupuesto.ipynb)
 
 ### Minería de Texto
 Clasificación de texto, procesamiento de lenguaje natural, representación de documentos y evaluación de modelos.
@@ -183,6 +182,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 ### Técnicas de Simulación
 
+- [Módulo 1 — Simulación Monte Carlo para riesgo de presupuesto](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_presupuesto.ipynb)
 - [Módulo 2 — Simulación Monte Carlo para riesgo de producción](notebooks/tecnicas-simulacion/simulacion_montecarlo_riesgo_produccion.ipynb)
 - [Módulo 3 — Ejercicios Monte Carlo para bombas de pistón](notebooks/tecnicas-simulacion/montecarlo_ejercicios_bombas_piston.ipynb)
 - [Módulo 4 — Simulación de eventos discretos de servicio con SimPy](notebooks/tecnicas-simulacion/simulacion_eventos_discretos_servicio_simpy.ipynb)
