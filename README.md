@@ -102,6 +102,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### Autos
 
 - [Autos con Scikit-Learn](notebooks/autos/Autos_sklearn_colab.ipynb)
+- [Regularización Lasso y Ridge](notebooks/supervisados/regularizacion_lasso_ridge_principiantes_colab.ipynb)
 - [Regresión Poisson de manufactura](notebooks/supervisados/regresion_poisson_manufactura_principiantes_colab.ipynb)
 - [Análisis discriminante de manufactura](notebooks/supervisados/analisis_discriminante_manufactura_principiantes_colab.ipynb)
 
