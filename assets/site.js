@@ -273,6 +273,20 @@ const portfolioSections = [
         ]
       },
       {
+        title: "Práctica de ChatGPT",
+        level: "Ejercicio integrador",
+        description: "Caso automotriz sintético de NovaDrive para practicar análisis con ChatGPT gratuito, lectura de datos, decisiones y validación humana.",
+        resources: [
+          { label: "Instrucciones para alumnos", path: "docs/practica-chatgpt/NovaDrive_Instrucciones_Alumnos.docx" },
+          { label: "Demanda y pedidos abiertos", path: "docs/practica-chatgpt/01_NovaDrive_Demanda_Pedidos.xlsx" },
+          { label: "Capacidad de producción", path: "docs/practica-chatgpt/02_NovaDrive_Capacidad_Produccion.xlsx" },
+          { label: "Inventario y cobertura", path: "docs/practica-chatgpt/03_NovaDrive_Inventario_Cobertura.xlsx" },
+          { label: "Proveedores y riesgo", path: "docs/practica-chatgpt/04_NovaDrive_Proveedores_Riesgo.xlsx" },
+          { label: "Impacto financiero y decisión", path: "docs/practica-chatgpt/05_NovaDrive_Impacto_Financiero_Decision.xlsx" },
+          { label: "Presentación de ejercicios", path: "docs/practica-chatgpt/NovaDrive_Ejercicios_ChatGPT_Gratis_Final.pptx", visibleOnSite: true }
+        ]
+      },
+      {
         title: "Agentes de IA",
         level: "Agentes",
         description: "Ejemplos de agentes y materiales complementarios para explicar casos de uso y adopción.",
@@ -537,7 +551,7 @@ function isPowerPointResource(item) {
 }
 
 function filterVisibleResources(items = []) {
-  return items.filter((item) => !isPowerPointResource(item));
+  return items.filter((item) => !isPowerPointResource(item) || item.visibleOnSite === true);
 }
 
 function renderNotebookGroup(config, notebooks) {
