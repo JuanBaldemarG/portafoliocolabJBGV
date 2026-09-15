@@ -64,9 +64,9 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 ### IA neurosimbólica
 
 - [Módulo 1 — Razonamiento simbólico](IA%20Neurosimbolica/notebook_razonamiento_simbolico_colab.ipynb)
-- [Módulo 2 — Lógica difusa](IA%20Neurosimbolica/notebook_logica_difusa_servicio_colab.ipynb)
-- [IA neurosimbólica — control de calidad en manufactura de cable](IA%20Neurosimbolica/neurosimbolica_manufactura_cable.ipynb)
-- [IA neurosimbólica — gestión de talento en Recursos Humanos](IA%20Neurosimbolica/neurosimbolica_rh.ipynb)
+- [Módulo 3 — Lógica difusa](IA%20Neurosimbolica/notebook_logica_difusa_servicio_colab.ipynb)
+- [Módulo 2 — IA neurosimbólica aplicada: control de calidad en manufactura de cable](IA%20Neurosimbolica/neurosimbolica_manufactura_cable.ipynb)
+- [Módulo 2 — IA neurosimbólica aplicada: gestión de talento en Recursos Humanos](IA%20Neurosimbolica/neurosimbolica_rh.ipynb)
 
 ### Limpieza de Datos para ML-DL-IA
 
