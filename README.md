@@ -116,11 +116,12 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [Regresión múltiple inferencial — Salsberry Realty](notebooks/costo-calefaccion-energia/Regresion_Multiple_Salsberry_Statsmodels.ipynb)
 
-### Análisis exploratorio y RFM
+### Analítica exploratoria y aprendizaje no supervisado
 
 - [Análisis exploratorio completo](notebooks/eda/Analisis_exploratorio_completo.ipynb)
 - [Exploratory Data Analysis](notebooks/eda/Exploratory_data_Analysis.ipynb)
 - [Segmentación RFM para Online Retail](notebooks/eda/RFM_Online_Retail_Explicado.ipynb)
+- [Módulo final — Pruebas de Vida Acelerada: foco de potencia inversa](notebooks/eda/prueba_vida_acelerada_foco_potencia_inversa_gradio.ipynb)
 
 ### Employee churn
 
