@@ -273,6 +273,7 @@ Google Colab, Jupyter, Databricks, Orange, Minitab, Gradio, Streamlit, Scikit-Le
 
 - [Inspección de manufactura con OpenCV](notebooks/vision-computadora/ejemplo_opencv_inspeccion_manufactura_colab.ipynb)
 - [Detección de EPP con YOLOv8](notebooks/vision-computadora/PPE_Detection_YOLOv8_Solo_Inferencia_Contexto_Resultados.ipynb)
+- [Imágenes de referencia de EPP: planta y almacén](data/vision-computadora/README.md)
 - [Emociones con cámara](notebooks/vision-computadora/notebook_emociones_camara_colab.ipynb)
 - [Estimación de edad con cámara](notebooks/vision-computadora/notebook_estimacion_edad_camara_colab.ipynb)
 - [Ejercicio de piezas faltantes con OpenCV](notebooks/vision-computadora/ejercicio_opencv_piezas_faltantes_colab.ipynb)
