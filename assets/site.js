@@ -155,6 +155,21 @@ const portfolioSections = [
         notebooks: [
           { label: "YOLO26 para principiantes", path: "notebooks/yolo26/deteccion_objetos_yolo26_principiantes_udem.ipynb" }
         ]
+      },
+      {
+        title: "Detección de EPP en entornos industriales",
+        level: "Visión por computadora",
+        description: "Galería de dos escenas de seguridad industrial para reconocer casco, lentes, chaleco de alta visibilidad, guantes y calzado de seguridad.",
+        notebooks: [
+          { label: "Detección de EPP con YOLOv8", path: "notebooks/vision-computadora/PPE_Detection_YOLOv8_Solo_Inferencia_Contexto_Resultados.ipynb" }
+        ],
+        resources: [
+          { label: "Descripción y uso de las imágenes", path: "data/vision-computadora/README.md" }
+        ],
+        images: [
+          { path: "data/vision-computadora/persona_EPP_planta.jpg", alt: "Trabajador con EPP operando maquinaria en una planta industrial", caption: "Operación en planta" },
+          { path: "data/vision-computadora/persona_EPP_almacen.jpg", alt: "Trabajador con EPP moviendo una tarima en un almacén", caption: "Manejo de materiales en almacén" }
+        ]
       }
     ]
   },
@@ -554,6 +569,49 @@ function filterVisibleResources(items = []) {
   return items.filter((item) => !isPowerPointResource(item) || item.visibleOnSite === true);
 }
 
+function buildGithubRawUrl(config, path) {
+  if (!config.githubUser || !config.githubRepo) {
+    return path;
+  }
+
+  return `https://raw.githubusercontent.com/${config.githubUser}/${config.githubRepo}/main/${path}`;
+}
+
+function renderImageGroup(config, images = []) {
+  if (images.length === 0) {
+    return null;
+  }
+
+  const gallery = document.createElement("div");
+  gallery.className = "image-gallery";
+  gallery.setAttribute("aria-label", "Imágenes de referencia de EPP");
+
+  images.forEach((item) => {
+    const figure = document.createElement("figure");
+    figure.className = "portfolio-image";
+
+    const imageLink = document.createElement("a");
+    imageLink.href = buildGithubUrl(config, item.path);
+    imageLink.target = "_blank";
+    imageLink.rel = "noreferrer";
+    imageLink.setAttribute("aria-label", `Abrir imagen: ${item.caption}`);
+
+    const image = document.createElement("img");
+    image.src = buildGithubRawUrl(config, item.path);
+    image.alt = item.alt;
+    image.loading = "lazy";
+    image.decoding = "async";
+    imageLink.appendChild(image);
+
+    const caption = document.createElement("figcaption");
+    caption.textContent = item.caption;
+    figure.append(imageLink, caption);
+    gallery.appendChild(figure);
+  });
+
+  return gallery;
+}
+
 function renderNotebookGroup(config, notebooks) {
   if (!notebooks || notebooks.length === 0) {
     return null;
@@ -660,7 +718,7 @@ function renderSection(config, section, counters) {
     const visibleResources = filterVisibleResources(module.resources || []);
     counters.moduleCount += 1;
     counters.notebookCount += module.notebooks ? module.notebooks.length : 0;
-    counters.resourceCount += visibleResources.length + (module.datasets ? module.datasets.length : 0);
+    counters.resourceCount += visibleResources.length + (module.datasets ? module.datasets.length : 0) + (module.images ? module.images.length : 0);
 
     const card = document.createElement("article");
     card.className = "module-card";
@@ -683,6 +741,11 @@ function renderSection(config, section, counters) {
     tag.textContent = module.level;
     head.append(headText, tag);
     card.appendChild(head);
+
+    const imageGroup = renderImageGroup(config, module.images || []);
+    if (imageGroup) {
+      card.appendChild(imageGroup);
+    }
 
     const notebookGroup = renderNotebookGroup(config, module.notebooks || []);
     const resourceGroup = renderResourceGroup("Material de apoyo", visibleResources);
