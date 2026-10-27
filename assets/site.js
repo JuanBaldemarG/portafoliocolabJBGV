@@ -993,6 +993,10 @@ const portfolioSections = [
           {
             "label": "Repositorio de GitHub con más de 20 skills",
             "path": "https://github.com/JuanBaldemarG/portafoliocolabJBGV/tree/main/skills"
+          },
+          {
+            "label": "Descargar todas las skills (ZIP)",
+            "path": "descargas/PortEC_skills.zip"
           }
         ]
       }
