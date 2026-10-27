@@ -999,6 +999,17 @@ const portfolioSections = [
             "path": "descargas/PortEC_skills.zip"
           }
         ]
+      },
+      {
+        "title": "Codex",
+        "level": "Herramienta de IA",
+        "description": "Guía práctica para usar Codex en tareas diarias: preparar documentos, analizar información y dar seguimiento, incluso sin programar.",
+        "resources": [
+          {
+            "label": "Codex para todos — elementos principales (PDF)",
+            "path": "docs/codex/Codex_Para_Todos_Con_Elementos_Principales.pdf"
+          }
+        ]
       }
     ]
   },
