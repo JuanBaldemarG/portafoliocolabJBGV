@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17253e">
+  <meta name="description" content="Una demostración visual automática explica cómo un agente de IA persigue un objetivo, usa herramientas y cambia de plan según los resultados.">
+  <title>IA agéntica en acción · Demostración visual</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;color:#17253e;background:#f4f6fb;color-scheme:light;--ink:#17253e;--muted:#596780;--blue:#375ce8;--line:#dce3ee}
+    *{box-sizing:border-box}body{margin:0}h1,h2,h3,p{margin-top:0}p{line-height:1.6}a{color:#2b50cd;text-underline-offset:3px}a:focus-visible{outline:3px solid #7ca8ff;outline-offset:4px}[hidden]{display:none!important}.shell{max-width:1250px;padding:26px 30px 20px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:23px}.top h1{font-size:clamp(1.5rem,3.5vw,2rem);letter-spacing:-.6px;margin:0 0 8px;line-height:1.2}.top p{color:var(--muted);margin:0;font-size:.9375rem}.back{font-size:.875rem;white-space:nowrap}.goal{display:flex;justify-content:space-between;align-items:center;gap:22px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px 21px;margin-bottom:17px}.eyebrow{font-size:.75rem;letter-spacing:.075em;text-transform:uppercase;color:var(--muted);font-weight:600}.goal strong{display:block;margin-top:5px;font-size:1.0625rem;line-height:1.4}.result{text-align:right;flex-shrink:0}.result .eyebrow{font-size:.75rem}.result-value{font-size:1.65rem;letter-spacing:-.7px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.3;color:#ae5937}.result-value.success{color:#126b55}.stage-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(315px,1fr);gap:18px;align-items:stretch}.diagram{background:#17253e;border:1px solid #263b5b;color:#fff;border-radius:16px;overflow:hidden;min-width:0;display:flex;flex-direction:column}.diagram-head{padding:17px 20px 0;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.8125rem;color:#bfcee8}.cycle{font-size:.75rem;padding:5px 8px;border:1px solid #486184;border-radius:5px;color:#e0e9fb}.flow{height:328px;position:relative;margin:4px 10px 0;flex-shrink:0}.wires{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.wire{fill:none;stroke:#4d6588;stroke-width:1.6;vector-effect:non-scaling-stroke}.wire.active{stroke:#8ab9ff;stroke-width:2.3;stroke-dasharray:7 7;animation:flow 1.3s linear infinite}.spoke{fill:none;stroke:#425777;stroke-width:1;stroke-dasharray:3 5;vector-effect:non-scaling-stroke}.node{position:absolute;width:39%;min-height:74px;transform:translate(-50%,-50%);border:1px solid #425777;background:#21334f;border-radius:11px;padding:12px;display:flex;align-items:center;gap:9px;transition:background .45s,border-color .45s,box-shadow .45s}.node.observe{left:25%;top:19%}.node.decide{left:75%;top:19%}.node.act{left:75%;top:79%}.node.verify{left:25%;top:79%}.node.active{background:#2c4a77;border-color:#91bbff;box-shadow:0 0 0 3px #90b6ff19}.node-title{font-size:.9375rem;font-weight:600}.node-sub{font-size:.75rem;color:#c1d0e6;line-height:1.35;margin-top:4px}.icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.node .icon{color:#b5c9e9}.node.active .icon{color:#a8d5ff}.agent{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);border:1px solid #7993c8;border-radius:50%;width:119px;height:119px;background:#2b3c62;box-shadow:0 0 0 11px #6d8dc212,0 0 0 22px #6d8dc20a;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px}.agent .icon{width:27px;height:27px;color:#c0d1ff}.agent strong{font-size:.875rem;line-height:1.35;max-width:85px}.agent small{font-size:.75rem;color:#c8d5ec}.feedback{padding:15px 20px;margin-top:auto;border-top:1px solid #344967;font-size:.8125rem;line-height:1.5;color:#c4d4ed;min-height:67px;display:flex;align-items:center;gap:9px}.feedback .icon{width:18px;height:18px;color:#9fc6ff}.narration{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;min-width:0}.scene-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:17px}.phase{font-size:.75rem;font-weight:600;color:#3150b4;background:#edf2ff;border-radius:5px;padding:5px 8px}.scene-number{font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums}.narration h2{font-size:clamp(1.3rem,2.2vw,1.55rem);line-height:1.25;letter-spacing:-.4px;margin-bottom:13px}.narration .explanation{font-size:1rem;color:#40516c;margin-bottom:18px}.tool-result{background:#f4f7fc;border-left:3px solid #a1b7eb;padding:11px 13px;margin-bottom:20px;line-height:1.5}.tool-result dt{color:var(--muted);font-size:.75rem;font-weight:600;margin-bottom:3px}.tool-result dd{margin:0;font-size:.875rem;color:#253e67;overflow-wrap:anywhere}.tool-result dd+dt{margin-top:9px}.lesson{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}.lesson-label{font-size:.75rem;font-weight:600;color:#355082;margin-bottom:5px}.lesson p{font-size:.9375rem;line-height:1.55;color:#2b4165;margin:0}.playback{display:flex;align-items:center;gap:15px;margin:17px 0 12px;font-size:.75rem;color:var(--muted)}.progress-track{height:4px;border-radius:3px;flex:1;background:#dfe5f0;overflow:hidden}.progress-fill{height:100%;width:0;background:#5278df;transform-origin:left}.playback-label{font-size:.75rem;flex-shrink:0}.note{font-size:.75rem;color:var(--muted);line-height:1.6;margin:0}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.static-story{margin-top:22px;border-top:1px solid var(--line);padding-top:17px}.static-story h2{font-size:1.1rem}.static-story ol{padding-left:22px}.static-story li{padding:8px 0;font-size:1rem;line-height:1.6}.static-story strong{display:block}body.embed{background:transparent}body.embed .shell{padding:0}body.embed .top{display:none}body.paused .wire{animation-play-state:paused}
+    .launch{min-height:220px;padding:30px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;border:1px solid var(--line);border-radius:16px;background:#fff}.launch p{font-size:.9375rem;color:var(--muted);margin:0;max-width:470px}.start-button{font:inherit;font-weight:600;color:#fff;background:#375ce8;border:1px solid #375ce8;border-radius:10px;min-height:48px;padding:13px 23px;display:inline-flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}.start-button:hover{background:#2948c4}.start-button:focus-visible{outline:3px solid #7ca8ff;outline-offset:4px}.start-button svg{width:17px;height:17px;fill:currentColor}.start-button:disabled{cursor:default}.diagram.agentic-focus{border-color:#dfb360}.agentic-focus .node.decide.active{background:#4d412e;border-color:#f1c780;box-shadow:0 0 0 3px #efc77c20}.agentic-focus .node.decide.active .icon{color:#f5d49c}.agentic-focus .feedback{background:#384366;color:#fff;font-weight:600;border-top-color:#657ba5}.agentic-focus .agent{border-color:#f1c780}.agentic-focus .wire.active{stroke:#f1c780}
+    @keyframes flow{to{stroke-dashoffset:-28}}
+    @media(max-width:900px){.shell{padding:22px}.stage-layout{grid-template-columns:minmax(0,1fr) minmax(300px,1fr);gap:13px}.node{width:43%;padding:12px 9px;gap:6px}.node .icon{display:none}.node-title{font-size:.875rem}.narration{padding:20px}.flow{margin:4px 5px 0}.agent{width:111px;height:111px}.goal{padding:16px 18px}.feedback{padding:13px 16px}}
+    @media(max-width:720px){.stage-layout{grid-template-columns:1fr}.narration{order:-1}.flow{height:300px}.node{width:36%;padding:13px;gap:10px;min-height:72px}.node .icon{display:block}.node-title{font-size:.9375rem}.agent{width:116px;height:116px}.diagram-head{padding-top:15px}.feedback{min-height:60px}.narration h2{font-size:1.4rem}.tool-result{margin-bottom:15px}.explanation{margin-bottom:15px!important}.scene-head{margin-bottom:13px}.top{align-items:flex-start;flex-direction:column;gap:12px}.goal strong{font-size:.9375rem;max-width:340px}.goal{align-items:flex-start}.result-value{font-size:1.5rem}.lesson{margin-top:0}.playback{flex-wrap:wrap;gap:8px}.progress-track{flex-basis:100%;order:2}.result .eyebrow{max-width:108px;text-align:right;line-height:1.4}}
+    @media(max-width:430px){.shell{padding:16px}.goal{padding:13px 14px;gap:12px}.goal strong{font-size:.9375rem}.goal .eyebrow{font-size:.75rem}.result-value{font-size:1.4rem}.narration{padding:18px}.narration h2{font-size:1.25rem}.narration .explanation,.lesson p{font-size:.9375rem}.node{width:43%;padding:11px;min-height:72px}.node .icon{display:none}.node-title{font-size:.875rem}.node-sub{font-size:.75rem}.agent{width:108px;height:108px}.flow{height:295px}.diagram-head{padding:14px 15px 0}.feedback{font-size:.8125rem}.goal strong{max-width:200px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media print{.top .back,.playback{display:none}.static-story{display:block!important}.stage-layout{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs>
+  <symbol id="i-agent" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 1v4m6-4v4M9 19v4m6-4v4M1 9h4m-4 6h4m14-6h4m-4 6h4m-10-3 2 2 4-4"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-plan" viewBox="0 0 24 24"><path d="M5 3v15a3 3 0 0 0 3 3h5M5 8h8a4 4 0 0 0 4-4V2m-4 3 4-3 4 3M10 18l3 3-3 3"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="m14 6 4 4 3-3a7 7 0 0 1-9 9l-6 6-4-4 6-6a7 7 0 0 1 9-9Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m7 12 3 3 7-7"/><circle cx="12" cy="12" r="9"/></symbol>
+  <symbol id="i-loop" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 1 8M3 3v7h7"/></symbol>
+</defs></svg>
+<main class="shell">
+  <header class="top"><div><h1>Cómo actúa un agente de IA</h1><p>Una historia de manufactura para entender el concepto, de principio a fin.</p></div><a class="back" href="../../#simulacion-ia-agentica">Volver al portafolio</a></header>
+  <section id="start-screen" class="launch" aria-label="Iniciar la demostración">
+    <button id="start-button" class="start-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4 20 12 7 20Z"/></svg>Iniciar simulación</button>
+    <p>Después de iniciar, la explicación avanza automáticamente.</p>
+  </section>
+  <div id="demonstration" hidden>
+  <section class="goal" aria-label="Objetivo y resultado observado"><div><div class="eyebrow">Objetivo del agente</div><strong>Reducir los defectos de 8 % a 2 % o menos</strong></div><div class="result"><div class="eyebrow">Última muestra</div><div id="result-value" class="result-value">8,0 %</div></div></section>
+  <div class="stage-layout">
+    <section id="diagram" class="diagram" aria-label="Ciclo del agente: observar, decidir, actuar y verificar; el agente elige el siguiente paso según los resultados.">
+      <div class="diagram-head"><span>El ciclo del agente</span><span id="cycle" class="cycle">Primer plan</span></div>
+      <div class="flow">
+        <svg class="wires" viewBox="0 0 1000 328" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6Z" fill="#88a4cd"/></marker></defs><path id="edge-decide" class="wire" d="M448 62H543" marker-end="url(#arrow)"/><path id="edge-act" class="wire" d="M750 105V214" marker-end="url(#arrow)"/><path id="edge-verify" class="wire" d="M550 259H455" marker-end="url(#arrow)"/><path id="edge-observe" class="wire" d="M250 219V111" marker-end="url(#arrow)"/><path class="spoke" d="M365 99 446 139M635 99 554 139M365 222 446 183M635 222 554 183"/></svg>
+        <div id="node-observe" class="node observe"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><div><div class="node-title">1. Observar</div><div class="node-sub">Recibir evidencia</div></div></div>
+        <div id="node-decide" class="node decide active"><svg class="icon" aria-hidden="true"><use href="#i-plan"/></svg><div><div class="node-title">2. Decidir</div><div class="node-sub">Elegir acción y herramienta</div></div></div>
+        <div class="agent"><svg class="icon" aria-hidden="true"><use href="#i-agent"/></svg><strong>Agente de calidad</strong><small id="agent-state">Decidiendo</small></div>
+        <div id="node-act" class="node act"><svg class="icon" aria-hidden="true"><use href="#i-tool"/></svg><div><div class="node-title">3. Actuar</div><div class="node-sub">Usar una herramienta</div></div></div>
+        <div id="node-verify" class="node verify"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><div><div class="node-title">4. Verificar</div><div class="node-sub">Comparar con la meta</div></div></div>
+      </div>
+      <div class="feedback"><svg class="icon" aria-hidden="true"><use href="#i-loop"/></svg><span id="feedback">El objetivo permanece. Las decisiones pueden cambiar.</span></div>
+    </section>
+    <section class="narration" aria-labelledby="scene-title"><div class="scene-head"><span id="phase" class="phase">Objetivo</span><span id="scene-number" class="scene-number">Escena 01 de 11</span></div><h2 id="scene-title">Todo empieza con un objetivo.</h2><p id="explanation" class="explanation">Una persona pide reducir los defectos. El agente recibe la meta y elige qué información necesita para empezar.</p><dl id="tool-result" class="tool-result"><dt id="tool-label">Punto de partida</dt><dd id="tool-value">16 piezas defectuosas de 200 inspeccionadas.</dd></dl><div class="lesson"><div class="lesson-label">La idea que explica esta escena</div><p id="lesson">Se le indica qué lograr; el agente organiza cómo intentarlo.</p></div></section>
+  </div>
+  <div class="playback"><span id="playback-label" class="playback-label">La demostración avanza sola.</span><div class="progress-track" role="progressbar" id="progress" aria-label="Avance de la demostración" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0"><div id="progress-fill" class="progress-fill"></div></div><span id="duration">Aproximadamente 3 minutos</span><button id="replay-button" class="start-button" type="button" hidden>Repetir simulación</button></div>
+  <p class="note">Caso ficticio. La secuencia está programada para explicar el concepto; no ejecuta un modelo de IA ni modifica una línea real.</p>
+  <section id="static-story" class="static-story" hidden><h2>La historia completa, sin animación</h2><ol id="story-transcript"></ol></section>
+  </div>
+  <noscript><p>Un agente recibe una meta, consulta herramientas y actúa dentro de sus permisos. En este caso, el primer ajuste deja los defectos en 5,5 %, por encima de la meta de 2 %. El agente usa ese resultado para cambiar el plan, coordina un mantenimiento autorizado y verifica una nueva muestra con 1 % de defectos. La decisión del siguiente paso depende de lo observado.</p></noscript>
+  <p id="announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+</main>
+<script>
+(() => {
+  'use strict';
+  // BEGIN_AUTOMATIC_STORY
+  const scenes = [
+    {id:'goal',phase:'decide',label:'Objetivo',duration:12000,plan:1,defects:16,title:'Todo empieza con un objetivo.',explanation:'Una persona pide reducir los defectos. El agente recibe la meta y elige qué información necesita para empezar.',toolLabel:'Punto de partida',toolValue:'16 piezas defectuosas de 200 inspeccionadas.',lesson:'Se le indica qué lograr; el agente organiza cómo intentarlo.',feedback:'El objetivo permanece. Las decisiones pueden cambiar.'},
+    {id:'observe',phase:'observe',label:'Observar',duration:14000,plan:1,defects:16,title:'Consulta lo que ocurre en la línea.',explanation:'El agente usa los sensores y encuentra una temperatura alta. Esa señal orienta la investigación, pero todavía no demuestra la causa.',toolLabel:'Herramienta: sensores del proceso',toolValue:'Lectura: 195 °C. Referencia del caso: 175–185 °C.',lesson:'Las herramientas le permiten obtener información de su entorno.',feedback:'Una observación aporta evidencia para decidir.'},
+    {id:'plan',phase:'decide',label:'Decidir',duration:15000,plan:1,defects:16,title:'Elige un primer plan.',explanation:'Consulta un caso similar en el historial y propone reducir la velocidad. Después medirá otra muestra para saber si funcionó.',toolLabel:'Herramienta: historial de mantenimiento',toolValue:'Ensayo propuesto: pasar de 100 a 85 unidades/min.',lesson:'El plan combina una acción con una forma de comprobar su resultado.',feedback:'Plan 1: ajustar la velocidad y volver a medir.'},
+    {id:'act',phase:'act',label:'Actuar',duration:13000,plan:1,defects:16,title:'Actúa mediante una herramienta.',explanation:'El ajuste está dentro de los permisos del caso. El agente solicita el cambio y la herramienta de control confirma su ejecución.',toolLabel:'Herramienta: control de línea',toolValue:'Velocidad ajustada a 85 unidades/min. Calidad aún sin verificar.',lesson:'La herramienta ejecuta la acción; todavía falta comprobar si resuelve el problema.',feedback:'El cambio está autorizado en este caso ficticio.'},
+    {id:'check',phase:'verify',label:'Verificar',duration:15000,plan:1,defects:11,title:'El primer intento no es suficiente.',explanation:'La nueva muestra tiene 11 defectos de 200 piezas: 5,5 %. Mejoró, pero sigue por encima del objetivo de 2 %.',toolLabel:'Herramienta: inspección de calidad',toolValue:'Resultado observado: 5,5 %. Meta pendiente.',lesson:'El agente compara lo que ocurrió con lo que debía lograr.',feedback:'El resultado vuelve al agente como nueva evidencia.'},
+    {id:'replan',phase:'decide',label:'El momento agéntico',duration:22000,plan:2,defects:11,title:'El agente decide cambiar de plan.',explanation:'El 5,5 % no cumple la meta. Sin recibir otra instrucción del usuario, el agente conserva ese resultado y elige investigar el enfriamiento.',toolLabel:'Decisión basada en la evidencia',toolValue:'Cambiar de herramienta: control de línea → diagnóstico de mantenimiento.',lesson:'El aspecto agéntico está en elegir cómo continuar según lo observado, manteniendo el objetivo y sus límites.',feedback:'El agente cambia su estrategia por el resultado de su propia acción.'},
+    {id:'diagnose',phase:'observe',label:'Observar de nuevo',duration:14000,plan:2,defects:11,title:'Busca evidencia con otra herramienta.',explanation:'El diagnóstico de mantenimiento identifica una obstrucción en el circuito de enfriamiento. El agente propone intervenir ese sistema.',toolLabel:'Herramienta: diagnóstico de mantenimiento',toolValue:'Hallazgo simulado: obstrucción en el enfriamiento.',lesson:'Puede cambiar de herramienta cuando la tarea necesita información distinta.',feedback:'La nueva evidencia permite proponer otra acción.'},
+    {id:'permission',phase:'decide',label:'Límites de autonomía',duration:16000,plan:2,defects:11,title:'Respeta los permisos establecidos.',explanation:'La parada requiere un supervisor. El agente solicita permiso; esta escena muestra la autorización como parte de la historia simulada.',toolLabel:'Evento representado en la animación',toolValue:'El supervisor autoriza la intervención. No se solicita una decisión al visitante.',lesson:'Un agente puede actuar con autonomía y tener supervisión humana en acciones específicas.',feedback:'La aprobación mostrada es un evento ficticio del relato.'},
+    {id:'repair',phase:'act',label:'Actuar de nuevo',duration:13000,plan:2,defects:11,title:'Coordina la intervención autorizada.',explanation:'El agente utiliza mantenimiento para atender la obstrucción. La historia resume una parada de 12 minutos y el reinicio de la línea.',toolLabel:'Herramienta: gestión de mantenimiento',toolValue:'Intervención simulada completada. Falta verificar la calidad.',lesson:'También puede coordinar tareas a través de herramientas, dentro de sus permisos.',feedback:'Después de actuar, debe comprobar el efecto.'},
+    {id:'verify',phase:'verify',label:'Comprobar el resultado',duration:15000,plan:2,defects:2,title:'Ahora verifica que la muestra cumple.',explanation:'La nueva inspección encuentra 2 defectos de 200 piezas: 1 %. El agente confirma que esta muestra cumple la meta de 2 % o menos.',toolLabel:'Herramienta: inspección de calidad',toolValue:'Resultado: 1 %. Objetivo cumplido en esta muestra.',lesson:'El cierre se apoya en un resultado medido, no solo en haber ejecutado una acción.',feedback:'Una muestra favorable no demuestra por sí sola estabilidad del proceso.'},
+    {id:'summary',phase:'verify',label:'Concepto de IA agéntica',duration:24000,plan:2,defects:2,title:'El agente elige cómo avanzar hacia la meta.',explanation:'En un sistema agéntico real, un modelo selecciona acciones y herramientas, evalúa sus resultados y puede cambiar de plan con autonomía dentro de sus permisos.',toolLabel:'Lo que hace agéntico al comportamiento',toolValue:'La siguiente decisión depende del objetivo y de la evidencia obtenida.',lesson:'En esta historia eligió herramientas, actuó, verificó y revisó su estrategia sin nuevas instrucciones del usuario.',feedback:'Objetivo, herramientas y evidencia: el agente decide cómo continuar.'}
+  ];
+  const totalDuration = scenes.reduce((sum,scene)=>sum+scene.duration,0);
+  function createTimeline(onScene,onProgress,onFinish=()=>{}){
+    let index=0,elapsed=0,finished=false;
+    onScene(scenes[index],index);
+    const progress=()=>onProgress((scenes.slice(0,index).reduce((sum,s)=>sum+s.duration,0)+elapsed)/totalDuration);
+    progress();
+    return {
+      advance(milliseconds){
+        if(!Number.isFinite(milliseconds)||milliseconds<0)throw new Error('Invalid elapsed time');
+        if(finished)return;
+        let remaining=milliseconds;
+        while(remaining>=scenes[index].duration-elapsed){
+          remaining-=scenes[index].duration-elapsed;
+          if(index===scenes.length-1){
+            elapsed=scenes[index].duration;finished=true;progress();onFinish();return;
+          }
+          elapsed=0;index++;
+          onScene(scenes[index],index);
+        }
+        elapsed+=remaining;progress();
+      },
+      reset(){index=0;elapsed=0;finished=false;onScene(scenes[index],index);progress();},
+      snapshot(){return {index,elapsed,finished,sceneId:scenes[index].id};}
+    };
+  }
+  // END_AUTOMATIC_STORY
+  const $=id=>document.getElementById(id);
+  const params=new URLSearchParams(location.search);
+  const embedded=window.parent!==window;
+  if(params.get('embed')==='1')document.body.classList.add('embed');
+  const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
+  let parentOrigin=null;
+  try{if(document.referrer)parentOrigin=new URL(document.referrer).origin;}catch{}
+  let visibleInParent=!(embedded&&params.get('managed')==='1'&&parentOrigin);
+  let frameId=null,lastFrame=null,hasStarted=false;
+  function setText(id,value){$(id).textContent=value;}
+  function renderScene(scene,index){
+    const phaseNames={observe:'Observando',decide:'Decidiendo',act:'Actuando',verify:'Verificando'};
+    for(const phase of Object.keys(phaseNames)){
+      $('node-'+phase).classList.toggle('active',scene.phase===phase);
+      $('edge-'+phase).classList.toggle('active',scene.phase===phase);
+    }
+    setText('phase',scene.label);setText('scene-number','Escena '+String(index+1).padStart(2,'0')+' de '+scenes.length);
+    setText('scene-title',scene.title);setText('explanation',scene.explanation);setText('tool-label',scene.toolLabel);setText('tool-value',scene.toolValue);setText('lesson',scene.lesson);setText('feedback',scene.feedback);
+    setText('cycle',scene.plan===1?'Primer plan':'Segundo plan');setText('agent-state',scene.id==='replan'?'Cambia de plan':phaseNames[scene.phase]);
+    $('diagram').classList.toggle('agentic-focus',scene.id==='replan'||scene.id==='summary');
+    setText('result-value',(scene.defects/200*100).toFixed(1).replace('.',',')+' %');$('result-value').classList.toggle('success',scene.defects<=4);
+    setText('playback-label',scene.id==='summary'?'Conclusión de la demostración.':'La demostración avanza sola.');
+    $('progress').setAttribute('aria-valuenow',String(index+1));
+    setText('announcement','Escena '+(index+1)+'. '+scene.title+' '+scene.explanation+' '+scene.lesson);
+  }
+  const timeline=createTimeline(renderScene,fraction=>{$('progress-fill').style.width=(fraction*100)+'%';},finishPlayback);
+  const seconds=Math.round(totalDuration/1000);setText('duration',Math.floor(seconds/60)+' min '+String(seconds%60).padStart(2,'0')+' s por recorrido');
+  function canAdvance(){return hasStarted&&!document.hidden&&visibleInParent&&!motionPreference.matches;}
+  function tick(now){
+    frameId=null;
+    if(!canAdvance()){lastFrame=null;return;}
+    if(lastFrame!==null)timeline.advance(Math.min(Math.max(0,now-lastFrame),250));
+    if(!canAdvance()){lastFrame=null;return;}
+    lastFrame=now;frameId=requestAnimationFrame(tick);
+  }
+  function syncPlayback(){
+    const play=canAdvance();document.body.classList.toggle('paused',!play);
+    if(!play){if(frameId!==null)cancelAnimationFrame(frameId);frameId=null;lastFrame=null;}
+    else if(frameId===null){lastFrame=null;frameId=requestAnimationFrame(tick);}
+  }
+  function syncMotionPreference(){
+    $('static-story').hidden=!motionPreference.matches;
+    if(motionPreference.matches){setText('playback-label','Vista sin animación, según la preferencia de su dispositivo.');$('duration').hidden=true;}
+    else{$('duration').hidden=false;const current=timeline.snapshot();renderScene(scenes[current.index],current.index);}
+    syncPlayback();
+  }
+  $('story-transcript').replaceChildren(...scenes.map(scene=>{const li=document.createElement('li');const strong=document.createElement('strong');strong.textContent=scene.title;li.append(strong,document.createTextNode(scene.explanation+' '+scene.lesson));return li;}));
+  function finishPlayback(){
+    hasStarted=false;
+    $('replay-button').hidden=false;
+    setText('playback-label','Demostración terminada.');
+    syncPlayback();
+  }
+  function beginPlayback(){
+    if(hasStarted)return;
+    timeline.reset();
+    hasStarted=true;
+    $('start-button').disabled=true;
+    $('start-screen').hidden=true;
+    $('demonstration').hidden=false;
+    $('replay-button').hidden=true;
+    syncMotionPreference();
+  }
+  $('start-button').addEventListener('click',beginPlayback);
+  $('replay-button').addEventListener('click',beginPlayback);
+  document.addEventListener('visibilitychange',syncPlayback);
+  motionPreference.addEventListener('change',syncMotionPreference);
+  if(embedded&&parentOrigin&&/^https?:/.test(parentOrigin)){
+    window.addEventListener('message',event=>{
+      if(event.source!==window.parent||event.origin!==parentOrigin)return;
+      if(event.data?.type!=='ia-agentica:visibility'||typeof event.data.visible!=='boolean')return;
+      visibleInParent=event.data.visible;syncPlayback();
+    });
+    const sendHeight=()=>window.parent.postMessage({type:'ia-agentica:resize',height:Math.ceil(document.body.getBoundingClientRect().height)},parentOrigin);
+    if(typeof ResizeObserver!=='undefined')new ResizeObserver(sendHeight).observe(document.body);
+    window.parent.postMessage({type:'ia-agentica:ready'},parentOrigin);sendHeight();
+  }
+  syncMotionPreference();
+})();
+</script>
+</body>
+</html>
+
