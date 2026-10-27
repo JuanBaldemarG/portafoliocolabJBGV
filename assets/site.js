@@ -1543,14 +1543,6 @@ const learningBlocks = [
       "proyectos",
       "herramientas"
     ]
-  },
-  {
-    "id": "data-analytics-iii",
-    "title": "Contenido adicional de GitHub",
-    "description": "Bloque orientado a recomendadores e inferencia causal aplicada.",
-    "sectionIds": [
-      "mineria-datos"
-    ]
   }
 ];
 
