@@ -332,9 +332,9 @@ const portfolioSections = [
         ]
       },
       {
-        "title": "Detección de EPP en entornos industriales",
+        "title": "Detección de equipo de protección personal con YOLOv8",
         "level": "Visión por computadora",
-        "description": "Galería de dos escenas de seguridad industrial para reconocer casco, lentes, chaleco de alta visibilidad, guantes y calzado de seguridad.",
+        "description": "Ejemplos visuales de seguridad industrial con EPP y acceso al notebook de inferencia contextual con YOLOv8.",
         "notebooks": [
           {
             "label": "Detección de EPP con YOLOv8",
@@ -562,7 +562,7 @@ const portfolioSections = [
       {
         "title": "MLOps y drift",
         "level": "Operación",
-        "description": "Bloque orientado a drift de datos, drift de modelos y errores frecuentes de leakage.",
+        "description": "Contenido orientado a drift de datos, drift de modelos y errores frecuentes de leakage.",
         "notebooks": [
           {
             "label": "Iris Drift",
@@ -615,7 +615,7 @@ const portfolioSections = [
       {
         "title": "Práctica de ChatGPT",
         "level": "Ejercicio integrador",
-        "description": "Caso automotriz sintético de NovaDrive para practicar análisis con ChatGPT gratuito, lectura de datos, decisiones y validación humana.",
+        "description": "Caso automotriz sintético de NovaDrive para practicar con ChatGPT gratuito el análisis de demanda, capacidad, inventario, proveedores e impacto financiero. Todos los archivos se consultan directamente desde GitHub.",
         "resources": [
           {
             "label": "Instrucciones para alumnos",
@@ -1546,7 +1546,7 @@ const learningBlocks = [
   },
   {
     "id": "data-analytics-iii",
-    "title": "Data Analytics III — Portafolio de Minería de Datos",
+    "title": "Contenido adicional de GitHub",
     "description": "Bloque orientado a recomendadores e inferencia causal aplicada.",
     "sectionIds": [
       "mineria-datos"
@@ -1817,7 +1817,9 @@ function renderSections() {
 
     const blockEyebrow = document.createElement("p");
     blockEyebrow.className = "section-kicker";
-    blockEyebrow.textContent = "Bloque principal";
+    blockEyebrow.textContent = block.id === "data-analytics-iii"
+      ? "Contenido adicional de GitHub"
+      : "Ruta temática";
 
     const blockTitle = document.createElement("h2");
     blockTitle.className = "block-title";
@@ -1837,10 +1839,18 @@ function renderSections() {
       .map((sectionId) => portfolioSections.find((section) => section.id === sectionId))
       .filter(Boolean)
       .forEach((section) => {
-        blockSections.appendChild(renderSection(config, section, counters));
+        const sectionCounters = block.id === "data-analytics-iii"
+          ? { moduleCount: 0, notebookCount: 0, resourceCount: 0 }
+          : counters;
+        blockSections.appendChild(renderSection(config, section, sectionCounters));
         if (block.id === "data-analytics-iii-portec" && section.id === "proyectos") {
           const featuredSites = document.getElementById("sitios-destacados");
-          if (featuredSites) blockSections.appendChild(featuredSites);
+          if (featuredSites) {
+            while (featuredSites.firstElementChild) {
+              blockSections.appendChild(featuredSites.firstElementChild);
+            }
+            featuredSites.remove();
+          }
         }
       });
 
