@@ -751,7 +751,7 @@ const portfolioSections = [
         ]
       },
       {
-        "title": "IA neurosimbólica aplicada",
+        "title": "Módulo 2 · IA neurosimbólica aplicada",
         "level": "Razonamiento híbrido",
         "description": "Unidad con presentación 2026 y notebooks aplicados para explicar cómo combinar modelos neuronales con conocimiento simbólico en contextos organizacionales e industriales.",
         "notebooks": [
@@ -779,7 +779,7 @@ const portfolioSections = [
   },
   {
     "id": "fairness",
-    "title": "Fairness, sesgos y explicabilidad",
+    "title": "Interpretación, Fairness, Sesgos y Explicabilidad",
     "description": "Ejercicios para explicar modelos, discutir sesgos y revisar decisiones responsables en IA.",
     "modules": [
       {
@@ -1512,7 +1512,7 @@ const learningBlocks = [
   {
     "id": "data-analytics-i",
     "title": "Data Analytics I",
-    "description": "Bloque orientado a fundamentos analíticos, modelado supervisado y exploración aplicada de datos.",
+    "description": "Fundamentos analíticos, modelado supervisado y exploración aplicada de datos.",
     "sectionIds": [
       "limpieza-datos",
       "supervisados",
@@ -1526,7 +1526,7 @@ const learningBlocks = [
   {
     "id": "data-analytics-ii",
     "title": "Data Analytics II",
-    "description": "Bloque orientado a inteligencia artificial aplicada, explicabilidad, dirección de proyectos y herramientas de apoyo.",
+    "description": "Inteligencia artificial aplicada, explicabilidad, dirección de proyectos y herramientas de apoyo.",
     "sectionIds": [
       "generativa",
       "neurosimbolica",
