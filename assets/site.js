@@ -995,6 +995,10 @@ const portfolioSections = [
             "path": "https://github.com/JuanBaldemarG/portafoliocolabJBGV/tree/main/skills"
           },
           {
+            "label": "Presentación breve sobre Skills (PDF)",
+            "path": "docs/skills/Skills_presentacion_breve.pdf"
+          },
+          {
             "label": "Descargar todas las skills (ZIP)",
             "path": "descargas/PortEC_skills.zip"
           }
