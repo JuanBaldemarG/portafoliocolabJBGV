@@ -134,6 +134,39 @@ const portfolioSections = [
         ]
       },
       {
+        "title": "Regularización Lasso y Ridge",
+        "level": "Regresión",
+        "description": "Ejercicio introductorio para comprender cómo Lasso y Ridge reducen el sobreajuste y estabilizan modelos de regresión.",
+        "notebooks": [
+          {
+            "label": "Regularización Lasso y Ridge",
+            "path": "notebooks/supervisados/regularizacion_lasso_ridge_principiantes_colab.ipynb"
+          }
+        ]
+      },
+      {
+        "title": "Regresión Poisson en manufactura",
+        "level": "Regresión",
+        "description": "Ejercicio introductorio para predecir el número de defectos por lote mediante regresión Poisson en un caso de manufactura.",
+        "notebooks": [
+          {
+            "label": "Regresión Poisson de manufactura",
+            "path": "notebooks/supervisados/regresion_poisson_manufactura_principiantes_colab.ipynb"
+          }
+        ]
+      },
+      {
+        "title": "Análisis discriminante de manufactura",
+        "level": "Clasificación",
+        "description": "Ejercicio introductorio de análisis discriminante lineal para clasificar resultados de calidad en un caso de manufactura.",
+        "notebooks": [
+          {
+            "label": "Análisis discriminante de manufactura",
+            "path": "notebooks/supervisados/analisis_discriminante_manufactura_principiantes_colab.ipynb"
+          }
+        ]
+      },
+      {
         "title": "Titanic",
         "level": "Clasificación",
         "description": "Ejercicio de clasificación con scikit-learn para analizar supervivencia de pasajeros y practicar aprendizaje supervisado en Google Colab.",
@@ -219,102 +252,6 @@ const portfolioSections = [
         ]
       },
       {
-        "title": "Red neuronal con MNIST",
-        "level": "Deep Learning",
-        "description": "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
-        "notebooks": [
-          {
-            "label": "Notebook MNIST",
-            "path": "notebooks/red-neuronal/Red_Neu_Mnist.ipynb"
-          }
-        ],
-        "resources": [
-          {
-            "label": "Guía de Keras",
-            "path": "docs/red-neuronal/Red_Neuronal_Keras_Introduccion.docx"
-          }
-        ]
-      },
-      {
-        "title": "Detección de objetos con YOLO26",
-        "level": "Visión por computadora",
-        "description": "Práctica guiada para principiantes sobre detección de objetos con YOLO26n en Google Colab, orientada a comprender entrenamiento, validación e interpretación básica del modelo.",
-        "notebooks": [
-          {
-            "label": "YOLO26 para principiantes",
-            "path": "notebooks/yolo26/deteccion_objetos_yolo26_principiantes_udem.ipynb"
-          }
-        ]
-      },
-      {
-        "title": "Detección de EPP en entornos industriales",
-        "level": "Visión por computadora",
-        "description": "Galería de dos escenas de seguridad industrial para reconocer casco, lentes, chaleco de alta visibilidad, guantes y calzado de seguridad.",
-        "notebooks": [
-          {
-            "label": "Detección de EPP con YOLOv8",
-            "path": "notebooks/vision-computadora/PPE_Detection_YOLOv8_Solo_Inferencia_Contexto_Resultados.ipynb"
-          }
-        ],
-        "resources": [
-          {
-            "label": "Descripción y uso de las imágenes",
-            "path": "data/vision-computadora/README.md"
-          }
-        ],
-        "images": [
-          {
-            "path": "data/vision-computadora/persona_EPP_planta.jpg",
-            "alt": "Trabajador con EPP operando maquinaria en una planta industrial",
-            "caption": "Operación en planta"
-          },
-          {
-            "path": "data/vision-computadora/persona_EPP_almacen.jpg",
-            "alt": "Trabajador con EPP moviendo una tarima en un almacén",
-            "caption": "Manejo de materiales en almacén"
-          }
-        ],
-        "datasets": [
-          {
-            "label": "Modelo YOLOv8 (best.pt)",
-            "path": "data/vision-computadora/best.pt"
-          }
-        ]
-      },
-      {
-        "title": "Regularización Lasso y Ridge",
-        "level": "Regresión",
-        "description": "Ejercicio introductorio para comprender cómo Lasso y Ridge reducen el sobreajuste y estabilizan modelos de regresión.",
-        "notebooks": [
-          {
-            "label": "Regularización Lasso y Ridge",
-            "path": "notebooks/supervisados/regularizacion_lasso_ridge_principiantes_colab.ipynb"
-          }
-        ]
-      },
-      {
-        "title": "Regresión Poisson en manufactura",
-        "level": "Regresión",
-        "description": "Ejercicio introductorio para predecir el número de defectos por lote mediante regresión Poisson en un caso de manufactura.",
-        "notebooks": [
-          {
-            "label": "Regresión Poisson de manufactura",
-            "path": "notebooks/supervisados/regresion_poisson_manufactura_principiantes_colab.ipynb"
-          }
-        ]
-      },
-      {
-        "title": "Análisis discriminante de manufactura",
-        "level": "Clasificación",
-        "description": "Ejercicio introductorio de análisis discriminante lineal para clasificar resultados de calidad en un caso de manufactura.",
-        "notebooks": [
-          {
-            "label": "Análisis discriminante de manufactura",
-            "path": "notebooks/supervisados/analisis_discriminante_manufactura_principiantes_colab.ipynb"
-          }
-        ]
-      },
-      {
         "title": "Clasificación supervisada de cáncer de mama",
         "level": "Clasificación",
         "description": "Ejercicio de aprendizaje supervisado para clasificar muestras de cáncer de mama y evaluar el desempeño del modelo.",
@@ -352,6 +289,34 @@ const portfolioSections = [
         ]
       },
       {
+        "title": "Red neuronal con MNIST",
+        "level": "Deep Learning",
+        "description": "Introducción a redes neuronales con Keras mediante un ejemplo de clasificación de imágenes.",
+        "notebooks": [
+          {
+            "label": "Notebook MNIST",
+            "path": "notebooks/red-neuronal/Red_Neu_Mnist.ipynb"
+          }
+        ],
+        "resources": [
+          {
+            "label": "Guía de Keras",
+            "path": "docs/red-neuronal/Red_Neuronal_Keras_Introduccion.docx"
+          }
+        ]
+      },
+      {
+        "title": "Detección de objetos con YOLO26",
+        "level": "Visión por computadora",
+        "description": "Práctica guiada para principiantes sobre detección de objetos con YOLO26n en Google Colab, orientada a comprender entrenamiento, validación e interpretación básica del modelo.",
+        "notebooks": [
+          {
+            "label": "YOLO26 para principiantes",
+            "path": "notebooks/yolo26/deteccion_objetos_yolo26_principiantes_udem.ipynb"
+          }
+        ]
+      },
+      {
         "title": "Inspección visual de manufactura con OpenCV",
         "level": "Visión por computadora",
         "description": "Ejemplo aplicado de inspección visual en manufactura con OpenCV, desde la lectura y preparación de imágenes hasta la identificación de características relevantes.",
@@ -363,6 +328,41 @@ const portfolioSections = [
           {
             "label": "Ejercicio de piezas faltantes con OpenCV",
             "path": "notebooks/vision-computadora/ejercicio_opencv_piezas_faltantes_colab.ipynb"
+          }
+        ]
+      },
+      {
+        "title": "Detección de EPP en entornos industriales",
+        "level": "Visión por computadora",
+        "description": "Galería de dos escenas de seguridad industrial para reconocer casco, lentes, chaleco de alta visibilidad, guantes y calzado de seguridad.",
+        "notebooks": [
+          {
+            "label": "Detección de EPP con YOLOv8",
+            "path": "notebooks/vision-computadora/PPE_Detection_YOLOv8_Solo_Inferencia_Contexto_Resultados.ipynb"
+          }
+        ],
+        "resources": [
+          {
+            "label": "Descripción y uso de las imágenes",
+            "path": "data/vision-computadora/README.md"
+          }
+        ],
+        "images": [
+          {
+            "path": "data/vision-computadora/persona_EPP_planta.jpg",
+            "alt": "Trabajador con EPP operando maquinaria en una planta industrial",
+            "caption": "Operación en planta"
+          },
+          {
+            "path": "data/vision-computadora/persona_EPP_almacen.jpg",
+            "alt": "Trabajador con EPP moviendo una tarima en un almacén",
+            "caption": "Manejo de materiales en almacén"
+          }
+        ],
+        "datasets": [
+          {
+            "label": "Modelo YOLOv8 (best.pt)",
+            "path": "data/vision-computadora/best.pt"
           }
         ]
       },
@@ -409,6 +409,17 @@ const portfolioSections = [
           {
             "label": "Dataset CSV",
             "path": "data/eda/data.csv"
+          }
+        ]
+      },
+      {
+        "title": "Análisis exploratorio completo",
+        "level": "EDA avanzado",
+        "description": "Ejercicio integrador para unir las piezas del análisis exploratorio: estructura, preguntas, resúmenes, visualizaciones y hallazgos prudentes con el dataset tips.",
+        "notebooks": [
+          {
+            "label": "Análisis exploratorio completo",
+            "path": "notebooks/eda/Analisis_exploratorio_completo.ipynb"
           }
         ]
       },
@@ -527,17 +538,6 @@ const portfolioSections = [
           {
             "label": "Supervivencia Tires",
             "path": "data/supervivencia/Supervivencia_Tires.csv"
-          }
-        ]
-      },
-      {
-        "title": "Análisis exploratorio completo",
-        "level": "EDA avanzado",
-        "description": "Ejercicio integrador para unir las piezas del análisis exploratorio: estructura, preguntas, resúmenes, visualizaciones y hallazgos prudentes con el dataset tips.",
-        "notebooks": [
-          {
-            "label": "Análisis exploratorio completo",
-            "path": "notebooks/eda/Analisis_exploratorio_completo.ipynb"
           }
         ]
       },
@@ -740,6 +740,17 @@ const portfolioSections = [
     "description": "Material 2026 para introducir arquitecturas híbridas que combinan aprendizaje automático con reglas, lógica y razonamiento explicable.",
     "modules": [
       {
+        "title": "Módulo 1 · Razonamiento simbólico",
+        "level": "Razonamiento simbólico",
+        "description": "Introducción práctica al razonamiento simbólico y a la representación del conocimiento para construir soluciones de IA explicables.",
+        "notebooks": [
+          {
+            "label": "Razonamiento simbólico",
+            "path": "IA Neurosimbolica/notebook_razonamiento_simbolico_colab.ipynb"
+          }
+        ]
+      },
+      {
         "title": "IA neurosimbólica aplicada",
         "level": "Razonamiento híbrido",
         "description": "Unidad con presentación 2026 y notebooks aplicados para explicar cómo combinar modelos neuronales con conocimiento simbólico en contextos organizacionales e industriales.",
@@ -763,17 +774,6 @@ const portfolioSections = [
             "path": "IA Neurosimbolica/Diplomado 2026 Mod XII IA Neuro.pptx"
           }
         ]
-      },
-      {
-        "title": "Módulo 1 · Razonamiento simbólico",
-        "level": "Razonamiento simbólico",
-        "description": "Introducción práctica al razonamiento simbólico y a la representación del conocimiento para construir soluciones de IA explicables.",
-        "notebooks": [
-          {
-            "label": "Razonamiento simbólico",
-            "path": "IA Neurosimbolica/notebook_razonamiento_simbolico_colab.ipynb"
-          }
-        ]
       }
     ]
   },
@@ -782,6 +782,17 @@ const portfolioSections = [
     "title": "Fairness, sesgos y explicabilidad",
     "description": "Ejercicios para explicar modelos, discutir sesgos y revisar decisiones responsables en IA.",
     "modules": [
+      {
+        "title": "Interpretación de ML",
+        "level": "Explainable AI",
+        "description": "Notebook dedicado a interpretar modelos de aprendizaje automático y comunicar sus resultados.",
+        "notebooks": [
+          {
+            "label": "Interpretación de Modelos de ML",
+            "path": "notebooks/explicabilidad/Interpretacion_de_Modelos_de_ML.ipynb"
+          }
+        ]
+      },
       {
         "title": "Fairness con COMPAS",
         "level": "Fairness",
@@ -815,17 +826,6 @@ const portfolioSections = [
           {
             "label": "PSM industrial",
             "path": "notebooks/explicabilidad/Notebook_PSM_Industrial_Detallado.ipynb"
-          }
-        ]
-      },
-      {
-        "title": "Interpretación de ML",
-        "level": "Explainable AI",
-        "description": "Notebook dedicado a interpretar modelos de aprendizaje automático y comunicar sus resultados.",
-        "notebooks": [
-          {
-            "label": "Interpretación de Modelos de ML",
-            "path": "notebooks/explicabilidad/Interpretacion_de_Modelos_de_ML.ipynb"
           }
         ]
       }
@@ -1514,11 +1514,11 @@ const learningBlocks = [
     "title": "Data Analytics I",
     "description": "Bloque orientado a fundamentos analíticos, modelado supervisado y exploración aplicada de datos.",
     "sectionIds": [
+      "limpieza-datos",
       "supervisados",
+      "metricas-ml",
       "no-supervisados",
       "mlops",
-      "limpieza-datos",
-      "metricas-ml",
       "series-tiempo",
       "tecnicas-simulacion"
     ]
@@ -1530,9 +1530,7 @@ const learningBlocks = [
     "sectionIds": [
       "generativa",
       "neurosimbolica",
-      "fairness",
-      "proyectos",
-      "herramientas"
+      "fairness"
     ]
   },
   {
@@ -1541,7 +1539,9 @@ const learningBlocks = [
     "description": "Inferencia estadística y pruebas de hipótesis aplicadas a problemas de minería de datos.",
     "sectionIds": [
       "pruebas-hipotesis",
-      "comunicacion"
+      "comunicacion",
+      "proyectos",
+      "herramientas"
     ]
   },
   {
@@ -1838,6 +1838,10 @@ function renderSections() {
       .filter(Boolean)
       .forEach((section) => {
         blockSections.appendChild(renderSection(config, section, counters));
+        if (block.id === "data-analytics-iii-portec" && section.id === "proyectos") {
+          const featuredSites = document.getElementById("sitios-destacados");
+          if (featuredSites) blockSections.appendChild(featuredSites);
+        }
       });
 
     blockEl.appendChild(blockSections);
