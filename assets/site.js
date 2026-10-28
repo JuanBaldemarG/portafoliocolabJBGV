@@ -924,6 +924,10 @@ const portfolioSections = [
         "description": "Acceso al GPT de apoyo académico para resolver dudas, reforzar conceptos y acompañar ejercicios de minería, analítica y ciencia de datos.",
         "resources": [
           {
+            "label": "Presentación Vibe Coding (PDF)",
+            "path": "docs/vibe-coding/Vibe_Coding.pdf"
+          },
+          {
             "label": "Abrir asistente GPT",
             "path": "https://chatgpt.com/g/g-nSv2zrv2U-asistente-de-mineria-analitica-y-ciencia-de-datos"
           }
